@@ -1,7 +1,784 @@
 fileFormatVersion: 2
 guid: 0be1a1894a0f4444ca7c5e5733a9e75f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7967909033162060566
+    second: Tileset (CastleArea)_0
+  - first:
+      213: -1280913101287173878
+    second: Tileset (CastleArea)_1
+  - first:
+      213: 308446259801503987
+    second: Tileset (CastleArea)_2
+  - first:
+      213: 2864545043242876046
+    second: Tileset (CastleArea)_3
+  - first:
+      213: 3638525962932182869
+    second: Tileset (CastleArea)_4
+  - first:
+      213: -1587908162099815703
+    second: Tileset (CastleArea)_Acid
+  - first:
+      213: 2483816595078670687
+    second: Tileset (CastleArea)_6
+  - first:
+      213: -2058084362154753658
+    second: Tileset (CastleArea)_PillarInAcid
+  - first:
+      213: 6703925127301314758
+    second: Tileset (CastleArea)_Pot_01
+  - first:
+      213: -1533929232716843604
+    second: Tileset (CastleArea)_Pot_03
+  - first:
+      213: 427626025770730506
+    second: Tileset (CastleArea)_10
+  - first:
+      213: 3069312332164561115
+    second: Tileset (CastleArea)_11
+  - first:
+      213: -1025942223086832510
+    second: Tileset (CastleArea)_12
+  - first:
+      213: 5151275590459690233
+    second: Tileset (CastleArea)_13
+  - first:
+      213: -2289994472469667864
+    second: Tileset (CastleArea)_14
+  - first:
+      213: -5106441541718235343
+    second: Tileset (CastleArea)_15
+  - first:
+      213: 2072371322858746464
+    second: Tileset (CastleArea)_StoneChest_04
+  - first:
+      213: 5578424807201018025
+    second: Tileset (CastleArea)_17
+  - first:
+      213: -1194016348468690702
+    second: Tileset (CastleArea)_Pot_02
+  - first:
+      213: 5959212020476632601
+    second: Tileset (CastleArea)_19
+  - first:
+      213: 6511537358706928157
+    second: Tileset (CastleArea)_20
+  - first:
+      213: 1702220574846388754
+    second: Tileset (CastleArea)_21
+  - first:
+      213: 2629828523891794302
+    second: Tileset (CastleArea)_22
+  - first:
+      213: 3845051704310995492
+    second: Tileset (CastleArea)_StoneChest_01
+  - first:
+      213: -8772644914165807033
+    second: Tileset (CastleArea)_24
+  - first:
+      213: 608408432205686981
+    second: Tileset (CastleArea)_WoodChest_01
+  - first:
+      213: 6816934624529039158
+    second: Tileset (CastleArea)_WoodChest_)3
+  - first:
+      213: -7526316360096823477
+    second: Tileset (CastleArea)_WoodChest_04
+  - first:
+      213: 8593660880168286187
+    second: Tileset (CastleArea)_28
+  - first:
+      213: -8707980976532329149
+    second: Tileset (CastleArea)_29
+  - first:
+      213: 1138164434836552393
+    second: Tileset (CastleArea)_30
+  - first:
+      213: 2236872688709611058
+    second: Tileset (CastleArea)_31
+  - first:
+      213: -7347499016796187447
+    second: Tileset (CastleArea)_32
+  - first:
+      213: -925459520687208410
+    second: Tileset (CastleArea)_33
+  - first:
+      213: 4370330256153175979
+    second: Tileset (CastleArea)_WoodChest_02
+  - first:
+      213: 3129922602130992556
+    second: Tileset (CastleArea)_35
+  - first:
+      213: -8070052225234154903
+    second: Tileset (CastleArea)_36
+  - first:
+      213: 7217703979235246584
+    second: Tileset (CastleArea)_37
+  - first:
+      213: -7767071088585360783
+    second: Tileset (CastleArea)_38
+  - first:
+      213: -5645837690046072513
+    second: Tileset (CastleArea)_39
+  - first:
+      213: 6062782452245730554
+    second: Tileset (CastleArea)_40
+  - first:
+      213: 4097237582916583162
+    second: Tileset (CastleArea)_41
+  - first:
+      213: -4860558684160132439
+    second: Tileset (CastleArea)_StoneChest_02
+  - first:
+      213: -4731198598179884339
+    second: Tileset (CastleArea)_StoneChest_03
+  - first:
+      213: 8537143083291292023
+    second: Tileset (CastleArea)_44
+  - first:
+      213: 2710508925737137882
+    second: Tileset (CastleArea)_45
+  - first:
+      213: -6501223279119488776
+    second: Tileset (CastleArea)_46
+  - first:
+      213: 8533226027332277451
+    second: Tileset (CastleArea)_ShinySpikes_Top
+  - first:
+      213: -8009209872685114802
+    second: Tileset (CastleArea)_48
+  - first:
+      213: 3807409744720099913
+    second: Tileset (CastleArea)_49
+  - first:
+      213: 6996896957036971909
+    second: Tileset (CastleArea)_50
+  - first:
+      213: 7145174510136091728
+    second: Tileset (CastleArea)_51
+  - first:
+      213: 260259342167391602
+    second: Tileset (CastleArea)_52
+  - first:
+      213: 2119915579187708696
+    second: Tileset (CastleArea)_53
+  - first:
+      213: -270006929285138112
+    second: Tileset (CastleArea)_ShinySpikes_Bottom
+  - first:
+      213: -216996315984629155
+    second: Tileset (CastleArea)_ShinySpikes_Left
+  - first:
+      213: -7001288585156811056
+    second: Tileset (CastleArea)_PurpleFloor_TM
+  - first:
+      213: 8389008962987888458
+    second: Tileset (CastleArea)_PurpleFloor_TL
+  - first:
+      213: -1755650222234563137
+    second: Tileset (CastleArea)_58
+  - first:
+      213: 6736920642761489863
+    second: Tileset (CastleArea)_59
+  - first:
+      213: -4552491824201685579
+    second: Tileset (CastleArea)_PurpleFloor_TR
+  - first:
+      213: 5915832209211008889
+    second: Tileset (CastleArea)_Window
+  - first:
+      213: -4645712429315510775
+    second: Tileset (CastleArea)_62
+  - first:
+      213: -4943007305879251729
+    second: Tileset (CastleArea)_ShinySpikes_Right
+  - first:
+      213: -4680115748861480799
+    second: Tileset (CastleArea)_64
+  - first:
+      213: -3966756982658719736
+    second: Tileset (CastleArea)_PurpleFloor_LB
+  - first:
+      213: -7159998603157225806
+    second: Tileset (CastleArea)_PurpleFloor_LM
+  - first:
+      213: -7384013309121014858
+    second: Tileset (CastleArea)_StoneSquare
+  - first:
+      213: 6832248049141984720
+    second: Tileset (CastleArea)_PurpleFloor_RT
+  - first:
+      213: -944463402499307092
+    second: Tileset (CastleArea)_69
+  - first:
+      213: -2551349652009625395
+    second: Tileset (CastleArea)_RustedSpikes_Top
+  - first:
+      213: 7609374163870728507
+    second: Tileset (CastleArea)_RustedSpikes_Bottom
+  - first:
+      213: 2815786339491601483
+    second: Tileset (CastleArea)_72
+  - first:
+      213: -583622710042986792
+    second: Tileset (CastleArea)_73
+  - first:
+      213: -1139907736265190637
+    second: Tileset (CastleArea)_PurpleFloor_RM
+  - first:
+      213: 1717254122255761410
+    second: Tileset (CastleArea)_75
+  - first:
+      213: 8543761227672716402
+    second: Tileset (CastleArea)_RustedSpikes_Left
+  - first:
+      213: -724273005803278160
+    second: Tileset (CastleArea)_PurpleFloor_LT
+  - first:
+      213: -3763349108386941524
+    second: Tileset (CastleArea)_78
+  - first:
+      213: -8601805925723104004
+    second: Tileset (CastleArea)_79
+  - first:
+      213: -8746939401883020117
+    second: Tileset (CastleArea)_80
+  - first:
+      213: 2326842537166277469
+    second: Tileset (CastleArea)_81
+  - first:
+      213: 7323327410349293276
+    second: Tileset (CastleArea)_RustedSpikes_Right
+  - first:
+      213: 6736394199726068823
+    second: Tileset (CastleArea)_PurpleFloor_BL
+  - first:
+      213: -1331720858911425857
+    second: Tileset (CastleArea)_PurpleFloor_BM
+  - first:
+      213: -2501498371111398216
+    second: Tileset (CastleArea)_PurpleFloor_BR
+  - first:
+      213: 9098770840898100239
+    second: Tileset (CastleArea)_PurpleFloor_RB
+  - first:
+      213: -5022197092668400721
+    second: Tileset (CastleArea)_87
+  - first:
+      213: 5256048523017214035
+    second: Tileset (CastleArea)_88
+  - first:
+      213: 2817490708804314832
+    second: Tileset (CastleArea)_89
+  - first:
+      213: 339562840957365491
+    second: Tileset (CastleArea)_90
+  - first:
+      213: 3520600236937184808
+    second: Tileset (CastleArea)_91
+  - first:
+      213: -5322905780349844822
+    second: Tileset (CastleArea)_92
+  - first:
+      213: -6457443136015252285
+    second: Tileset (CastleArea)_93
+  - first:
+      213: -352558176776277356
+    second: Tileset (CastleArea)_94
+  - first:
+      213: -4090288942592256450
+    second: Tileset (CastleArea)_95
+  - first:
+      213: -2887438274941174738
+    second: Tileset (CastleArea)_96
+  - first:
+      213: -1479034408002796991
+    second: Tileset (CastleArea)_97
+  - first:
+      213: -6185835608657558142
+    second: Tileset (CastleArea)_98
+  - first:
+      213: -3826235270955217213
+    second: Tileset (CastleArea)_99
+  - first:
+      213: -7725697014388570438
+    second: Tileset (CastleArea)_100
+  - first:
+      213: -3620087406556801604
+    second: Tileset (CastleArea)_101
+  - first:
+      213: 2819993555108965798
+    second: Tileset (CastleArea)_102
+  - first:
+      213: 5298913570628965757
+    second: Tileset (CastleArea)_103
+  - first:
+      213: 3378983412862164964
+    second: Tileset (CastleArea)_104
+  - first:
+      213: 8624406303375080406
+    second: Tileset (CastleArea)_105
+  - first:
+      213: -4787421510813037308
+    second: Tileset (CastleArea)_106
+  - first:
+      213: -4313939648890929710
+    second: Tileset (CastleArea)_107
+  - first:
+      213: 1996838295623039849
+    second: Tileset (CastleArea)_108
+  - first:
+      213: 5831700340226455683
+    second: Tileset (CastleArea)_109
+  - first:
+      213: -7894835260495678721
+    second: Tileset (CastleArea)_110
+  - first:
+      213: -8386675455006390638
+    second: Tileset (CastleArea)_111
+  - first:
+      213: 118846140030237659
+    second: Tileset (CastleArea)_112
+  - first:
+      213: 4119425889540502819
+    second: Tileset (CastleArea)_113
+  - first:
+      213: 4063660280474405268
+    second: Tileset (CastleArea)_114
+  - first:
+      213: 2119979854507988535
+    second: Tileset (CastleArea)_115
+  - first:
+      213: 4243843460794457365
+    second: Tileset (CastleArea)_116
+  - first:
+      213: 3468541592604887701
+    second: Tileset (CastleArea)_117
+  - first:
+      213: -3399852897160896233
+    second: Tileset (CastleArea)_118
+  - first:
+      213: -6801921091119266311
+    second: Tileset (CastleArea)_119
+  - first:
+      213: 6831043343682726018
+    second: Tileset (CastleArea)_120
+  - first:
+      213: 3751899142249247704
+    second: Tileset (CastleArea)_121
+  - first:
+      213: -3120052629085422958
+    second: Tileset (CastleArea)_122
+  - first:
+      213: -5661727606738151958
+    second: Tileset (CastleArea)_123
+  - first:
+      213: -8029644703652884695
+    second: Tileset (CastleArea)_124
+  - first:
+      213: -546613521251777769
+    second: Tileset (CastleArea)_125
+  - first:
+      213: 2862716890205944344
+    second: Tileset (CastleArea)_126
+  - first:
+      213: -1682617952160942697
+    second: Tileset (CastleArea)_127
+  - first:
+      213: 5811521495827279747
+    second: Tileset (CastleArea)_128
+  - first:
+      213: -8842319915250792383
+    second: Tileset (CastleArea)_129
+  - first:
+      213: 2894766769144965674
+    second: Tileset (CastleArea)_130
+  - first:
+      213: 7472498323548142095
+    second: Tileset (CastleArea)_131
+  - first:
+      213: 3996521830767635142
+    second: Tileset (CastleArea)_132
+  - first:
+      213: -438599773932699727
+    second: Tileset (CastleArea)_133
+  - first:
+      213: -8801762355819950828
+    second: Tileset (CastleArea)_134
+  - first:
+      213: -8552012022491456160
+    second: Tileset (CastleArea)_135
+  - first:
+      213: -6656885064695916410
+    second: Tileset (CastleArea)_136
+  - first:
+      213: 7696481611377411903
+    second: Tileset (CastleArea)_137
+  - first:
+      213: -5049690426826902205
+    second: Tileset (CastleArea)_138
+  - first:
+      213: 2792660424575884520
+    second: Tileset (CastleArea)_139
+  - first:
+      213: -4944069518924680937
+    second: Tileset (CastleArea)_140
+  - first:
+      213: -558059333059360077
+    second: Tileset (CastleArea)_141
+  - first:
+      213: -3956464204921874379
+    second: Tileset (CastleArea)_142
+  - first:
+      213: 6598414313246593361
+    second: Tileset (CastleArea)_143
+  - first:
+      213: -8592935665829930531
+    second: Tileset (CastleArea)_144
+  - first:
+      213: 5270774001150117546
+    second: Tileset (CastleArea)_145
+  - first:
+      213: 5776546659764925282
+    second: Tileset (CastleArea)_146
+  - first:
+      213: -4989440775580255230
+    second: Tileset (CastleArea)_147
+  - first:
+      213: 6626418893075829765
+    second: Tileset (CastleArea)_148
+  - first:
+      213: 5995441879582682488
+    second: Tileset (CastleArea)_149
+  - first:
+      213: -4678612307517534181
+    second: Tileset (CastleArea)_150
+  - first:
+      213: -2013226027997791054
+    second: Tileset (CastleArea)_151
+  - first:
+      213: -6790200631332207463
+    second: Tileset (CastleArea)_152
+  - first:
+      213: -5992025103560622534
+    second: Tileset (CastleArea)_153
+  - first:
+      213: 761334182408434720
+    second: Tileset (CastleArea)_154
+  - first:
+      213: -1053456735301062288
+    second: Tileset (CastleArea)_155
+  - first:
+      213: 2776935886392528404
+    second: Tileset (CastleArea)_156
+  - first:
+      213: 3864107684438967621
+    second: Tileset (CastleArea)_157
+  - first:
+      213: -7896516651172518892
+    second: Tileset (CastleArea)_158
+  - first:
+      213: -5784941041564603217
+    second: Tileset (CastleArea)_159
+  - first:
+      213: 6140030371556998499
+    second: Tileset (CastleArea)_160
+  - first:
+      213: -6326818041806121269
+    second: Tileset (CastleArea)_161
+  - first:
+      213: -2725587553289706471
+    second: Tileset (CastleArea)_162
+  - first:
+      213: -1747452232189821184
+    second: Tileset (CastleArea)_163
+  - first:
+      213: 1484430559805104870
+    second: Tileset (CastleArea)_164
+  - first:
+      213: -5141566064839912064
+    second: Tileset (CastleArea)_165
+  - first:
+      213: -8701757444753109255
+    second: Tileset (CastleArea)_166
+  - first:
+      213: -2878300353169822300
+    second: Tileset (CastleArea)_167
+  - first:
+      213: -5686524060188469463
+    second: Tileset (CastleArea)_168
+  - first:
+      213: -519025752897585785
+    second: Tileset (CastleArea)_169
+  - first:
+      213: -8566788169107541174
+    second: Tileset (CastleArea)_170
+  - first:
+      213: -8618078701678751973
+    second: Tileset (CastleArea)_171
+  - first:
+      213: 6768051899901045536
+    second: Tileset (CastleArea)_172
+  - first:
+      213: 1417972414619210551
+    second: Tileset (CastleArea)_173
+  - first:
+      213: 6430427655669875096
+    second: Tileset (CastleArea)_174
+  - first:
+      213: -1614824163250492663
+    second: Tileset (CastleArea)_175
+  - first:
+      213: 6935541850066657527
+    second: Tileset (CastleArea)_176
+  - first:
+      213: -3264153890643942854
+    second: Tileset (CastleArea)_177
+  - first:
+      213: 4494694717008848195
+    second: Tileset (CastleArea)_178
+  - first:
+      213: -8093898938723444076
+    second: Tileset (CastleArea)_179
+  - first:
+      213: -2334844268725894574
+    second: Tileset (CastleArea)_180
+  - first:
+      213: 1804969228398684707
+    second: Tileset (CastleArea)_181
+  - first:
+      213: 5964371448437832886
+    second: Tileset (CastleArea)_182
+  - first:
+      213: 3357427351816967618
+    second: Tileset (CastleArea)_183
+  - first:
+      213: -306102939431935070
+    second: Tileset (CastleArea)_184
+  - first:
+      213: 268065614531914713
+    second: Tileset (CastleArea)_185
+  - first:
+      213: 2462441071268398712
+    second: Tileset (CastleArea)_186
+  - first:
+      213: -7261553361299681751
+    second: Tileset (CastleArea)_187
+  - first:
+      213: -2538487633492949943
+    second: Tileset (CastleArea)_188
+  - first:
+      213: -1579856642148637922
+    second: Tileset (CastleArea)_189
+  - first:
+      213: 3669561116883147285
+    second: Tileset (CastleArea)_190
+  - first:
+      213: -6710009079734872656
+    second: Tileset (CastleArea)_191
+  - first:
+      213: -6277548760255985949
+    second: Tileset (CastleArea)_192
+  - first:
+      213: -4207835057459550497
+    second: Tileset (CastleArea)_193
+  - first:
+      213: 4375589301432773408
+    second: Tileset (CastleArea)_194
+  - first:
+      213: 3478159663203876855
+    second: Tileset (CastleArea)_195
+  - first:
+      213: -8452854578547888402
+    second: Tileset (CastleArea)_196
+  - first:
+      213: -5863938826638684822
+    second: Tileset (CastleArea)_197
+  - first:
+      213: -9164594229626140924
+    second: Tileset (CastleArea)_198
+  - first:
+      213: -6517243173940665526
+    second: Tileset (CastleArea)_199
+  - first:
+      213: 7419457403791899471
+    second: Tileset (CastleArea)_200
+  - first:
+      213: 7781627721760045225
+    second: Tileset (CastleArea)_201
+  - first:
+      213: 4625047562563191429
+    second: Tileset (CastleArea)_202
+  - first:
+      213: -1913197576032020107
+    second: Tileset (CastleArea)_203
+  - first:
+      213: -1783317294927918328
+    second: Tileset (CastleArea)_204
+  - first:
+      213: 2521437813063626404
+    second: Tileset (CastleArea)_205
+  - first:
+      213: -4533064182636023619
+    second: Tileset (CastleArea)_206
+  - first:
+      213: -409958712577797726
+    second: Tileset (CastleArea)_207
+  - first:
+      213: 3114859926348404455
+    second: Tileset (CastleArea)_208
+  - first:
+      213: 2159163731781925618
+    second: Tileset (CastleArea)_209
+  - first:
+      213: -5211204466953703797
+    second: Tileset (CastleArea)_210
+  - first:
+      213: 6570513512814471666
+    second: Tileset (CastleArea)_211
+  - first:
+      213: -8117108086050550653
+    second: Tileset (CastleArea)_212
+  - first:
+      213: 8844780911587738546
+    second: Tileset (CastleArea)_213
+  - first:
+      213: 2316838903758746976
+    second: Tileset (CastleArea)_214
+  - first:
+      213: -2459587955609547854
+    second: Tileset (CastleArea)_215
+  - first:
+      213: 8565025494282796275
+    second: Tileset (CastleArea)_216
+  - first:
+      213: -294246530662632500
+    second: Tileset (CastleArea)_217
+  - first:
+      213: -1040845837419776671
+    second: Tileset (CastleArea)_218
+  - first:
+      213: 8981557906117794440
+    second: Tileset (CastleArea)_219
+  - first:
+      213: 766104946872099368
+    second: Tileset (CastleArea)_220
+  - first:
+      213: -1983629760883202836
+    second: Tileset (CastleArea)_221
+  - first:
+      213: -6048713760018596706
+    second: Tileset (CastleArea)_222
+  - first:
+      213: -6280571044921589634
+    second: Tileset (CastleArea)_223
+  - first:
+      213: -3098120054013715826
+    second: Tileset (CastleArea)_224
+  - first:
+      213: 7127331010197575923
+    second: Tileset (CastleArea)_225
+  - first:
+      213: 751391360581745673
+    second: Tileset (CastleArea)_226
+  - first:
+      213: 6485126768084813579
+    second: Tileset (CastleArea)_227
+  - first:
+      213: -5321003201720889114
+    second: Tileset (CastleArea)_228
+  - first:
+      213: 2189073333833286156
+    second: Tileset (CastleArea)_229
+  - first:
+      213: -6514328732988890372
+    second: Tileset (CastleArea)_230
+  - first:
+      213: -738393909986427644
+    second: Tileset (CastleArea)_231
+  - first:
+      213: -7519574257242838687
+    second: Tileset (CastleArea)_232
+  - first:
+      213: -1742032999944474683
+    second: Tileset (CastleArea)_233
+  - first:
+      213: 3950647774336956946
+    second: Tileset (CastleArea)_234
+  - first:
+      213: 7109682965230211153
+    second: Tileset (CastleArea)_235
+  - first:
+      213: -5257895752673441846
+    second: Tileset (CastleArea)_236
+  - first:
+      213: 200484035966919554
+    second: Tileset (CastleArea)_237
+  - first:
+      213: -8902111829539562600
+    second: Tileset (CastleArea)_238
+  - first:
+      213: 6337949788457117641
+    second: Tileset (CastleArea)_239
+  - first:
+      213: 2119937526054782754
+    second: Tileset (CastleArea)_240
+  - first:
+      213: 4253058562074839434
+    second: Tileset (CastleArea)_241
+  - first:
+      213: 9041576376308119821
+    second: Tileset (CastleArea)_242
+  - first:
+      213: 6550904449930718097
+    second: Tileset (CastleArea)_243
+  - first:
+      213: -4163441249356192761
+    second: Tileset (CastleArea)_244
+  - first:
+      213: 4174427171716625187
+    second: Tileset (CastleArea)_245
+  - first:
+      213: -6390253427027950459
+    second: Tileset (CastleArea)_246
+  - first:
+      213: 4605104868400279802
+    second: Tileset (CastleArea)_247
+  - first:
+      213: -5500198541908160261
+    second: Tileset (CastleArea)_248
+  - first:
+      213: -8905349387949955931
+    second: Tileset (CastleArea)_249
+  - first:
+      213: 8628039356907298104
+    second: Tileset (CastleArea)_250
+  - first:
+      213: 4235220127633014417
+    second: Tileset (CastleArea)_251
+  - first:
+      213: 465034663849853490
+    second: Tileset (CastleArea)_0
+  - first:
+      213: 4481505987011332201
+    second: Tileset (CastleArea)_1
+  - first:
+      213: 103146097007266450
+    second: Tileset (CastleArea)_2
+  - first:
+      213: 3340476304624472834
+    second: Tileset (CastleArea)_3
+  - first:
+      213: -2806097887922756658
+    second: Tileset (CastleArea)_4
+  - first:
+      213: -4218053968392290051
+    second: Tileset (CastleArea)_Acid
+  - first:
+      213: 4288365342794858019
+    second: Tileset (CastleArea)_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +809,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -46,7 +823,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -66,7 +843,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -78,7 +855,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -90,7 +867,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,7 +879,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,7 +888,1771 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 209
+        width: 32
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20350cd1081cb5e20800000000000000
+      internalID: 3340476304624472834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 176
+        width: 13
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3e36996dcbe09d0800000000000000
+      internalID: -2806097887922756658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_Acid
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 208
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df00d8293467675c0800000000000000
+      internalID: -4218053968392290051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e326cfe85538b30800000000000000
+      internalID: 4288365342794858019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_PillarInAcid
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681caf34d273073e0800000000000000
+      internalID: -2058084362154753658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_Pot_01
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 208
+        width: 12
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c83c956260290d50800000000000000
+      internalID: 6703925127301314758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_Pot_03
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 208
+        width: 29
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5335d6d7366bae0800000000000000
+      internalID: -1533929232716843604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04c6c2da9b3fe500800000000000000
+      internalID: 427626025770730506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8f46fdd43689a20800000000000000
+      internalID: 3069312332164561115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284b5d8dbfe13c1f0800000000000000
+      internalID: -1025942223086832510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 145
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc8d7d5bd10d7740800000000000000
+      internalID: 5151275590459690233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_14
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 176
+        width: 17
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef56d2092e4830e0800000000000000
+      internalID: -2289994472469667864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_15
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 176
+        width: 16
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137269f09764229b0800000000000000
+      internalID: -5106441541718235343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_StoneChest_04
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062b3bdfcba82cc10800000000000000
+      internalID: 2072371322858746464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_17
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 128
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0917f6ecb8a6d40800000000000000
+      internalID: 5578424807201018025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_Pot_02
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 208
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0c38d05700e6fe0800000000000000
+      internalID: -1194016348468690702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e5fb562cf53b250800000000000000
+      internalID: 5959212020476632601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_20
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 172
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a69676ab0ad5a50800000000000000
+      internalID: 6511537358706928157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 172
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a841518908f9710800000000000000
+      internalID: 1702220574846388754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_22
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71a2caeb170f7420800000000000000
+      internalID: 2629828523891794302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_StoneChest_01
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a9772372e5c5530800000000000000
+      internalID: 3845051704310995492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_24
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 176
+        width: 18
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74882861eed414680800000000000000
+      internalID: -8772644914165807033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_WoodChest_01
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8e8ffde30817800800000000000000
+      internalID: 608408432205686981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_WoodChest_)3
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 160
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f3d106ced9a9e50800000000000000
+      internalID: 6816934624529039158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_WoodChest_04
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47c73985272d8790800000000000000
+      internalID: -7526316360096823477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7f9921a01d24770800000000000000
+      internalID: 8593660880168286187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 161
+        width: 32
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d6eee4079072780800000000000000
+      internalID: -8707980976532329149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 161
+        width: 32
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca7a62f5829bcf00800000000000000
+      internalID: 1138164434836552393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e2f42ebd7fa0f10800000000000000
+      internalID: 2236872688709611058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_32
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 130
+        width: 23
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4d45ca290780a90800000000000000
+      internalID: -7347499016796187447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_33
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6288f6f187b1823f0800000000000000
+      internalID: -925459520687208410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_WoodChest_02
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7e625863886ac30800000000000000
+      internalID: 4370330256153175979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_35
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadeb7a0608bf6b20800000000000000
+      internalID: 3129922602130992556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 143
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a4114124a610090800000000000000
+      internalID: -8070052225234154903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 145
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f18d30378f6a2460800000000000000
+      internalID: 7217703979235246584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_38
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 176
+        width: 14
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ab9a32ff1d53490800000000000000
+      internalID: -7767071088585360783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39ba49a884f5a1b0800000000000000
+      internalID: -5645837690046072513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_40
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af41490b484532450800000000000000
+      internalID: 6062782452245730554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe7f12afdf4cd830800000000000000
+      internalID: 4097237582916583162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_StoneChest_02
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aaf1bc01a3db8cb0800000000000000
+      internalID: -4860558684160132439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_StoneChest_03
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 128
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc279a121f7675eb0800000000000000
+      internalID: -4731198598179884339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_44
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771b24c07660a7670800000000000000
+      internalID: 8537143083291292023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6761fc189ad9520800000000000000
+      internalID: 2710508925737137882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_46
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 145
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f825926fd307c5a0800000000000000
+      internalID: -6501223279119488776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_ShinySpikes_Top
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc412436cdb1c6670800000000000000
+      internalID: 8533226027332277451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_48
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 112
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a5d0f2e0299d090800000000000000
+      internalID: -8009209872685114802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_49
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 96
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94af6648df2a6d430800000000000000
+      internalID: 3807409744720099913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_50
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587433616b8f91160800000000000000
+      internalID: 6996896957036971909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_51
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 112
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05466d63c52c82360800000000000000
+      internalID: 7145174510136091728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_52
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d3d572e70ac9300800000000000000
+      internalID: 260259342167391602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_53
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813cc4bccf37b6d10800000000000000
+      internalID: 2119915579187708696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_ShinySpikes_Bottom
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 85
+        width: 16
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049b01dd02eb04cf0800000000000000
+      internalID: -270006929285138112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_ShinySpikes_Left
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 96
+        width: 11
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52fa2410031dfcf0800000000000000
+      internalID: -216996315984629155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_PurpleFloor_TM
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d62bbf402d66de90800000000000000
+      internalID: -7001288585156811056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_PurpleFloor_TL
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f0678743fbb6470800000000000000
+      internalID: 8389008962987888458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_58
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd8fd9bc6da2a7e0800000000000000
+      internalID: -1755650222234563137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_59
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd7bcf71a95e7d50800000000000000
+      internalID: 6736920642761489863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_PurpleFloor_TR
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5a6975ecc42d0c0800000000000000
+      internalID: -4552491824201685579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_Window
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 64
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97726d40d02491250800000000000000
+      internalID: 5915832209211008889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_62
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e280ad82d178fb0800000000000000
+      internalID: -4645712429315510775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_ShinySpikes_Right
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 11
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe418e26b09e66bb0800000000000000
+      internalID: -4943007305879251729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a07661d583ec0fb0800000000000000
+      internalID: -4680115748861480799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_PurpleFloor_LB
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800a3528a8f33f8c0800000000000000
+      internalID: -3966756982658719736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_PurpleFloor_LM
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be358aa43392ac90800000000000000
+      internalID: -7159998603157225806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_StoneSquare
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3d51d7407b68990800000000000000
+      internalID: -7384013309121014858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_PurpleFloor_RT
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 48
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dda672e66501de50800000000000000
+      internalID: 6832248049141984720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_69
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 208
+        width: 48
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca90ca61a8794e2f0800000000000000
+      internalID: -944463402499307092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_RustedSpikes_Top
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 64
+        width: 16
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc856265209c79cd0800000000000000
+      internalID: -2551349652009625395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_RustedSpikes_Bottom
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 37
+        width: 16
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31cc806c7de99960800000000000000
+      internalID: 7609374163870728507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_72
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c5bc0d1cea31720800000000000000
+      internalID: 2815786339491601483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_73
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d67905cc3e86e7f0800000000000000
+      internalID: -583622710042986792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_PurpleFloor_RM
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313913f04fb3e20f0800000000000000
+      internalID: -1139907736265190637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200412a9689e4d710800000000000000
+      internalID: 1717254122255761410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_RustedSpikes_Left
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 48
+        width: 11
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274003dd199819670800000000000000
+      internalID: 8543761227672716402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_PurpleFloor_LT
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0f0b0e98dd2f5f0800000000000000
+      internalID: -724273005803278160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca530dccce5e5cbc0800000000000000
+      internalID: -3763349108386941524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_79
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc9c6ab51f30a880800000000000000
+      internalID: -8601805925723104004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_80
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba415ee05f0ac9680800000000000000
+      internalID: -8746939401883020117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_81
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 17
+        width: 48
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b801c95fa9a4020800000000000000
+      internalID: 2326842537166277469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_RustedSpikes_Right
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 48
+        width: 11
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde30c3aa7fa1a560800000000000000
+      internalID: 7323327410349293276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_PurpleFloor_BL
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7549cad65da7c7d50800000000000000
+      internalID: 6736394199726068823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_PurpleFloor_BM
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba3b904fe6c48de0800000000000000
+      internalID: -1331720858911425857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_PurpleFloor_BR
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4dfa72c74e84dd0800000000000000
+      internalID: -2501498371111398216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (CastleArea)_PurpleFloor_RB
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cd9685fd3554e70800000000000000
+      internalID: 9098770840898100239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
