@@ -9,12 +9,15 @@ public class playerMovement : MonoBehaviour
     public float jumpVelocity = 6f;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
+    public float dashDistance = 3f;
 
     private float inputHorizontal;
     private Rigidbody2D playerRigidBody;
     private BoxCollider2D playerBoxCollider2D;
     private SpriteRenderer playerSpriteRenderer;
     [SerializeField] private LayerMask groundLayer; //the serialized field adds a dropdown to this scripts in which you can select the layer
+
+    public Animator animator;
 
     void Start()
     {
@@ -27,6 +30,15 @@ public class playerMovement : MonoBehaviour
     {
         movePlayerLateral();
         jump();
+        dash();
+        //check grounded for animator
+
+        if (isGrounded())
+        {
+            animator.SetBool("IsFalling", false);
+            animator.SetBool("IsGrounded", true);
+            Debug.Log("Is grounded");
+        }
     }
 
     private void movePlayerLateral()
@@ -36,6 +48,8 @@ public class playerMovement : MonoBehaviour
         playerRigidBody.velocity = new Vector2(movementSpeed * inputHorizontal, playerRigidBody.velocity.y);
 
         flipPlayer(inputHorizontal);
+
+        animator.SetFloat("Speed", Mathf.Abs(playerRigidBody.velocity.x));
     }
 
     private void flipPlayer(float input)
@@ -53,25 +67,57 @@ public class playerMovement : MonoBehaviour
 
     private void jump()
     {
+
+
         //basic jump
 
         if (Input.GetButtonDown("Jump") && isGrounded())
         {
+            animator.SetBool("IsGrounded", false);
+            animator.SetBool("IsJumping", true);
+            Debug.Log("Is jumping");
             playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, jumpVelocity);
         }
 
         //fast fall
 
-        if (playerRigidBody.velocity.y < 0)
+        if (playerRigidBody.velocity.y < 0 && !isGrounded())
         {
             playerRigidBody.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            animator.SetBool("IsGrounded", false);
+            animator.SetBool("IsJumping", false);
+            animator.SetBool("IsFalling", true);
+            Debug.Log("Is falling");
         }
+
 
         //short jump
 
         else if (playerRigidBody.velocity.y > 0 && !Input.GetButton("Jump"))
         {
             playerRigidBody.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+    }
+
+    private bool canMove(Vector2 direction, float distance)
+    {
+        //casts a ray in the direction we are moving tot see if we can dash/roll there
+        return Physics2D.Raycast(transform.position, direction, distance).collider == null;
+    }
+
+    private void dash()
+    {
+        if(Input.GetKeyDown("j"))
+        {
+            if (playerSpriteRenderer.flipX == true)
+            {
+                playerRigidBody.position += new Vector2(-dashDistance, 0);
+            }
+            else
+            {
+                playerRigidBody.position += new Vector2(dashDistance, 0);
+            }
+            
         }
     }
 
