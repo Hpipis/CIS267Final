@@ -31,11 +31,16 @@ public class playerMovement : MonoBehaviour
         movePlayerLateral();
         jump();
         dash();
+
         //check grounded for animator
 
         if (isGrounded())
         {
             animator.SetBool("IsFalling", false);
+            if (playerRigidBody.velocity.y <= 0)
+            {
+                animator.SetBool("IsJumping", false);
+            }
             animator.SetBool("IsGrounded", true);
             Debug.Log("Is grounded");
         }
@@ -55,20 +60,14 @@ public class playerMovement : MonoBehaviour
     private void flipPlayer(float input)
     {
         if (input > 0)
-        {
-            playerSpriteRenderer.flipX = false;
-        }
+            transform.eulerAngles = new Vector2(0, 0);
 
         else if (input < 0)
-        {
-            playerSpriteRenderer.flipX = true;
-        }
+            transform.eulerAngles = new Vector2(0, 180);
     }
 
     private void jump()
     {
-
-
         //basic jump
 
         if (Input.GetButtonDown("Jump") && isGrounded())
@@ -123,16 +122,24 @@ public class playerMovement : MonoBehaviour
 
     private bool isGrounded()
     {
-        float extraHeight = .1f;
+        float extraHeight = 0.1f;
         //Draws a line slightly longer than our box collider to detect if we are grounded
-        RaycastHit2D raycastHit = Physics2D.Raycast(playerBoxCollider2D.bounds.center, Vector2.down, playerBoxCollider2D.bounds.extents.y + extraHeight, groundLayer);
+        RaycastHit2D raycastHit = Physics2D.BoxCast(playerBoxCollider2D.bounds.center, playerBoxCollider2D.bounds.size, 0, Vector2.down, extraHeight, groundLayer);
+        Color rayColor = Color.red;
 
         if (raycastHit.collider != null)
         {
+            rayColor = Color.green;
+            Debug.DrawRay(playerBoxCollider2D.bounds.center + new Vector3(playerBoxCollider2D.bounds.extents.x, 0), Vector2.down * (playerBoxCollider2D.bounds.extents.y + extraHeight), rayColor);
+            Debug.DrawRay(playerBoxCollider2D.bounds.center - new Vector3(playerBoxCollider2D.bounds.extents.x, 0), Vector2.down * (playerBoxCollider2D.bounds.extents.y + extraHeight), rayColor);
+            Debug.DrawRay(playerBoxCollider2D.bounds.center - new Vector3(playerBoxCollider2D.bounds.extents.x, playerBoxCollider2D.bounds.extents.x, 0), Vector2.right * (playerBoxCollider2D.bounds.extents.x), rayColor);
             return true;
         }
         else
         {
+            Debug.DrawRay(playerBoxCollider2D.bounds.center + new Vector3(playerBoxCollider2D.bounds.extents.x, 0), Vector2.down * (playerBoxCollider2D.bounds.extents.y + extraHeight), rayColor);
+            Debug.DrawRay(playerBoxCollider2D.bounds.center - new Vector3(playerBoxCollider2D.bounds.extents.x, 0), Vector2.down * (playerBoxCollider2D.bounds.extents.y + extraHeight), rayColor);
+            Debug.DrawRay(playerBoxCollider2D.bounds.center - new Vector3(playerBoxCollider2D.bounds.extents.x, playerBoxCollider2D.bounds.extents.x, 0), Vector2.right * (playerBoxCollider2D.bounds.extents.x), rayColor);
             return false;
         }
     }
