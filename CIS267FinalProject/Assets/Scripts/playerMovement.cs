@@ -15,6 +15,7 @@ public class playerMovement : MonoBehaviour
     public AudioClip playerJumpSound;
     private AudioSource audioSource;
 
+    private bool canJump = true;
     private float inputHorizontal;
     private Rigidbody2D playerRigidBody;
     private BoxCollider2D playerBoxCollider2D;
@@ -76,7 +77,7 @@ public class playerMovement : MonoBehaviour
     {
         //basic jump
 
-        if (Input.GetButtonDown("Jump") && isGrounded())
+        if (Input.GetButtonDown("Jump") && isGrounded() && canJump)
         {
             audioSource.PlayOneShot(playerJumpSound);
             animator.SetBool("IsGrounded", false);
@@ -125,6 +126,11 @@ public class playerMovement : MonoBehaviour
             }
             
         }
+    }
+
+    public void setJumping(bool j)
+    {
+        canJump = j;
     }
 
     private bool isGrounded()
