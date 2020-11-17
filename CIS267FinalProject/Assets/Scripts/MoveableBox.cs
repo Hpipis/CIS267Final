@@ -1,0 +1,61 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MoveableBox : MonoBehaviour
+{
+    GameObject Player;
+    Rigidbody2D boxRigidbody;
+
+    bool playerCollision = false;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        boxRigidbody = GetComponent<Rigidbody2D>();   
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //if they are pressing the pull key and colliding then dont let them jump
+        if (playerCollision && Input.GetKey("k"))
+        {
+            float distance = transform.position.x - Player.transform.position.x;
+            Player.GetComponent<playerMovement>().setJumping(false);
+            if (distance >= 0)
+            {
+                Debug.Log("Im on the left");
+                transform.position = new Vector2(Player.transform.position.x + 1.13f, transform.position.y);
+            }
+            else
+            {
+                Debug.Log("Im on the right");
+                transform.position = new Vector2(Player.transform.position.x - 1.13f, transform.position.y);
+            }
+        }
+        else if (Player != null)
+        {
+            Player.GetComponent<playerMovement>().setJumping(true);
+        }
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Player = collision.gameObject;
+            playerCollision = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            playerCollision = false;
+        }
+    }
+
+}
