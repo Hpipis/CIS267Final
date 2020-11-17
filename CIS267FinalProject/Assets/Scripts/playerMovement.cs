@@ -11,6 +11,10 @@ public class playerMovement : MonoBehaviour
     public float lowJumpMultiplier = 2f;
     public float dashDistance = 3f;
 
+    //sound variables
+    public AudioClip playerJumpSound;
+    private AudioSource audioSource;
+
     private float inputHorizontal;
     private Rigidbody2D playerRigidBody;
     private BoxCollider2D playerBoxCollider2D;
@@ -21,6 +25,8 @@ public class playerMovement : MonoBehaviour
 
     void Start()
     {
+        
+        audioSource = GetComponent<AudioSource>();
         playerRigidBody = GetComponent<Rigidbody2D>();
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
         playerBoxCollider2D = GetComponent<BoxCollider2D>();
@@ -72,6 +78,7 @@ public class playerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isGrounded())
         {
+            audioSource.PlayOneShot(playerJumpSound);
             animator.SetBool("IsGrounded", false);
             animator.SetBool("IsJumping", true);
             Debug.Log("Is jumping");
