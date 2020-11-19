@@ -19,18 +19,18 @@ public class MoveableBox : MonoBehaviour
     void Update()
     {
         //if they are pressing the pull key and colliding then dont let them jump
-        if (playerCollision && Input.GetKey("k"))
+        if (playerCollision && Input.GetKey("k") && !playerOnTopofBox())
         {
             float distance = transform.position.x - Player.transform.position.x;
             Player.GetComponent<playerMovement>().setJumping(false);
             if (distance >= 0)
             {
-                Debug.Log("Im on the left");
+                //Debug.Log("Im on the left");
                 transform.position = new Vector2(Player.transform.position.x + 1.13f, transform.position.y);
             }
             else
             {
-                Debug.Log("Im on the right");
+                //Debug.Log("Im on the right");
                 transform.position = new Vector2(Player.transform.position.x - 1.13f, transform.position.y);
             }
         }
@@ -56,6 +56,29 @@ public class MoveableBox : MonoBehaviour
         {
             playerCollision = false;
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Stopper"))
+        {
+            Debug.Log("Colliding with " + collision.gameObject.tag);
+            playerCollision = false;
+        }
+    }
+
+    private bool playerOnTopofBox()
+    {
+        if (Player)
+        {
+            
+            float difference = Mathf.Abs(Mathf.Abs(Player.transform.position.y) - Mathf.Abs(transform.position.y));
+            //Debug.Log(difference);
+            if (difference > .1f)
+                return true;
+        }
+
+        return false;
     }
 
 }
