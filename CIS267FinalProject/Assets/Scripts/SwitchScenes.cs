@@ -27,8 +27,7 @@ public class SwitchScenes : MonoBehaviour
             else if (currentLevel.name == "Level 3")
             {
                 Debug.Log("You cleared Level 3, Enter Boss");
-                //enter boss scene name here 
-                //SceneManager.LoadScene("")
+                SceneManager.LoadScene("Boss Level");
             }
         }
     }
