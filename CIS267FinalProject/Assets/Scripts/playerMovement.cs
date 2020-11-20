@@ -16,6 +16,7 @@ public class playerMovement : MonoBehaviour
     private AudioSource audioSource;
 
     private bool canJump = true;
+    private bool attack;
     private float inputHorizontal;
     private Rigidbody2D playerRigidBody;
     private BoxCollider2D playerBoxCollider2D;
@@ -38,6 +39,7 @@ public class playerMovement : MonoBehaviour
         movePlayerLateral();
         jump();
         dash();
+        attackInput();
 
         //check grounded for animator
 
@@ -55,11 +57,20 @@ public class playerMovement : MonoBehaviour
 
     private void movePlayerLateral()
     {
+        if (!this.animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            playerRigidBody.velocity = new Vector2(movementSpeed * inputHorizontal, playerRigidBody.velocity.y);
+        }
+
         inputHorizontal = Input.GetAxisRaw("Horizontal");
 
-        playerRigidBody.velocity = new Vector2(movementSpeed * inputHorizontal, playerRigidBody.velocity.y);
+        
 
         flipPlayer(inputHorizontal);
+
+        //player attack bool followed by a reset of that value.
+        playerAttack();
+        resetValues();
 
         animator.SetFloat("Speed", Mathf.Abs(playerRigidBody.velocity.x));
     }
@@ -103,6 +114,23 @@ public class playerMovement : MonoBehaviour
         else if (playerRigidBody.velocity.y > 0 && !Input.GetButton("Jump"))
         {
             playerRigidBody.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+    }
+
+    private void playerAttack()
+    {
+        if (attack && !this.animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            animator.SetTrigger("attack");
+            playerRigidBody.velocity = Vector2.zero;
+        }
+    }
+
+    private void attackInput()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            attack = true;
         }
     }
 
@@ -155,5 +183,11 @@ public class playerMovement : MonoBehaviour
             Debug.DrawRay(playerBoxCollider2D.bounds.center - new Vector3(playerBoxCollider2D.bounds.extents.x, playerBoxCollider2D.bounds.extents.x, 0), Vector2.right * (playerBoxCollider2D.bounds.extents.x), rayColor);
             return false;
         }
+    }
+
+    //reset bools
+    private void resetValues()
+    {
+        attack = false;
     }
 }
