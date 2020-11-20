@@ -38,8 +38,8 @@ public class playerMovement : MonoBehaviour
     {
         movePlayerLateral();
         jump();
-        dash();
-        attackInput();
+        //dash();
+        //attackInput();
 
         //check grounded for animator
 
