@@ -430,6 +430,18 @@ PrefabInstance:
       propertyPath: jumpVelocity
       value: 6.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6704911057207655529, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 239cf596f8349694e9233db8b260927a, type: 3}
+    - target: {fileID: 6704911057207655529, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
+      propertyPath: m_Volume
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704911057207655529, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
 --- !u!1 &745329526
