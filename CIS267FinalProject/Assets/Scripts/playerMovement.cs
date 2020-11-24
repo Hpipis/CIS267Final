@@ -9,7 +9,6 @@ public class playerMovement : MonoBehaviour
     public float jumpVelocity = 6f;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
-    public float dashDistance = 3f;
 
     //sound variables
     public AudioClip playerJumpSound;
@@ -38,7 +37,7 @@ public class playerMovement : MonoBehaviour
     {
         movePlayerLateral();
         jump();
-        //dash();
+
         //attackInput();
 
         //check grounded for animator
@@ -140,28 +139,7 @@ public class playerMovement : MonoBehaviour
         return Physics2D.Raycast(transform.position, direction, distance).collider == null;
     }
 
-    private void dash()
-    {
-        if(Input.GetKeyDown("j"))
-        {
-            if (playerSpriteRenderer.flipX == true)
-            {
-                playerRigidBody.position += new Vector2(-dashDistance, 0);
-            }
-            else
-            {
-                playerRigidBody.position += new Vector2(dashDistance, 0);
-            }
-            
-        }
-    }
-
-    public void setJumping(bool j)
-    {
-        canJump = j;
-    }
-
-    private bool isGrounded()
+    public bool isGrounded()
     {
         float extraHeight = 0.1f;
         //Draws a line slightly longer than our box collider to detect if we are grounded
@@ -189,5 +167,19 @@ public class playerMovement : MonoBehaviour
     private void resetValues()
     {
         attack = false;
+    }
+
+    //getters
+
+    public float getSpeed()
+    {
+        return movementSpeed;
+    }
+
+    //setters
+
+    public void setJumping(bool j)
+    {
+        canJump = j;
     }
 }
