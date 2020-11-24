@@ -43491,6 +43491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 231838152}
   - component: {fileID: 231838153}
+  - component: {fileID: 231838154}
   m_Layer: 0
   m_Name: Lvl_1_bckgrnd_3
   m_TagString: Untagged
@@ -43506,8 +43507,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231838151}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.139996, y: 0.48909616, z: 385.60745}
-  m_LocalScale: {x: 0.72, y: 0.59, z: 1}
+  m_LocalPosition: {x: -28.2, y: 0.953, z: 385.60745}
+  m_LocalScale: {x: 0.72, y: 0.5215023, z: 1}
   m_Children:
   - {fileID: 1776756378}
   - {fileID: 912400823}
@@ -43558,13 +43559,27 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 5.92, y: 2.72}
+  m_DrawMode: 2
+  m_Size: {x: 37, y: 17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &231838154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231838151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528d18fd989c4444f98149eb7ddb28b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 317056173}
+  parallaxEffect: 0
 --- !u!1 &317056173
 GameObject:
   m_ObjectHideFlags: 0
@@ -43645,7 +43660,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.439996, y: -3.4600003, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2027372701}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -43665,8 +43681,8 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
+  m_UpdateMethod: 0
+  m_BlendUpdateMethod: 0
   m_DefaultBlend:
     m_Style: 1
     m_Time: 2
@@ -43759,7 +43775,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.92, y: 2.72}
+  m_Size: {x: 37, y: 17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -75098,7 +75114,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.92, y: 2.72}
+  m_Size: {x: 37, y: 17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -75241,6 +75257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 816417106}
   - component: {fileID: 816417107}
+  - component: {fileID: 816417108}
   m_Layer: 0
   m_Name: Lvl_1_bckgrnd_2
   m_TagString: Untagged
@@ -75256,8 +75273,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816417105}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.139996, y: 0.48909616, z: 385.60745}
-  m_LocalScale: {x: 0.72, y: 0.59, z: 1}
+  m_LocalPosition: {x: -28.139996, y: 1.6, z: 385.60745}
+  m_LocalScale: {x: 0.71999997, y: 0.59000003, z: 1}
   m_Children:
   - {fileID: 326019100}
   - {fileID: 1342991480}
@@ -75309,12 +75326,26 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.92, y: 2.72}
+  m_Size: {x: 37, y: 17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &816417108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816417105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528d18fd989c4444f98149eb7ddb28b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 317056173}
+  parallaxEffect: 0.5
 --- !u!1 &912400822
 GameObject:
   m_ObjectHideFlags: 0
@@ -75391,7 +75422,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.92, y: 2.72}
+  m_Size: {x: 37, y: 17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -75583,7 +75614,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1936039760}
-  - {fileID: 2027372701}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -75663,7 +75693,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.92, y: 2.72}
+  m_Size: {x: 37, y: 17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -75827,7 +75857,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.92, y: 2.72}
+  m_Size: {x: 37, y: 17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -75924,6 +75954,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1498531141}
   - component: {fileID: 1498531142}
+  - component: {fileID: 1498531143}
   m_Layer: 0
   m_Name: Lvl_1_bckgrnd_0
   m_TagString: Untagged
@@ -75939,8 +75970,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498531140}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.139996, y: 0.48909616, z: 385.60745}
-  m_LocalScale: {x: 0.72, y: 0.59, z: 1}
+  m_LocalPosition: {x: -27.75, y: 2.5, z: 385.60745}
+  m_LocalScale: {x: 0.72135025, y: 0.59, z: 1}
   m_Children:
   - {fileID: 1986135581}
   - {fileID: 1879489902}
@@ -75992,12 +76023,26 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.92, y: 2.72}
+  m_Size: {x: 37, y: 17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1498531143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498531140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528d18fd989c4444f98149eb7ddb28b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 317056173}
+  parallaxEffect: 1
 --- !u!1 &1776756377
 GameObject:
   m_ObjectHideFlags: 0
@@ -76074,7 +76119,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.92, y: 2.72}
+  m_Size: {x: 37, y: 17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -76156,7 +76201,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.92, y: 2.72}
+  m_Size: {x: 37, y: 17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -76172,6 +76217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1887659139}
   - component: {fileID: 1887659140}
+  - component: {fileID: 1887659141}
   m_Layer: 0
   m_Name: Lvl_1_bckgrnd_1
   m_TagString: Untagged
@@ -76187,8 +76233,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887659138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.139996, y: 0.48909616, z: 385.60745}
-  m_LocalScale: {x: 0.72, y: 0.59, z: 1}
+  m_LocalPosition: {x: -28.139996, y: 1.9, z: 385.60745}
+  m_LocalScale: {x: 0.71999997, y: 0.59000003, z: 1}
   m_Children:
   - {fileID: 1413333354}
   - {fileID: 499682775}
@@ -76240,12 +76286,26 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.92, y: 2.72}
+  m_Size: {x: 37, y: 17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1887659141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887659138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528d18fd989c4444f98149eb7ddb28b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 317056173}
+  parallaxEffect: 0.7
 --- !u!1 &1936039759
 GameObject:
   m_ObjectHideFlags: 3
@@ -76409,7 +76469,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.92, y: 2.72}
+  m_Size: {x: 37, y: 17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -76446,8 +76506,8 @@ Transform:
   - {fileID: 816417106}
   - {fileID: 1887659139}
   - {fileID: 1498531141}
-  m_Father: {fileID: 1284674797}
-  m_RootOrder: 1
+  m_Father: {fileID: 317056176}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2047224661
 GameObject:
