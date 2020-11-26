@@ -12,8 +12,8 @@ public class Dash : MonoBehaviour
 
     public float dashDistance;
     private bool hasDash;
-    private float offset;
-    private Vector2 direction = new Vector2(2.5f,0);
+    private float offset = .6f;
+    private Vector2 direction = new Vector2(1,0);
 
 
     void Start()
@@ -21,7 +21,6 @@ public class Dash : MonoBehaviour
         playerRigidBody = GetComponent<Rigidbody2D>();
         pm = GetComponent<playerMovement>();
         playerBoxCollider = GetComponent<BoxCollider2D>();
-        offset = playerBoxCollider.size.x / 2;
     }
 
     // Update is called once per frame
@@ -37,25 +36,33 @@ public class Dash : MonoBehaviour
 
         if (transform.eulerAngles.y == 180)
         {
-            direction = new Vector2(-2.5f, 0);
+            direction = new Vector2(-Mathf.Abs(direction.x), 0);
+            offset = -Mathf.Abs(offset);
+            dashDistance = -Mathf.Abs(dashDistance);
         }
         else
         {
-            direction = new Vector2(2.5f, 0);
+            direction = new Vector2(Mathf.Abs(direction.x), 0);
+            offset = Mathf.Abs(offset);
+            dashDistance = Mathf.Abs(dashDistance);
         }
 
         if (Input.GetKeyDown("j") && hasDash && !dashCollision())
         {
             if (!pm.isGrounded())
                 hasDash = false;
-            playerRigidBody.position += direction;
+            playerRigidBody.position += new Vector2(dashDistance, 0);
         }
     }
 
     private bool dashCollision()
     {
-        Debug.Log(Physics2D.Raycast(transform.position + new Vector3(offset, 0), direction, groundLayer).collider.gameObject);
-        Debug.DrawRay(transform.position + new Vector3(offset, 0), direction, Color.red);
-        return Physics2D.Raycast(transform.position + new Vector3(offset, 0), direction, groundLayer).collider != null;
+        RaycastHit2D rayHit = Physics2D.Raycast(transform.position + new Vector3(offset, 0), direction, Mathf.Abs(dashDistance), groundLayer);
+
+        if (rayHit.collider != null)
+            Debug.Log(rayHit.collider.gameObject);
+
+        Debug.DrawRay(transform.position + new Vector3(offset, 0), direction * Mathf.Abs(dashDistance), Color.red);
+        return rayHit.collider != null;
     }
 }

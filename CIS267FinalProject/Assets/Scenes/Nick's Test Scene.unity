@@ -706,7 +706,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f70443b3a1390bd42b1a70223c24802a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashDistance: 2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  dashDistance: 4
 --- !u!4 &1751726335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6345752265292192291, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
@@ -4178,7 +4181,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 1763875514}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a172eff3564915f4d909b9e19f688936, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -4265,7 +4268,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a172eff3564915f4d909b9e19f688936, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
