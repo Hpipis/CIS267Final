@@ -182,4 +182,5 @@ public class playerMovement : MonoBehaviour
     {
         canJump = j;
     }
+
 }

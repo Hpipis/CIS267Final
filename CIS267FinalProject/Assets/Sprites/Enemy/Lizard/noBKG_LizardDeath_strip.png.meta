@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: 38f445f14f028c0409f15e984513d98f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5376142296989412450
+    second: noBKG_LizardDeath_strip_0
+  - first:
+      213: 891774662008802131
+    second: noBKG_LizardDeath_strip_1
+  - first:
+      213: -5405974392406073435
+    second: noBKG_LizardDeath_strip_2
+  - first:
+      213: 6373029209754577118
+    second: noBKG_LizardDeath_strip_3
+  - first:
+      213: -1039600331829592897
+    second: noBKG_LizardDeath_strip_4
+  - first:
+      213: -1430412073369336225
+    second: noBKG_LizardDeath_strip_5
+  - first:
+      213: -7486899043821369613
+    second: noBKG_LizardDeath_strip_6
+  - first:
+      213: -771862281606577405
+    second: noBKG_LizardDeath_strip_7
+  - first:
+      213: -3819025250213134380
+    second: noBKG_LizardDeath_strip_8
+  - first:
+      213: -2837191977487413951
+    second: noBKG_LizardDeath_strip_9
+  - first:
+      213: 2594755208930822547
+    second: noBKG_LizardDeath_strip_10
+  - first:
+      213: -2635653702361163341
+    second: noBKG_LizardDeath_strip_11
+  - first:
+      213: -2733370632032163993
+    second: noBKG_LizardDeath_strip_12
+  - first:
+      213: -4550604284016580452
+    second: noBKG_LizardDeath_strip_13
+  - first:
+      213: 2285055037881883604
+    second: noBKG_LizardDeath_strip_14
+  - first:
+      213: 6410622821041477034
+    second: noBKG_LizardDeath_strip_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -46,7 +94,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,7 +111,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -75,7 +123,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -87,7 +135,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -99,7 +147,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -111,7 +159,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_0
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 81
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e935efd901b1465b0800000000000000
+      internalID: -5376142296989412450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_1
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 81
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b8abc8458306c00800000000000000
+      internalID: 891774662008802131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_2
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 81
+        width: 65
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af17c3aeee1af4b0800000000000000
+      internalID: -5405974392406073435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_3
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 81
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed82c9eec4c817850800000000000000
+      internalID: 6373029209754577118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_4
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 81
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc3be891099291f0800000000000000
+      internalID: -1039600331829592897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_5
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 81
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5604644cc7262ce0800000000000000
+      internalID: -1430412073369336225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_6
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 81
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6c0d7acf0391890800000000000000
+      internalID: -7486899043821369613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_7
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 81
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3034159285bc945f0800000000000000
+      internalID: -771862281606577405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_8
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 81
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df7cccd4c8100bc0800000000000000
+      internalID: -3819025250213134380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_9
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 81
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d4646bde440a8d0800000000000000
+      internalID: -2837191977487413951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_10
+      rect:
+        serializedVersion: 2
+        x: 3163
+        y: 81
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3998a6b6d1c620420800000000000000
+      internalID: 2594755208930822547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_11
+      rect:
+        serializedVersion: 2
+        x: 3463
+        y: 81
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9d1d70ce64c6bd0800000000000000
+      internalID: -2635653702361163341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_12
+      rect:
+        serializedVersion: 2
+        x: 3763
+        y: 81
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767ec3664ed111ad0800000000000000
+      internalID: -2733370632032163993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_13
+      rect:
+        serializedVersion: 2
+        x: 4063
+        y: 81
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9822d9838109d0c0800000000000000
+      internalID: -4550604284016580452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_14
+      rect:
+        serializedVersion: 2
+        x: 4363
+        y: 81
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db9a21437526bf10800000000000000
+      internalID: 2285055037881883604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardDeath_strip_15
+      rect:
+        serializedVersion: 2
+        x: 4663
+        y: 81
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa59035ad7b17f850800000000000000
+      internalID: 6410622821041477034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

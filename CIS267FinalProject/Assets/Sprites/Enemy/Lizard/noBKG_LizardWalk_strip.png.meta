@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: bdda4cfe5d53ce841994e479bcad888b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5525749133757736684
+    second: noBKG_LizardWalk_strip_0
+  - first:
+      213: 722739953402802269
+    second: noBKG_LizardWalk_strip_1
+  - first:
+      213: -1495407168607521686
+    second: noBKG_LizardWalk_strip_2
+  - first:
+      213: -7983561175439737211
+    second: noBKG_LizardWalk_strip_3
+  - first:
+      213: 3194341583795165042
+    second: noBKG_LizardWalk_strip_4
+  - first:
+      213: 2469565250176885077
+    second: noBKG_LizardWalk_strip_5
+  - first:
+      213: 946629024486649375
+    second: noBKG_LizardWalk_strip_6
+  - first:
+      213: -6947405296514745296
+    second: noBKG_LizardWalk_strip_7
+  - first:
+      213: 4191052194859118745
+    second: noBKG_LizardWalk_strip_8
+  - first:
+      213: -3504347414879758096
+    second: noBKG_LizardWalk_strip_9
+  - first:
+      213: -396332081983667299
+    second: noBKG_LizardWalk_strip_10
+  - first:
+      213: 2079848534235425913
+    second: noBKG_LizardWalk_strip_11
+  - first:
+      213: -7579835359291922941
+    second: noBKG_LizardWalk_strip_12
+  - first:
+      213: -7794946180207428179
+    second: noBKG_LizardWalk_strip_13
+  - first:
+      213: 2352902769737020871
+    second: noBKG_LizardWalk_strip_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -46,9 +91,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -63,7 +108,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -75,7 +120,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -87,7 +132,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -99,7 +144,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -111,7 +156,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 76
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419927480789053b0800000000000000
+      internalID: -5525749133757736684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_1
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 76
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d507e8b8820b70a00800000000000000
+      internalID: 722739953402802269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_2
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 76
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6473986a1f3f3be0800000000000000
+      internalID: -1495407168607521686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_3
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 76
+        width: 46
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e705fd861b43190800000000000000
+      internalID: -7983561175439737211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_4
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 76
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2779e510fb4945c20800000000000000
+      internalID: 3194341583795165042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_5
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 76
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551217eb288a54220800000000000000
+      internalID: 2469565250176885077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_6
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 76
+        width: 54
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ee992151a132d00800000000000000
+      internalID: 946629024486649375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_7
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 76
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c329611bbd59f90800000000000000
+      internalID: -6947405296514745296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_8
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 76
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990f2bd14cb992a30800000000000000
+      internalID: 4191052194859118745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_9
+      rect:
+        serializedVersion: 2
+        x: 2328
+        y: 76
+        width: 46
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8988ec79e0e5fc0800000000000000
+      internalID: -3504347414879758096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_10
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 76
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93c5404212ff7af0800000000000000
+      internalID: -396332081983667299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_11
+      rect:
+        serializedVersion: 2
+        x: 2804
+        y: 76
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c28bde83b1ddc10800000000000000
+      internalID: 2079848534235425913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_12
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 76
+        width: 54
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306a57186e30fc690800000000000000
+      internalID: -7579835359291922941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_13
+      rect:
+        serializedVersion: 2
+        x: 3284
+        y: 76
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadb27d9fb9c2d390800000000000000
+      internalID: -7794946180207428179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_LizardWalk_strip_14
+      rect:
+        serializedVersion: 2
+        x: 3525
+        y: 76
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c535355a9037a020800000000000000
+      internalID: 2352902769737020871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
