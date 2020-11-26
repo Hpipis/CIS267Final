@@ -6,47 +6,56 @@ public class Dash : MonoBehaviour
 {
     private Rigidbody2D playerRigidBody;
     private playerMovement pm;
+    private BoxCollider2D playerBoxCollider;
+
+    [SerializeField] private LayerMask groundLayer;
 
     public float dashDistance;
     private bool hasDash;
-    private Vector2 direction = new Vector2(1,0);
+    private float offset;
+    private Vector2 direction = new Vector2(2.5f,0);
 
 
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
         pm = GetComponent<playerMovement>();
+        playerBoxCollider = GetComponent<BoxCollider2D>();
+        offset = playerBoxCollider.size.x / 2;
     }
 
     // Update is called once per frame
     void Update()
     {
+        dashCollision();
         dash();
         if (pm.isGrounded())
             hasDash = true;
     }
     private void dash()
     {
-        if (Input.GetKeyDown("j") && hasDash && canDash(direction, dashDistance))
+
+        if (transform.eulerAngles.y == 180)
+        {
+            direction = new Vector2(-2.5f, 0);
+        }
+        else
+        {
+            direction = new Vector2(2.5f, 0);
+        }
+
+        if (Input.GetKeyDown("j") && hasDash && !dashCollision())
         {
             if (!pm.isGrounded())
                 hasDash = false;
-
-            if (transform.eulerAngles.y == 180)
-            {
-                direction = new Vector2(-1, 0);
-                playerRigidBody.position += new Vector2(-dashDistance, 0);
-            }
-            else
-            {
-                direction = new Vector2(1, 0);
-                playerRigidBody.position += new Vector2(dashDistance, 0);
-            }
+            playerRigidBody.position += direction;
         }
     }
 
-    private bool canDash(Vector3 dir, float distance)
+    private bool dashCollision()
     {
-        return Physics2D.Raycast(transform.position, dir, distance).collider == null;
+        Debug.Log(Physics2D.Raycast(transform.position + new Vector3(offset, 0), direction, groundLayer).collider.gameObject);
+        Debug.DrawRay(transform.position + new Vector3(offset, 0), direction, Color.red);
+        return Physics2D.Raycast(transform.position + new Vector3(offset, 0), direction, groundLayer).collider != null;
     }
 }

@@ -50,7 +50,6 @@ public class playerMovement : MonoBehaviour
                 animator.SetBool("IsJumping", false);
             }
             animator.SetBool("IsGrounded", true);
-            Debug.Log("Is grounded");
         }
     }
 
@@ -92,7 +91,6 @@ public class playerMovement : MonoBehaviour
             audioSource.PlayOneShot(playerJumpSound);
             animator.SetBool("IsGrounded", false);
             animator.SetBool("IsJumping", true);
-            Debug.Log("Is jumping");
             playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, jumpVelocity);
         }
 
@@ -104,7 +102,6 @@ public class playerMovement : MonoBehaviour
             animator.SetBool("IsGrounded", false);
             animator.SetBool("IsJumping", false);
             animator.SetBool("IsFalling", true);
-            Debug.Log("Is falling");
         }
 
 
@@ -131,12 +128,6 @@ public class playerMovement : MonoBehaviour
         {
             attack = true;
         }
-    }
-
-    private bool canMove(Vector2 direction, float distance)
-    {
-        //casts a ray in the direction we are moving tot see if we can dash/roll there
-        return Physics2D.Raycast(transform.position, direction, distance).collider == null;
     }
 
     public bool isGrounded()
