@@ -6,7 +6,6 @@ public class Dash : MonoBehaviour
 {
     private Rigidbody2D playerRigidBody;
     private playerMovement pm;
-    private BoxCollider2D playerBoxCollider;
 
     [SerializeField] private LayerMask groundLayer;
 
@@ -20,7 +19,6 @@ public class Dash : MonoBehaviour
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
         pm = GetComponent<playerMovement>();
-        playerBoxCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame

@@ -167,6 +167,11 @@ public class playerMovement : MonoBehaviour
         return movementSpeed;
     }
 
+    public float getJumpVelocity()
+    {
+        return jumpVelocity;
+    }
+
     //setters
 
     public void setJumping(bool j)

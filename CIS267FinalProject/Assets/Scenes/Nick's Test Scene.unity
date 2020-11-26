@@ -694,6 +694,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6345752265292192294, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
   m_PrefabInstance: {fileID: 6345752263813112540}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1640146227 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6345752265292192732, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
+  m_PrefabInstance: {fileID: 6345752263813112540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1640146232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -710,6 +715,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   dashDistance: 4
+--- !u!114 &1640146233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640146225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a023be2d71d0814da28ea9cfb2e011d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1640146227}
+  playerJumpSound: {fileID: 8300000, guid: 62b619a0c45fa4542af13cc365936304, type: 3}
 --- !u!4 &1751726335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6345752265292192291, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
