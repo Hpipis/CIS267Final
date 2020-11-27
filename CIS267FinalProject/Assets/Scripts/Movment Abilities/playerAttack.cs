@@ -24,12 +24,7 @@ public class playerAttack : MonoBehaviour
         attackInput();
         playerAttackMovement();
 
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            soundDelay();
-            Debug.Log("sword");
-            audioSource.PlayOneShot(playerSwordSwingSound);
-        }
+      
     }
 
     public void playerAttackMovement()
@@ -59,8 +54,9 @@ public class playerAttack : MonoBehaviour
         attack = false;
     }
 
-    IEnumerator soundDelay()
+    private void Slash()
     {
-        yield return new WaitForSeconds(5);
+        Debug.Log("sword");
+        audioSource.PlayOneShot(playerSwordSwingSound);
     }
 }

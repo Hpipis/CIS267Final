@@ -9,6 +9,8 @@ public class Dash : MonoBehaviour
 
     [SerializeField] private LayerMask groundLayer;
 
+    private AudioSource audioSource;
+    public AudioClip playerDashSound;
     public float dashDistance;
     private bool hasDash;
     private float offset = .6f;
@@ -19,6 +21,7 @@ public class Dash : MonoBehaviour
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
         pm = GetComponent<playerMovement>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -50,6 +53,7 @@ public class Dash : MonoBehaviour
             if (!pm.isGrounded())
                 hasDash = false;
             playerRigidBody.position += new Vector2(dashDistance, 0);
+            audioSource.PlayOneShot(playerDashSound);
         }
     }
 

@@ -499,7 +499,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  dashDistance: 0
+  playerDashSound: {fileID: 8300000, guid: a6b3ccf0b5273e34c9ebb116b7101c1d, type: 3}
+  dashDistance: 4
 --- !u!1 &745329526
 GameObject:
   m_ObjectHideFlags: 0
@@ -127043,7 +127044,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 95
-      m_TileSpriteIndex: 87
+      m_TileSpriteIndex: 134
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -143684,8 +143685,8 @@ Tilemap:
     m_Data: {fileID: 965232505075382369, guid: 2459755449812874f87c81d234708ec0, type: 3}
   - m_RefCount: 35
     m_Data: {fileID: 6274808264523826439, guid: 2459755449812874f87c81d234708ec0, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 5731489802460016426, guid: 2459755449812874f87c81d234708ec0, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: 1571710395950688394, guid: 2459755449812874f87c81d234708ec0, type: 3}
   - m_RefCount: 3
@@ -143778,8 +143779,8 @@ Tilemap:
     m_Data: {fileID: 667838199133298541, guid: 79e70cef37de0044496383995a5b4903, type: 3}
   - m_RefCount: 75
     m_Data: {fileID: -6143122200201241615, guid: 79e70cef37de0044496383995a5b4903, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 5731489802460016426, guid: 2459755449812874f87c81d234708ec0, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -4530413906545727182, guid: 79e70cef37de0044496383995a5b4903, type: 3}
   - m_RefCount: 4
