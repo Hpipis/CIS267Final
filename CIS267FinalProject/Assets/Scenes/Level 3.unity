@@ -498,7 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   dashDistance: 0
 --- !u!1 &745329526
 GameObject:
