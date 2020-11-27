@@ -15,7 +15,6 @@ public class playerMovement : MonoBehaviour
     private AudioSource audioSource;
 
     private bool canJump = true;
-    private bool attack;
     private float inputHorizontal;
     private Rigidbody2D playerRigidBody;
     private BoxCollider2D playerBoxCollider2D;
@@ -67,9 +66,7 @@ public class playerMovement : MonoBehaviour
         flipPlayer(inputHorizontal);
 
         //player attack bool followed by a reset of that value.
-        playerAttack();
-        resetValues();
-
+        
         animator.SetFloat("Speed", Mathf.Abs(playerRigidBody.velocity.x));
     }
 
@@ -113,23 +110,7 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    private void playerAttack()
-    {
-        if (attack && !this.animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
-        {
-            animator.SetTrigger("attack");
-            playerRigidBody.velocity = Vector2.zero;
-        }
-    }
-
-    private void attackInput()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            attack = true;
-        }
-    }
-
+      
     public bool isGrounded()
     {
         float extraHeight = 0.1f;
@@ -154,12 +135,7 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    //reset bools
-    private void resetValues()
-    {
-        attack = false;
-    }
-
+   
     //getters
 
     public float getSpeed()
