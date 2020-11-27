@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 6345752265292192295}
   - component: {fileID: 6345752265292192732}
   - component: {fileID: 6704911057207655529}
+  - component: {fileID: 8800705468948499621}
+  - component: {fileID: 6278322551826844344}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -150,7 +152,6 @@ MonoBehaviour:
   jumpVelocity: 6
   fallMultiplier: 2.5
   lowJumpMultiplier: 2
-  dashDistance: 3
   playerJumpSound: {fileID: 8300000, guid: 62b619a0c45fa4542af13cc365936304, type: 3}
   groundLayer:
     serializedVersion: 2
@@ -271,3 +272,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8800705468948499621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6345752265292192294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70443b3a1390bd42b1a70223c24802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  dashDistance: 4
+--- !u!114 &6278322551826844344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6345752265292192294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a023be2d71d0814da28ea9cfb2e011d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6345752265292192732}
+  playerJumpSound: {fileID: 8300000, guid: 62b619a0c45fa4542af13cc365936304, type: 3}
