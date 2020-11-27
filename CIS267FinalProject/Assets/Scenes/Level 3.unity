@@ -463,6 +463,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 482417767}
   movementSpeed: 5
+  attack: 0
+  playerSwordSwingSound: {fileID: 8300000, guid: 746df689b6ab96c45b50f62751ee0314, type: 3}
 --- !u!114 &482417766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,16 +474,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 482417764}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a276001632f5a6b48926496478288179, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a023be2d71d0814da28ea9cfb2e011d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 482417767}
   playerJumpSound: {fileID: 8300000, guid: 62b619a0c45fa4542af13cc365936304, type: 3}
-  playerSwordSwingSound: {fileID: 8300000, guid: 746df689b6ab96c45b50f62751ee0314, type: 3}
 --- !u!95 &482417767 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6345752265292192732, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
   m_PrefabInstance: {fileID: 369268375}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &482417768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482417764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70443b3a1390bd42b1a70223c24802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  dashDistance: 0
 --- !u!1 &745329526
 GameObject:
   m_ObjectHideFlags: 0

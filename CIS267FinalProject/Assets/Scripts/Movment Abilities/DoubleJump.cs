@@ -34,5 +34,12 @@ public class DoubleJump : MonoBehaviour
         {
             hasDoubleJump = true;
         }
+
+        if (Input.GetButtonDown("Jump") && pm.isGrounded() && hasDoubleJump == true)
+        {
+            Debug.Log("jump");
+            audioSource.PlayOneShot(playerJumpSound);
+
+        }
     }
 }

@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class playerAttack : MonoBehaviour
 {
+    private AudioSource audioSource;
     public Animator animator;
     public float movementSpeed = 5f;
     private float inputHorizontal;
     private Rigidbody2D playerRigidBody;
     public bool attack;
+    public AudioClip playerSwordSwingSound;
 
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
-       
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -21,6 +23,13 @@ public class playerAttack : MonoBehaviour
     {
         attackInput();
         playerAttackMovement();
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            soundDelay();
+            Debug.Log("sword");
+            audioSource.PlayOneShot(playerSwordSwingSound);
+        }
     }
 
     public void playerAttackMovement()
@@ -48,5 +57,10 @@ public class playerAttack : MonoBehaviour
     private void resetValues()
     {
         attack = false;
+    }
+
+    IEnumerator soundDelay()
+    {
+        yield return new WaitForSeconds(5);
     }
 }
