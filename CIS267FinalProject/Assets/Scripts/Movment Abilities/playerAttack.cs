@@ -25,12 +25,6 @@ public class playerAttack : MonoBehaviour
 
     public void playerAttackMovement()
     {
-
-        if (!this.animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
-        {
-            playerRigidBody.velocity = new Vector2(movementSpeed * inputHorizontal, playerRigidBody.velocity.y);
-        }
-
         playerAttackAction();
         resetValues();
     }
@@ -40,8 +34,6 @@ public class playerAttack : MonoBehaviour
         if (attack && !this.animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
         {
             animator.SetTrigger("attack");
-            playerRigidBody.velocity = Vector2.zero;
-
         }
     }
 

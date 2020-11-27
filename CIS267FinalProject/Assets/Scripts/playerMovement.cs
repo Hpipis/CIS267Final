@@ -37,8 +37,7 @@ public class playerMovement : MonoBehaviour
         movePlayerLateral();
         jump();
 
-        //attackInput();
-
+      
         //check grounded for animator
 
         if (isGrounded())
@@ -59,14 +58,17 @@ public class playerMovement : MonoBehaviour
             playerRigidBody.velocity = new Vector2(movementSpeed * inputHorizontal, playerRigidBody.velocity.y);
         }
 
+        if (this.animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            playerRigidBody.velocity = Vector2.zero;
+        }
+
         inputHorizontal = Input.GetAxisRaw("Horizontal");
 
         
 
         flipPlayer(inputHorizontal);
-
-        //player attack bool followed by a reset of that value.
-        
+                       
         animator.SetFloat("Speed", Mathf.Abs(playerRigidBody.velocity.x));
     }
 
