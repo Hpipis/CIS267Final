@@ -8,7 +8,7 @@ public class playerAttack : MonoBehaviour
     public float movementSpeed = 5f;
     private float inputHorizontal;
     private Rigidbody2D playerRigidBody;
-    private bool attack;
+    public bool attack;
 
     void Start()
     {

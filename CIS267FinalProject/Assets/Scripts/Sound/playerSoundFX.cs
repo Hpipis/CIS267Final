@@ -6,8 +6,10 @@ public class playerSoundFX : MonoBehaviour
 {
     private Rigidbody2D playerRigidBody;
     private playerMovement pm;
+    private playerAttack pa;
     //sound variables
     public AudioClip playerJumpSound;
+    public AudioClip playerSwordSwingSound;
     private AudioSource audioSource;
 
     
@@ -19,14 +21,26 @@ public class playerSoundFX : MonoBehaviour
     
     void Update()
     {
-
+        playJumpSound();
+        playSwordSwingSound();
     }
 
-    private void playJumpSOund()
+    private void playJumpSound()
     {
-        if (Input.GetButtonDown("Jump") && pm.isGrounded())
+        if (Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("jump");
             audioSource.PlayOneShot(playerJumpSound);
+
+        }
+    }
+
+    private void playSwordSwingSound()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Debug.Log("sword");
+            audioSource.PlayOneShot(playerSwordSwingSound);
         }
     }
 }

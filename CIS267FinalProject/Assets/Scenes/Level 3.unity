@@ -476,6 +476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerJumpSound: {fileID: 8300000, guid: 62b619a0c45fa4542af13cc365936304, type: 3}
+  playerSwordSwingSound: {fileID: 8300000, guid: 746df689b6ab96c45b50f62751ee0314, type: 3}
 --- !u!95 &482417767 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6345752265292192732, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
