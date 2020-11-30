@@ -6,6 +6,7 @@ public class Dash : MonoBehaviour
 {
     private Rigidbody2D playerRigidBody;
     private playerMovement pm;
+    private PowerUps pu;
 
     [SerializeField] private LayerMask groundLayer;
 
@@ -22,15 +23,22 @@ public class Dash : MonoBehaviour
         playerRigidBody = GetComponent<Rigidbody2D>();
         pm = GetComponent<playerMovement>();
         audioSource = GetComponent<AudioSource>();
+        pu = GetComponent<PowerUps>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        dashCollision();
-        dash();
-        if (pm.isGrounded())
-            hasDash = true;
+        if (pu.getDashCollectionStatus() == true)
+        {
+            dashCollision();
+            dash();
+            if (pm.isGrounded())
+                hasDash = true;
+        }
+      
+      
     }
     private void dash()
     {
