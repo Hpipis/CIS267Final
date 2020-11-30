@@ -6,13 +6,16 @@ public class MoveableBox : MonoBehaviour
 {
     GameObject Player;
     Rigidbody2D boxRigidbody;
-
+    private AudioSource audioSource;
+    public AudioClip boxMoving;
+    
     bool playerCollision = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        boxRigidbody = GetComponent<Rigidbody2D>();   
+        boxRigidbody = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,23 +24,30 @@ public class MoveableBox : MonoBehaviour
         //if they are pressing the pull key and colliding then dont let them jump
         if (playerCollision && Input.GetKey("k") && !playerOnTopofBox())
         {
+            
+
             float distance = transform.position.x - Player.transform.position.x;
             Player.GetComponent<playerMovement>().setJumping(false);
             if (distance >= 0)
             {
                 //Debug.Log("Im on the left");
                 transform.position = new Vector2(Player.transform.position.x + 1.13f, transform.position.y);
+                
             }
             else
             {
                 //Debug.Log("Im on the right");
                 transform.position = new Vector2(Player.transform.position.x - 1.13f, transform.position.y);
+                
             }
+            
+
         }
         else if (Player != null)
         {
             Player.GetComponent<playerMovement>().setJumping(true);
         }
+
     }
 
 
@@ -80,5 +90,7 @@ public class MoveableBox : MonoBehaviour
 
         return false;
     }
+
+   
 
 }
