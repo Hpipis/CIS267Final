@@ -6,11 +6,11 @@ public abstract class Character : MonoBehaviour
 {
     
     
-    public bool facingRight;
+    public bool facingRight = true;
 
     public Animator Animator { get; private set; }
 
-    void Start()
+    public virtual void Start()
     {
         facingRight = true;
     }
@@ -22,7 +22,7 @@ public abstract class Character : MonoBehaviour
     }
 
 
-    protected void changeDirection()
+    public void changeDirection()
     {
         facingRight = !facingRight;
         transform.localScale = new Vector3(transform.localScale.x * -1, 1, 1);

@@ -9,6 +9,7 @@ TagManager:
   - LevelEnd
   - DashPowerUp
   - DoubleJumpPowerUp
+  - Edge
   layers:
   - Default
   - TransparentFX

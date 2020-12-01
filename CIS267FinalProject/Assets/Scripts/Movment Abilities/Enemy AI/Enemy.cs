@@ -6,18 +6,58 @@ public class Enemy : Character
 {
 
     private IEnemyState currentState;
-    public float movementSpeed = 5f;
+    public GameObject Target { get; set; }
 
-    void Start()
+    [SerializeField]
+    private float meleeRange;
+    [SerializeField]
+    private Transform leftEdge;
+    [SerializeField]
+    private Transform rightEdge;
+
+    public bool inMeleeRange
     {
+        get
+        {
+            if (Target != null)
+            {
+                return Vector2.Distance(transform.position, Target.transform.position) <= meleeRange;
+
+            }
+
+            return false;
+        }
+
+    }
+
+    public float movementSpeed = 3f;
+
+    public override void Start()
+    {
+        base.Start();
+
         ChangeState(new IdleState());
 
     }
 
-    
+        
     void Update()
     {
         currentState.Exectue();
+        lookAtTarget();
+    }
+
+    private void lookAtTarget()
+    {
+        if (Target != null)
+        {
+            float xDirection = Target.transform.position.x - transform.position.x;
+
+            if (xDirection < 0 && facingRight || xDirection > 0 && !facingRight)
+            {
+                changeDirection();
+            }
+        }
     }
 
 
@@ -35,15 +75,30 @@ public class Enemy : Character
 
     public void Move()
     {
-        Animator.SetFloat("speed", 1);
+        //need functionality to stop moving here.
 
-        transform.Translate(GetDirection() * (movementSpeed * Time.deltaTime));
+        if ((GetDirection().x > 0 && transform.position.x < rightEdge.position.x) || (GetDirection().x < 0 && transform.position.x > leftEdge.position.x))
+        {
+            //Animator.SetBool("isIdle", false);
+            //Animator.SetBool("isPatroling", true);
 
-
+            transform.Translate(GetDirection() * (movementSpeed * Time.deltaTime));
+        }
+       
+        else if (currentState is PatrolState)
+        {
+            changeDirection();
+        }
+        
     }
 
     public Vector2 GetDirection()
     {
         return facingRight ? Vector2.right : Vector2.left;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        currentState.OnTriggerEnter(other);
     }
 }

@@ -35,7 +35,7 @@ public class playerAttack : MonoBehaviour
 
     public void playerAttackAction()
     {
-        if (attack && !this.animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        if (attack && !this.animator.GetCurrentAnimatorStateInfo(0).IsTag("attack"))
         {
             animator.SetTrigger("attack");
         }

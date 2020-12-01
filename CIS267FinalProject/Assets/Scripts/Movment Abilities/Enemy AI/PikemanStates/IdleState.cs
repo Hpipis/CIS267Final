@@ -20,6 +20,11 @@ public class IdleState : IEnemyState
     {
         Debug.Log("Im Idling");
         Idle();
+
+        if (enemy.Target != null)
+        {
+            enemy.ChangeState(new PatrolState());
+        }
             
     }
 
@@ -35,7 +40,8 @@ public class IdleState : IEnemyState
 
     private void Idle()
     {
-        enemy.Animator.SetFloat("speed", 0);
+        //enemy.Animator.SetBool("isIdle", true);
+        //enemy.Animator.SetBool("isPatroling", false);
 
         idleTimer += Time.deltaTime;
 

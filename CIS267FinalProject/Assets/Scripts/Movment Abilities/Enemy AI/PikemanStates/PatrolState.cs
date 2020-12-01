@@ -21,6 +21,11 @@ public class PatrolState : IEnemyState
         Debug.Log("Patroling");
         Patrol();
         enemy.Move();
+
+        if (enemy.Target != null)
+        {
+            enemy.ChangeState(new MeeleState());
+        }
     }
 
     public void Execute()
@@ -35,7 +40,7 @@ public class PatrolState : IEnemyState
 
     public void OnTriggerEnter(Collider2D other)
     {
-
+        
     }
 
     private void Patrol()

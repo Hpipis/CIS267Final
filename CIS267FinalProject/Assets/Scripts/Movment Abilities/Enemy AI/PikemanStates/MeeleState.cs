@@ -5,14 +5,32 @@ using UnityEngine;
 public class MeeleState : IEnemyState
 {
 
+    private Enemy enemy;
+    private float attackTimer;
+    private float attackCooldown = 5;
+    private bool canAttack;
+    public bool attacking;
+
+
     public void Enter(Enemy enemy)
     {
-
+        this.enemy = enemy;
     }
 
     public void Exectue()
     {
 
+        attack();
+
+        if (enemy.Target != null)
+        {
+            enemy.Move();
+        }
+
+        else
+        {
+            enemy.ChangeState(new IdleState());
+        }
     }
 
     public void Exit()
@@ -23,5 +41,27 @@ public class MeeleState : IEnemyState
     public void OnTriggerEnter(Collider2D other)
     {
 
+    }
+
+    private void attack()
+    {
+        Debug.Log("attacking");
+
+        attackTimer += Time.deltaTime;
+
+        if (attackTimer >= attackCooldown)
+        {
+            canAttack = true;
+            attackTimer = 0;
+            //enemy.movementSpeed = 3;
+        }
+
+        if (canAttack)
+        {
+            canAttack = false;
+            enemy.Animator.SetTrigger("attack");
+            //enemy.movementSpeed = 0;
+        }
+            
     }
 }
