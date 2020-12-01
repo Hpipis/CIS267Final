@@ -14,8 +14,11 @@ public class Dash : MonoBehaviour
     public AudioClip playerDashSound;
     public float dashDistance;
     private bool hasDash;
-    private float offset = .6f;
+    private float offset = .0f;
     private Vector2 direction = new Vector2(1,0);
+
+    private float cooldownTime = 1;
+    private float nextDashTime = -1;
 
 
     void Start()
@@ -42,7 +45,6 @@ public class Dash : MonoBehaviour
     }
     private void dash()
     {
-
         if (transform.eulerAngles.y == 180)
         {
             direction = new Vector2(-Mathf.Abs(direction.x), 0);
@@ -56,8 +58,9 @@ public class Dash : MonoBehaviour
             dashDistance = Mathf.Abs(dashDistance);
         }
 
-        if (Input.GetKeyDown("j") && hasDash && !dashCollision())
+        if (Input.GetKeyDown("j") && hasDash && !dashCollision() && (nextDashTime == -1 || Time.time >= nextDashTime))
         {
+            nextDashTime = Time.time + cooldownTime;
             if (!pm.isGrounded())
                 hasDash = false;
             playerRigidBody.position += new Vector2(dashDistance, 0);

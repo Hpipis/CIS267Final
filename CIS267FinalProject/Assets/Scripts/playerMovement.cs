@@ -11,6 +11,7 @@ public class playerMovement : MonoBehaviour
     public float lowJumpMultiplier = 2f;
 
     private bool canJump = true;
+    private bool isJumping;
     private float inputHorizontal;
     private Rigidbody2D playerRigidBody;
     private BoxCollider2D playerBoxCollider2D;
@@ -83,6 +84,7 @@ public class playerMovement : MonoBehaviour
         {
             animator.SetBool("IsGrounded", false);
             animator.SetBool("IsJumping", true);
+            isJumping = true;
             playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, jumpVelocity);
         }
 
@@ -93,6 +95,7 @@ public class playerMovement : MonoBehaviour
             playerRigidBody.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
             animator.SetBool("IsGrounded", false);
             animator.SetBool("IsJumping", false);
+            isJumping = false;
             animator.SetBool("IsFalling", true);
         }
 
@@ -115,17 +118,17 @@ public class playerMovement : MonoBehaviour
 
         if (raycastHit.collider != null)
         {
-            rayColor = Color.green;
-            Debug.DrawRay(playerBoxCollider2D.bounds.center + new Vector3(playerBoxCollider2D.bounds.extents.x, 0), Vector2.down * (playerBoxCollider2D.bounds.extents.y + extraHeight), rayColor);
-            Debug.DrawRay(playerBoxCollider2D.bounds.center - new Vector3(playerBoxCollider2D.bounds.extents.x, 0), Vector2.down * (playerBoxCollider2D.bounds.extents.y + extraHeight), rayColor);
-            Debug.DrawRay(playerBoxCollider2D.bounds.center - new Vector3(playerBoxCollider2D.bounds.extents.x, playerBoxCollider2D.bounds.extents.x, 0), Vector2.right * (playerBoxCollider2D.bounds.extents.x), rayColor);
+            //rayColor = Color.green;
+            //Debug.DrawRay(playerBoxCollider2D.bounds.center + new Vector3(playerBoxCollider2D.bounds.extents.x, 0), Vector2.down * (playerBoxCollider2D.bounds.extents.y + extraHeight), rayColor);
+            //Debug.DrawRay(playerBoxCollider2D.bounds.center - new Vector3(playerBoxCollider2D.bounds.extents.x, 0), Vector2.down * (playerBoxCollider2D.bounds.extents.y + extraHeight), rayColor);
+            //Debug.DrawRay(playerBoxCollider2D.bounds.center - new Vector3(playerBoxCollider2D.bounds.extents.x, playerBoxCollider2D.bounds.extents.x, 0), Vector2.right * (playerBoxCollider2D.bounds.extents.x), rayColor);
             return true;
         }
         else
         {
-            Debug.DrawRay(playerBoxCollider2D.bounds.center + new Vector3(playerBoxCollider2D.bounds.extents.x, 0), Vector2.down * (playerBoxCollider2D.bounds.extents.y + extraHeight), rayColor);
-            Debug.DrawRay(playerBoxCollider2D.bounds.center - new Vector3(playerBoxCollider2D.bounds.extents.x, 0), Vector2.down * (playerBoxCollider2D.bounds.extents.y + extraHeight), rayColor);
-            Debug.DrawRay(playerBoxCollider2D.bounds.center - new Vector3(playerBoxCollider2D.bounds.extents.x, playerBoxCollider2D.bounds.extents.x, 0), Vector2.right * (playerBoxCollider2D.bounds.extents.x), rayColor);
+            //Debug.DrawRay(playerBoxCollider2D.bounds.center + new Vector3(playerBoxCollider2D.bounds.extents.x, 0), Vector2.down * (playerBoxCollider2D.bounds.extents.y + extraHeight), rayColor);
+            //Debug.DrawRay(playerBoxCollider2D.bounds.center - new Vector3(playerBoxCollider2D.bounds.extents.x, 0), Vector2.down * (playerBoxCollider2D.bounds.extents.y + extraHeight), rayColor);
+            //Debug.DrawRay(playerBoxCollider2D.bounds.center - new Vector3(playerBoxCollider2D.bounds.extents.x, playerBoxCollider2D.bounds.extents.x, 0), Vector2.right * (playerBoxCollider2D.bounds.extents.x), rayColor);
             return false;
         }
     }
@@ -141,6 +144,11 @@ public class playerMovement : MonoBehaviour
     public float getJumpVelocity()
     {
         return jumpVelocity;
+    }
+
+    public bool getIsJumping()
+    {
+        return isJumping;
     }
 
     //setters
