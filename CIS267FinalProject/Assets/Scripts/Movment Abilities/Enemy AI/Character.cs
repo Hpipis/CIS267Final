@@ -8,7 +8,7 @@ public abstract class Character : MonoBehaviour
     
     public bool facingRight = true;
 
-    public Animator Animator { get; private set; }
+    public Animator animator { get; private set; }
 
     public virtual void Start()
     {

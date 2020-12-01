@@ -79,8 +79,8 @@ public class Enemy : Character
 
         if ((GetDirection().x > 0 && transform.position.x < rightEdge.position.x) || (GetDirection().x < 0 && transform.position.x > leftEdge.position.x))
         {
-            //Animator.SetBool("isIdle", false);
-            //Animator.SetBool("isPatroling", true);
+            animator.SetBool("isIdle", false);
+            animator.SetBool("isPatroling", true);
 
             transform.Translate(GetDirection() * (movementSpeed * Time.deltaTime));
         }

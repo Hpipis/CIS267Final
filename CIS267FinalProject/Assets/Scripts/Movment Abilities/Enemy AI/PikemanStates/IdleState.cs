@@ -40,8 +40,8 @@ public class IdleState : IEnemyState
 
     private void Idle()
     {
-        //enemy.Animator.SetBool("isIdle", true);
-        //enemy.Animator.SetBool("isPatroling", false);
+        //enemy.animator.SetBool("isIdle", true);
+        //enemy.animator.SetBool("isPatroling", false);
 
         idleTimer += Time.deltaTime;
 

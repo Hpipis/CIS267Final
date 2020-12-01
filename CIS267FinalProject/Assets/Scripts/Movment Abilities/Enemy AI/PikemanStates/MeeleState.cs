@@ -53,14 +53,14 @@ public class MeeleState : IEnemyState
         {
             canAttack = true;
             attackTimer = 0;
-            //enemy.movementSpeed = 3;
+            
         }
 
         if (canAttack)
         {
             canAttack = false;
-            enemy.Animator.SetTrigger("attack");
-            //enemy.movementSpeed = 0;
+            enemy.animator.SetTrigger("attack");
+            
         }
             
     }
