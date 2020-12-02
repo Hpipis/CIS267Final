@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class EnemySight : MonoBehaviour
 {
-    [SerializeField]
-    private Enemy enemy;
+    public GameObject Target { get; set; }
+
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-       if (other.tag == "Player")
+        if (other.tag == "Player")
         {
-            enemy.Target = other.gameObject;
+            Target = other.gameObject;
 
         }
     }
@@ -20,7 +21,7 @@ public class EnemySight : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            enemy.Target = null;
+            Target = null;
         }
     }
 }

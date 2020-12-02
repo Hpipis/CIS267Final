@@ -132,8 +132,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 97272447}
-  - component: {fileID: 97272448}
   - component: {fileID: 97272449}
+  - component: {fileID: 97272448}
   m_Layer: 10
   m_Name: Sight
   m_TagString: Untagged
@@ -164,10 +164,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 97272446}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 064353584e793e048852b05669114a9c, type: 3}
+  m_Script: {fileID: 11500000, guid: fb3966f4ecd159d4cbeb4743882b213a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 684656528}
 --- !u!60 &97272449
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -199,6 +198,11 @@ PolygonCollider2D:
       - {x: 1.1758105, y: 0.1392234}
       - {x: 3.8840935, y: 0.13922256}
       - {x: 3.7943215, y: 2.6410537}
+--- !u!4 &285805890 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6345752265292192291, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
+  m_PrefabInstance: {fileID: 1140892036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &306822030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -340,14 +344,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 684656526}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb35aaf2295dcd345bd7d8ffac5e2fa3, type: 3}
+  m_Script: {fileID: 11500000, guid: 325de02eca1e76f488e0d379534e887c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 684656531}
+  agroRange: 3
+  movementSpeed: 3
+  attacking: 0
+  meleeState: 0
+  idleState: 0
+  patrolState: 0
+  attack: 0
   facingRight: 1
-  meleeRange: 1
+  Target: 0
+  inMeleeRange: 0
   leftEdge: {fileID: 1734388739}
   rightEdge: {fileID: 2141312972}
-  movementSpeed: 3
+  player: {fileID: 285805890}
 --- !u!50 &684656530
 Rigidbody2D:
   serializedVersion: 4
@@ -369,6 +382,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &684656531 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6340035761726217310, guid: d9299d793e331a649a44627c117738cf, type: 3}
+  m_PrefabInstance: {fileID: 684656525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &684656533
 MonoBehaviour:
   m_ObjectHideFlags: 0
