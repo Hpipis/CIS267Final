@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class EnemyAI : MonoBehaviour
+public class EnemyAI1 : MonoBehaviour
 {
-
+    
     //attack variables
     #region Public Variables
     public Transform rayCast;
@@ -33,7 +31,6 @@ public class EnemyAI : MonoBehaviour
 
     void Awake()
     {
-        //Debug.Log("IsAwake");
         intTimer = timer;
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
@@ -44,7 +41,6 @@ public class EnemyAI : MonoBehaviour
     {
         if (inRange)
         {
-            Debug.Log("IsRange");
             hit = Physics2D.Raycast(rayCast.position, Vector2.left, rayCastLength, raycastMask);
             RaycastDebugger();
         }
@@ -64,6 +60,14 @@ public class EnemyAI : MonoBehaviour
             animator.SetBool("canWalk", false);
             stopAttack();
         }
+
+
+
+
+
+
+
+
 
     }
 
@@ -97,30 +101,28 @@ public class EnemyAI : MonoBehaviour
 
     public void Move()
     {
-        Debug.Log("IsMoving");
         animator.SetBool("canWalk", true);
-
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Pike-man_Attack"))
         {
             Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
         }
 
-
+        
 
     }
 
-
+   
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //enemy state ai
-
+   
 
     private void enemyMelee()
     {
         Debug.Log("attacking");
 
-        
+        //attackTimer += Time.deltaTime;
         timer = intTimer;
         attackMode = true;
 
@@ -175,11 +177,3 @@ public class EnemyAI : MonoBehaviour
     }
 
 }
-
-
-
-
-
-
-
-
