@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class playerAttack : MonoBehaviour
 {
+    public float maxHealth = 1f;
+    private float currentHealth;
     private AudioSource audioSource;
     public Animator animator;
     public float movementSpeed = 5f;
@@ -16,6 +18,7 @@ public class playerAttack : MonoBehaviour
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
+        currentHealth = maxHealth;
     }
 
 
@@ -59,4 +62,39 @@ public class playerAttack : MonoBehaviour
         Debug.Log("sword");
         audioSource.PlayOneShot(playerSwordSwingSound);
     }
+
+    //damage scripting
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            currentHealth--;
+        }
+
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        //Debug.Log("Enemy Died");
+        animator.SetBool("isDead", true);
+
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
+
+
+    }
+
+
+
+
+
+
 }
+
+

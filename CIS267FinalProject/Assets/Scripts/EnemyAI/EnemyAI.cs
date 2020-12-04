@@ -16,6 +16,8 @@ public class EnemyAI : MonoBehaviour
     public float attackDistance;
     public float moveSpeed;
     public float timer;
+    public float maxHealth = 1f;
+    private float currentHealth;
     public Transform leftEdge;
     public Transform rightEdge;
     
@@ -26,12 +28,12 @@ public class EnemyAI : MonoBehaviour
     private RaycastHit2D hit;
     private Transform target;
     private Animator animator;
-    
     private float distance;
     private bool attackMode;
     private bool inRange;
     private bool cooling;
     private float intTimer;
+    
     #endregion
 
 
@@ -43,6 +45,7 @@ public class EnemyAI : MonoBehaviour
         intTimer = timer;
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        currentHealth = maxHealth;
     }
 
 
@@ -91,6 +94,17 @@ public class EnemyAI : MonoBehaviour
             inRange = true;
             Flip();
         }
+
+        if (other.gameObject.CompareTag("Player"))
+        {
+            currentHealth--;
+        }
+
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     void enemyLogic()
@@ -129,7 +143,7 @@ public class EnemyAI : MonoBehaviour
 
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //enemy state ai
+    //enemy fight ai
 
 
     void enemyMelee()
@@ -143,6 +157,18 @@ public class EnemyAI : MonoBehaviour
         animator.SetBool("canWalk", false);
         animator.SetBool("Attack", true);
 
+    }
+
+    
+
+    void Die()
+    {
+        //Debug.Log("Enemy Died");
+        animator.SetBool("isDead", true);
+
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
+        
 
     }
 
@@ -230,6 +256,14 @@ public class EnemyAI : MonoBehaviour
 
         transform.eulerAngles = rotation;
     }
+
+
+    //for player
+
+    
+
+
+
 }
 
 
