@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 8800705468948499621}
   - component: {fileID: 6278322551826844344}
   - component: {fileID: 3357119042207610578}
+  - component: {fileID: 1225108236797181727}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -35,7 +36,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.06, y: -4.7, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 6390925114886478545}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -315,3 +317,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 415632eca7a02a940aae3a013d6c4989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1225108236797181727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6345752265292192294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0ee535c41f033478f7d70eb9b005db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6345752265292192732}
+  movementSpeed: 5
+  attack: 0
+  playerSwordSwingSound: {fileID: 8300000, guid: 746df689b6ab96c45b50f62751ee0314, type: 3}
+--- !u!1001 &884564440709047575
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6345752265292192291}
+    m_Modifications:
+    - target: {fileID: 6122566882744205254, guid: 5583613df8914084695122d909a0bc75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07500013
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122566882744205254, guid: 5583613df8914084695122d909a0bc75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0236667
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122566882744205254, guid: 5583613df8914084695122d909a0bc75, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -160.4329
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122566882744205254, guid: 5583613df8914084695122d909a0bc75, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122566882744205254, guid: 5583613df8914084695122d909a0bc75, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122566882744205254, guid: 5583613df8914084695122d909a0bc75, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122566882744205254, guid: 5583613df8914084695122d909a0bc75, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122566882744205254, guid: 5583613df8914084695122d909a0bc75, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122566882744205254, guid: 5583613df8914084695122d909a0bc75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122566882744205254, guid: 5583613df8914084695122d909a0bc75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122566882744205254, guid: 5583613df8914084695122d909a0bc75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122566882744205255, guid: 5583613df8914084695122d909a0bc75, type: 3}
+      propertyPath: m_Name
+      value: Sword
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5583613df8914084695122d909a0bc75, type: 3}
+--- !u!4 &6390925114886478545 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6122566882744205254, guid: 5583613df8914084695122d909a0bc75, type: 3}
+  m_PrefabInstance: {fileID: 884564440709047575}
+  m_PrefabAsset: {fileID: 0}
