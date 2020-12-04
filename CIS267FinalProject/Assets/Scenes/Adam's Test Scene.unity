@@ -281,8 +281,8 @@ Transform:
   m_Father: {fileID: 684656527}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &330470827
-BoxCollider2D:
+--- !u!60 &330470827
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -294,7 +294,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.8519866, y: 0.3146694}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -304,9 +304,14 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.0506177, y: 0.9989223}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.3915559, y: 2.807589}
+      - {x: -1.3691764, y: 0.9298003}
+      - {x: -0.3341808, y: 0.9402383}
+      - {x: -0.3295577, y: -0.50775236}
+      - {x: 3.0839787, y: -0.5077525}
+      - {x: 3.0886004, y: 4.2541504}
 --- !u!1 &369915643 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6345752265292192294, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
@@ -421,6 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325de02eca1e76f488e0d379534e887c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swordSwingSound: {fileID: 8300000, guid: 746df689b6ab96c45b50f62751ee0314, type: 3}
   rayCast: {fileID: 1573983504}
   raycastMask:
     serializedVersion: 2
@@ -431,7 +437,6 @@ MonoBehaviour:
   timer: 3
   leftEdge: {fileID: 1734388739}
   rightEdge: {fileID: 2141312972}
-  swordSwingSound: {fileID: 8300000, guid: 746df689b6ab96c45b50f62751ee0314, type: 3}
 --- !u!50 &684656530
 Rigidbody2D:
   serializedVersion: 4
@@ -475,11 +480,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6345752265292192288, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.46875
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6345752265292192288, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.4375
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6345752265292192291, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
       propertyPath: m_LocalPosition.x

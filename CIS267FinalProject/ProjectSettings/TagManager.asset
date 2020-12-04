@@ -10,6 +10,9 @@ TagManager:
   - DashPowerUp
   - DoubleJumpPowerUp
   - Edge
+  - Sword
+  - AI Bounds
+  - AI reset pos
   layers:
   - Default
   - TransparentFX
