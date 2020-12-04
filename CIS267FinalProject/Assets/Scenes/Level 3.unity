@@ -391,6 +391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pikeman (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2721192308069445707, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5312555575617679676, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 121.27714
@@ -84028,6 +84032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pikeman (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2721192308069445707, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5312555575617679676, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 69.80842
@@ -86566,6 +86574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pikeman (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2721192308069445707, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5312555575617679676, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 133.90036
@@ -86630,6 +86642,10 @@ PrefabInstance:
     - target: {fileID: 2371605789632301219, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
       propertyPath: m_Name
       value: Pikeman (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721192308069445707, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5312555575617679676, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -147777,6 +147793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pikeman (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2721192308069445707, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5312555575617679676, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 164.52191
@@ -147841,6 +147861,10 @@ PrefabInstance:
     - target: {fileID: 2371605789632301219, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
       propertyPath: m_Name
       value: Pikeman
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721192308069445707, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5312555575617679676, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
       propertyPath: m_LocalPosition.x

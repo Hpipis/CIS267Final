@@ -9,6 +9,7 @@ public class InRange : MonoBehaviour
 
     private GameObject enemy;
     public GameObject resetPos;
+    public GameObject player;
 
     private void Start()
     {
@@ -32,6 +33,7 @@ public class InRange : MonoBehaviour
         {
             for (int i = 0; i < enemies.Length; i++)
             {
+                enemy.GetComponent<AIDestinationSetter>().target = player.transform;
                 enemy = enemies[i];
 
                 enemy.GetComponent<AIPath>().canSearch = true;

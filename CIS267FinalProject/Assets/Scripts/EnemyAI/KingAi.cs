@@ -229,7 +229,6 @@ public class KingAi : MonoBehaviour
         {
             target = leftEdge;
         }
-
         else
         {
             target = rightEdge;
