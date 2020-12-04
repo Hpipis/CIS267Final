@@ -26,37 +26,39 @@ public class DoubleJump : MonoBehaviour
 
     void Update()
     {
-        if (pu.getDoubleJumpCollectionStatus() == true)
+        if (!animator.GetBool("isDead"))
         {
-            if (Input.GetButtonDown("Jump") && !pm.isGrounded() && hasDoubleJump == true)
+            if (pu.getDoubleJumpCollectionStatus() == true)
             {
-                audioSource.PlayOneShot(playerJumpSound);
-                animator.SetBool("IsFalling", false);
-                animator.SetBool("IsJumping", true);
-                playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, pm.getJumpVelocity());
-                ps.enableEmission = true;
-                hasDoubleJump = false;
-            }
-            if (pm.isGrounded() == true)
-            {
-                hasDoubleJump = true;
-                ps.enableEmission = false;
-            }
+                if (Input.GetButtonDown("Jump") && !pm.isGrounded() && hasDoubleJump == true)
+                {
+                    audioSource.PlayOneShot(playerJumpSound);
+                    animator.SetBool("IsFalling", false);
+                    animator.SetBool("IsJumping", true);
+                    playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, pm.getJumpVelocity());
+                    ps.enableEmission = true;
+                    hasDoubleJump = false;
+                }
+                if (pm.isGrounded() == true)
+                {
+                    hasDoubleJump = true;
+                    ps.enableEmission = false;
+                }
 
-            if (Input.GetButtonDown("Jump") && pm.isGrounded())
-            {
-                Debug.Log("jump");
-                audioSource.PlayOneShot(playerJumpSound);
+                if (Input.GetButtonDown("Jump") && pm.isGrounded())
+                {
+                    Debug.Log("jump");
+                    audioSource.PlayOneShot(playerJumpSound);
 
-            }
+                }
 
-            if (Input.GetButtonDown("Jump") && pm.isGrounded() && hasDoubleJump == true)
-            {
-                Debug.Log("jump");
-                audioSource.PlayOneShot(playerJumpSound);
+                if (Input.GetButtonDown("Jump") && pm.isGrounded() && hasDoubleJump == true)
+                {
+                    Debug.Log("jump");
+                    audioSource.PlayOneShot(playerJumpSound);
 
+                }
             }
         }
-
     }
 }

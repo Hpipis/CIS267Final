@@ -33,7 +33,7 @@ public class EnemyPikemanAI : MonoBehaviour
     private bool inRange;
     private bool cooling;
     private float intTimer;
-
+    
     #endregion
 
 
@@ -88,7 +88,7 @@ public class EnemyPikemanAI : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.tag == "Player")
         {
             target = other.transform;
             inRange = true;
@@ -97,9 +97,9 @@ public class EnemyPikemanAI : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Was Hit");
             currentHealth--;
         }
+
 
         if (currentHealth <= 0)
         {
@@ -135,9 +135,6 @@ public class EnemyPikemanAI : MonoBehaviour
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
         }
-
-
-
     }
 
 
@@ -161,23 +158,15 @@ public class EnemyPikemanAI : MonoBehaviour
 
     
 
-    public void Die()
+    void Die()
     {
         //Debug.Log("Enemy Died");
         animator.SetBool("isDead", true);
-        Destroy(this.gameObject);
+
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
         
-    }
 
-
-    public float getHealth()
-    {
-        return currentHealth;
-    }
-
-    public void setHealth(int damage)
-    {
-        currentHealth -= damage;
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

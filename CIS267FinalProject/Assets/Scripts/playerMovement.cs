@@ -29,20 +29,23 @@ public class playerMovement : MonoBehaviour
 
     void Update()
     {
-        movePlayerLateral();
-        jump();
-
-      
-        //check grounded for animator
-
-        if (isGrounded())
+        if (!animator.GetBool("isDead"))
         {
-            animator.SetBool("IsFalling", false);
-            if (playerRigidBody.velocity.y <= 0)
+            movePlayerLateral();
+            jump();
+
+
+            //check grounded for animator
+
+            if (isGrounded())
             {
-                animator.SetBool("IsJumping", false);
+                animator.SetBool("IsFalling", false);
+                if (playerRigidBody.velocity.y <= 0)
+                {
+                    animator.SetBool("IsJumping", false);
+                }
+                animator.SetBool("IsGrounded", true);
             }
-            animator.SetBool("IsGrounded", true);
         }
     }
 

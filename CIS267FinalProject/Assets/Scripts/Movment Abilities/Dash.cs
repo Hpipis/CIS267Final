@@ -8,6 +8,7 @@ public class Dash : MonoBehaviour
     private playerMovement pm;
     private PowerUps pu;
     private TrailRenderer tr;
+    private Animator animator;
 
     [SerializeField] private LayerMask groundLayer;
 
@@ -24,6 +25,7 @@ public class Dash : MonoBehaviour
     private float effectTurnOffTime = -1;
 
 
+
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
@@ -31,18 +33,22 @@ public class Dash : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         pu = GetComponent<PowerUps>();
         tr = GetComponent<TrailRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (pu.getDashCollectionStatus() == true)
+        if (!animator.GetBool("isDead"))
         {
-            dashCollision();
-            dash();
-            if (pm.isGrounded())
+            if (pu.getDashCollectionStatus() == true)
             {
-                hasDash = true;
+                dashCollision();
+                dash();
+                if (pm.isGrounded())
+                {
+                    hasDash = true;
+                }
             }
         }
     }
