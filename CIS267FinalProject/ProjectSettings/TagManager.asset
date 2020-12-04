@@ -13,6 +13,9 @@ TagManager:
   - Sword
   - AI Bounds
   - AI reset pos
+  - EnemyWeapon
+  - PlayerWeapon
+  - Enemy
   layers:
   - Default
   - TransparentFX
