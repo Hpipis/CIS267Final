@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerAttack : MonoBehaviour
 {
     public float maxHealth = 1f;
-    private float currentHealth;
+    private float currentPlayerHealth;
     private AudioSource audioSource;
     public Animator animator;
     public float movementSpeed = 5f;
@@ -14,11 +15,12 @@ public class playerAttack : MonoBehaviour
     public bool attack;
     public AudioClip playerSwordSwingSound;
 
+
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
-        currentHealth = maxHealth;
+        currentPlayerHealth = maxHealth;
     }
 
 
@@ -65,30 +67,34 @@ public class playerAttack : MonoBehaviour
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////vv
     //damage scripting
 
-    private void OnCollisionEnter2D(Collision2D other)
+
+    //enemy weapons are on a trigger collision so that they don't push players off the map
+    private void OnTriggerEnter2D(Collider2D WeaponHitMe)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (WeaponHitMe.gameObject.CompareTag("EnemyWeapon"))
         {
-            currentHealth--;
-        }
+            if (currentPlayerHealth <= 0)
+            {
+                Scene cur = SceneManager.GetActiveScene();
+                SceneManager.LoadScene(cur.name);
+            }
 
-
-        if (currentHealth <= 0)
-        {
-            Die();
         }
+        //if (WeaponHitMe.gameObject.CompareTag("PikeManHitBox"))
+        //{
+        //    float EnemyHealth = WeaponHitMe.gameObject.GetComponent<EnemyPikemanAI>().getHealth();
+
+        //    if (EnemyHealth <= 0)
+        //    {
+        //        WeaponHitMe.gameObject.GetComponent<EnemyPikemanAI>().Die();
+        //    }
+        //    else if (EnemyHealth > 0)
+        //    {
+        //        Debug.Log("You hit enemy Pikeman");
+        //    }
+        //}
     }
 
-    void Die()
-    {
-        //Debug.Log("Enemy Died");
-        animator.SetBool("isDead", true);
-
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
-
-
-    }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

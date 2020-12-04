@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyPikemanAI : MonoBehaviour
+public class KingAi : MonoBehaviour
 {
     private AudioSource audioSource;
     public AudioClip enemyAttackSound;
@@ -20,7 +19,7 @@ public class EnemyPikemanAI : MonoBehaviour
     private float currentHealth;
     public Transform leftEdge;
     public Transform rightEdge;
-    
+
 
     #endregion
 
@@ -80,7 +79,7 @@ public class EnemyPikemanAI : MonoBehaviour
         }
         if (inRange == false)
         {
-            
+
             stopAttack();
         }
 
@@ -150,7 +149,7 @@ public class EnemyPikemanAI : MonoBehaviour
     {
         Debug.Log("attacking");
 
-        
+
         timer = intTimer;
         attackMode = true;
 
@@ -159,14 +158,14 @@ public class EnemyPikemanAI : MonoBehaviour
 
     }
 
-    
+
 
     public void Die()
     {
         //Debug.Log("Enemy Died");
         animator.SetBool("isDead", true);
         Destroy(this.gameObject);
-        
+
     }
 
 
@@ -200,11 +199,6 @@ public class EnemyPikemanAI : MonoBehaviour
         animator.SetBool("Attack", false);
     }
 
-    void Slash()
-    {
-        Debug.Log("sword");
-        audioSource.PlayOneShot(enemyAttackSound);
-    }
 
     void RaycastDebugger()
     {
@@ -228,7 +222,7 @@ public class EnemyPikemanAI : MonoBehaviour
     {
         return transform.position.x > leftEdge.position.x && transform.position.x < rightEdge.position.x;
     }
-    
+
     private void selectTarget()
     {
         float distanceToLeft = Vector2.Distance(transform.position, leftEdge.position);
@@ -266,14 +260,6 @@ public class EnemyPikemanAI : MonoBehaviour
     }
 
 
-    
+
 
 }
-
-
-
-
-
-
-
-

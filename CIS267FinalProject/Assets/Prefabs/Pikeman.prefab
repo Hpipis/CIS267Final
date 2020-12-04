@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 1701570495289852410}
   - component: {fileID: 2133796903845768298}
   m_Layer: 0
-  m_Name: Pikeman 1
+  m_Name: Pikeman
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325de02eca1e76f488e0d379534e887c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swordSwingSound: {fileID: 8300000, guid: 746df689b6ab96c45b50f62751ee0314, type: 3}
+  enemyAttackSound: {fileID: 0}
   rayCast: {fileID: 8571424914038943449}
   raycastMask:
     serializedVersion: 2
@@ -295,7 +295,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7046222481142164268}
-  - component: {fileID: 5793967674763698748}
   - component: {fileID: 3329204512494910460}
   m_Layer: 10
   m_Name: hitbox
@@ -318,18 +317,6 @@ Transform:
   m_Father: {fileID: 5312555575617679676}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5793967674763698748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2663029488258982738, guid: e39cfc0f650379f4dba038518a4daf6c, type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8243790033313172156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb3966f4ecd159d4cbeb4743882b213a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &3329204512494910460
 BoxCollider2D:
   m_ObjectHideFlags: 0
