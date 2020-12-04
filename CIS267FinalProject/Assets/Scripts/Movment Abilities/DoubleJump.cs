@@ -8,6 +8,7 @@ public class DoubleJump : MonoBehaviour
     private playerMovement pm;
     private PowerUps pu;
     private bool hasDoubleJump;
+    private ParticleSystem ps;
 
     public Animator animator;
 
@@ -20,6 +21,7 @@ public class DoubleJump : MonoBehaviour
         playerRigidBody = GetComponent<Rigidbody2D>();
         pu = GetComponent<PowerUps>();
         pm = GetComponent<playerMovement>();
+        ps = GetComponent<ParticleSystem>();
     }
 
     void Update()
@@ -32,11 +34,13 @@ public class DoubleJump : MonoBehaviour
                 animator.SetBool("IsFalling", false);
                 animator.SetBool("IsJumping", true);
                 playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, pm.getJumpVelocity());
+                ps.enableEmission = true;
                 hasDoubleJump = false;
             }
             if (pm.isGrounded() == true)
             {
                 hasDoubleJump = true;
+                ps.enableEmission = false;
             }
 
             if (Input.GetButtonDown("Jump") && pm.isGrounded())
@@ -53,6 +57,6 @@ public class DoubleJump : MonoBehaviour
 
             }
         }
-       
+
     }
 }

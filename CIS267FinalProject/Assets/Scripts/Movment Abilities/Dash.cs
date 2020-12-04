@@ -7,6 +7,7 @@ public class Dash : MonoBehaviour
     private Rigidbody2D playerRigidBody;
     private playerMovement pm;
     private PowerUps pu;
+    private TrailRenderer tr;
 
     [SerializeField] private LayerMask groundLayer;
 
@@ -15,10 +16,12 @@ public class Dash : MonoBehaviour
     public float dashDistance;
     private bool hasDash;
     private float offset = .0f;
-    private Vector2 direction = new Vector2(1,0);
+    private Vector2 direction = new Vector2(1, 0);
 
     private float cooldownTime = 1;
     private float nextDashTime = -1;
+    public float effectCooldownTime = .2f;
+    private float effectTurnOffTime = -1;
 
 
     void Start()
@@ -27,7 +30,7 @@ public class Dash : MonoBehaviour
         pm = GetComponent<playerMovement>();
         audioSource = GetComponent<AudioSource>();
         pu = GetComponent<PowerUps>();
-
+        tr = GetComponent<TrailRenderer>();
     }
 
     // Update is called once per frame
@@ -38,13 +41,14 @@ public class Dash : MonoBehaviour
             dashCollision();
             dash();
             if (pm.isGrounded())
+            {
                 hasDash = true;
+            }
         }
-      
-      
     }
     private void dash()
     {
+        //set dash direction
         if (transform.eulerAngles.y == 180)
         {
             direction = new Vector2(-Mathf.Abs(direction.x), 0);
@@ -58,13 +62,38 @@ public class Dash : MonoBehaviour
             dashDistance = Mathf.Abs(dashDistance);
         }
 
+        //dash action
         if (Input.GetKeyDown("j") && hasDash && !dashCollision() && (nextDashTime == -1 || Time.time >= nextDashTime))
         {
+            //set dash cooldown
             nextDashTime = Time.time + cooldownTime;
+
+            effectTurnOffTime = Time.time + effectCooldownTime;
+            if (Time.time <= effectTurnOffTime)
+            {
+                tr.enabled = true;
+
+            }
+
+
+            //no double dash in air
             if (!pm.isGrounded())
+            {
                 hasDash = false;
+            }
+
+            //dash movement
             playerRigidBody.position += new Vector2(dashDistance, 0);
+
+            //dash sound
             audioSource.PlayOneShot(playerDashSound);
+        }
+
+        //trail effects turn off
+
+        if (Time.time >= effectTurnOffTime)
+        {
+            tr.enabled = false;
         }
     }
 

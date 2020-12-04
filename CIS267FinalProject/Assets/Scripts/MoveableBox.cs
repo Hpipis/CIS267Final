@@ -8,8 +8,11 @@ public class MoveableBox : MonoBehaviour
     Rigidbody2D boxRigidbody;
     private AudioSource audioSource;
     public AudioClip boxMoving;
-    
-    bool playerCollision = false;
+
+    private bool playerCollision = false;
+    private float boxDirection;
+    private bool canMoveLeft = true;
+    private bool canMoveRight = true;
 
     // Start is called before the first frame update
     void Start()
@@ -24,23 +27,23 @@ public class MoveableBox : MonoBehaviour
         //if they are pressing the pull key and colliding then dont let them jump
         if (playerCollision && Input.GetKey("k") && !playerOnTopofBox())
         {
-            
-
             float distance = transform.position.x - Player.transform.position.x;
             Player.GetComponent<playerMovement>().setJumping(false);
-            if (distance >= 0)
+            if (distance >= 0 && canMoveLeft)
             {
                 //Debug.Log("Im on the left");
-                transform.position = new Vector2(Player.transform.position.x + 1.13f, transform.position.y);
-                
+                transform.position = new Vector2(Player.transform.position.x + .84f, transform.position.y);
+                boxDirection = -1;
+                Debug.Log("Box Direction: " + boxDirection);
             }
-            else
+            else if (distance < 0 && canMoveRight)
             {
                 //Debug.Log("Im on the right");
-                transform.position = new Vector2(Player.transform.position.x - 1.13f, transform.position.y);
-                
+                transform.position = new Vector2(Player.transform.position.x - .833f, transform.position.y);
+                boxDirection = 1;
+                Debug.Log("Box Direction: " + boxDirection);
             }
-            
+
 
         }
         else if (Player != null)
@@ -49,7 +52,6 @@ public class MoveableBox : MonoBehaviour
         }
 
     }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -66,14 +68,25 @@ public class MoveableBox : MonoBehaviour
         {
             playerCollision = false;
         }
+        if (collision.gameObject.CompareTag("Stopper"))
+        {
+            canMoveRight = true;
+            canMoveLeft = true;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Stopper"))
         {
-            Debug.Log("Colliding with " + collision.gameObject.tag);
-            playerCollision = false;
+            if (boxDirection == 1)
+            {
+                canMoveRight = false;
+            }
+            else if (boxDirection == -1)
+            {
+                canMoveLeft = false;
+            }
         }
     }
 
@@ -81,7 +94,7 @@ public class MoveableBox : MonoBehaviour
     {
         if (Player)
         {
-            
+
             float difference = Mathf.Abs(Mathf.Abs(Player.transform.position.y) - Mathf.Abs(transform.position.y));
             //Debug.Log(difference);
             if (difference > .1f)
@@ -90,7 +103,4 @@ public class MoveableBox : MonoBehaviour
 
         return false;
     }
-
-   
-
 }
