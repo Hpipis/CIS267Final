@@ -43,7 +43,7 @@ public class playerAttack : MonoBehaviour
 
     private void attackInput()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.H))
         {
             attack = true;
         }

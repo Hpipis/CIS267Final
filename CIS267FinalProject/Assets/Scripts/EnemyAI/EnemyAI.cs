@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
+    private AudioSource audioSource;
+    public AudioClip swordSwingSound;
 
     //attack variables
     #region Public Variables
@@ -14,14 +16,17 @@ public class EnemyAI : MonoBehaviour
     public float attackDistance;
     public float moveSpeed;
     public float timer;
-    public AudioClip playerSwordSwingSound;
+    public Transform leftEdge;
+    public Transform rightEdge;
+    
+
     #endregion
 
     #region Private Variables
     private RaycastHit2D hit;
-    private GameObject target;
+    private Transform target;
     private Animator animator;
-    private AudioSource audioSource;
+    
     private float distance;
     private bool attackMode;
     private bool inRange;
@@ -34,6 +39,7 @@ public class EnemyAI : MonoBehaviour
     void Awake()
     {
         //Debug.Log("IsAwake");
+        selectTarget();
         intTimer = timer;
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
@@ -42,10 +48,20 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        if (!attackMode)
+        {
+            Move();
+        }
+
+        if (!withinLimits() && !inRange && !animator.GetCurrentAnimatorStateInfo(0).IsName("Pike-man_Attack"))
+        {
+            selectTarget();
+        }
+
         if (inRange)
         {
             Debug.Log("IsRange");
-            hit = Physics2D.Raycast(rayCast.position, Vector2.left, rayCastLength, raycastMask);
+            hit = Physics2D.Raycast(rayCast.position, transform.right, rayCastLength, raycastMask);
             RaycastDebugger();
         }
 
@@ -61,28 +77,28 @@ public class EnemyAI : MonoBehaviour
         }
         if (inRange == false)
         {
-            animator.SetBool("canWalk", false);
+            
             stopAttack();
         }
 
     }
 
-    private void OnTriggerEnter2D(Collider2D trig)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (trig.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
-            target = trig.gameObject;
+            target = other.transform;
             inRange = true;
+            Flip();
         }
     }
 
     void enemyLogic()
     {
-        distance = Vector2.Distance(transform.position, target.transform.position);
+        distance = Vector2.Distance(transform.position, target.position);
 
         if (distance > attackDistance)
         {
-            Move();
             stopAttack();
         }
         else if (attackDistance >= distance && cooling == false)
@@ -95,14 +111,14 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    public void Move()
+    void Move()
     {
         Debug.Log("IsMoving");
         animator.SetBool("canWalk", true);
 
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Pike-man_Attack"))
         {
-            Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
+            Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
         }
 
@@ -116,7 +132,7 @@ public class EnemyAI : MonoBehaviour
     //enemy state ai
 
 
-    private void enemyMelee()
+    void enemyMelee()
     {
         Debug.Log("attacking");
 
@@ -143,28 +159,28 @@ public class EnemyAI : MonoBehaviour
             timer = intTimer;
         }
     }
-    private void stopAttack()
+    void stopAttack()
     {
         cooling = false;
         attackMode = false;
         animator.SetBool("Attack", false);
     }
 
-    private void Slash()
+    void Slash()
     {
         Debug.Log("sword");
-        audioSource.PlayOneShot(playerSwordSwingSound);
+        audioSource.PlayOneShot(swordSwingSound);
     }
 
     void RaycastDebugger()
     {
         if (distance > attackDistance)
         {
-            Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.red);
+            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.red);
         }
         else if (attackDistance > distance)
         {
-            Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.green);
+            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.green);
         }
     }
 
@@ -174,6 +190,46 @@ public class EnemyAI : MonoBehaviour
         cooling = true;
     }
 
+    private bool withinLimits()
+    {
+        return transform.position.x > leftEdge.position.x && transform.position.x < rightEdge.position.x;
+    }
+    
+    private void selectTarget()
+    {
+        float distanceToLeft = Vector2.Distance(transform.position, leftEdge.position);
+        float distanceToRight = Vector2.Distance(transform.position, rightEdge.position);
+
+        if (distanceToLeft > distanceToRight)
+        {
+            target = leftEdge;
+        }
+
+        else
+        {
+            target = rightEdge;
+        }
+
+        Flip();
+
+    }
+
+    private void Flip()
+    {
+        Vector3 rotation = transform.eulerAngles;
+
+        if (transform.position.x > target.position.x)
+        {
+            rotation.y = 180f;
+        }
+
+        else
+        {
+            rotation.y = 0f;
+        }
+
+        transform.eulerAngles = rotation;
+    }
 }
 
 
