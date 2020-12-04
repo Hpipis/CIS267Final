@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour
+public class EnemyPikemanAI : MonoBehaviour
 {
     private AudioSource audioSource;
-    public AudioClip swordSwingSound;
+    public AudioClip enemyAttackSound;
 
     //attack variables
     #region Public Variables
@@ -195,7 +195,7 @@ public class EnemyAI : MonoBehaviour
     void Slash()
     {
         Debug.Log("sword");
-        audioSource.PlayOneShot(swordSwingSound);
+        audioSource.PlayOneShot(enemyAttackSound);
     }
 
     void RaycastDebugger()
