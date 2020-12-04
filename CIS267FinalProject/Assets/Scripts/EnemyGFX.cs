@@ -11,11 +11,11 @@ public class EnemyGFX : MonoBehaviour
     {
         if(aipath.desiredVelocity.x >= .01f)
         {
-            transform.localScale = new Vector3(3f, 3f, 1f);
+            transform.localScale = new Vector3(1f, 1f, 1f);
         }
         else if (aipath.desiredVelocity.x <= -.01f)
         {
-            transform.localScale = new Vector3(-3f, 3f, 1f);
+            transform.localScale = new Vector3(-1f, 1f, 1f);
         }
     }
 }

@@ -9,7 +9,7 @@ public class KingAi : MonoBehaviour
 
     //attack variables
     #region Public Variables
-    public Transform rayCast;
+    //public Transform rayCast;
     public LayerMask raycastMask;
     public float rayCastLength;
     public float attackDistance;
@@ -55,32 +55,33 @@ public class KingAi : MonoBehaviour
             Move();
         }
 
-        if (!withinLimits() && !inRange && !animator.GetCurrentAnimatorStateInfo(0).IsName("Pike-man_Attack"))
-        {
+        //if (!withinLimits() && !inRange && !animator.GetCurrentAnimatorStateInfo(0).IsName("King_Attack"))
+       // {
             selectTarget();
-        }
+            Debug.Log(target.position.x);
+        //}
 
         if (inRange)
         {
             Debug.Log("IsRange");
-            hit = Physics2D.Raycast(rayCast.position, transform.right, rayCastLength, raycastMask);
-            RaycastDebugger();
+            //hit = Physics2D.Raycast(rayCast.position, transform.right, rayCastLength, raycastMask);
+            //RaycastDebugger();
         }
 
 
 
         if (hit.collider != null)
         {
-            enemyLogic();
+            //enemyLogic();
         }
         else if (hit.collider == null)
         {
-            inRange = false;
+            //inRange = false;
         }
         if (inRange == false)
         {
 
-            stopAttack();
+            //stopAttack();
         }
 
     }
@@ -94,16 +95,16 @@ public class KingAi : MonoBehaviour
             Flip();
         }
 
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("Was Hit");
-            currentHealth--;
-        }
+        //if (other.gameObject.CompareTag("Player"))
+        //{
+        //    Debug.Log("Was Hit");
+        //    currentHealth--;
+        //}
 
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        //if (currentHealth <= 0)
+        //{
+        //    Die();
+        //}
     }
 
     void enemyLogic()
@@ -120,7 +121,7 @@ public class KingAi : MonoBehaviour
         }
         if (cooling)
         {
-            animator.SetBool("attack", false);
+            animator.SetBool("Attack", false);
         }
     }
 
@@ -129,14 +130,11 @@ public class KingAi : MonoBehaviour
         Debug.Log("IsMoving");
         animator.SetBool("canWalk", true);
 
-        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Pike-man_Attack"))
-        {
+        //if (!animator.GetCurrentAnimatorStateInfo(0).IsName("King_Attack"))
+        //{
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-        }
-
-
-
+        //}
     }
 
 
@@ -199,16 +197,15 @@ public class KingAi : MonoBehaviour
         animator.SetBool("Attack", false);
     }
 
-
     void RaycastDebugger()
     {
         if (distance > attackDistance)
         {
-            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.red);
+            //Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.red);
         }
         else if (attackDistance > distance)
         {
-            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.green);
+            //Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.green);
         }
     }
 
