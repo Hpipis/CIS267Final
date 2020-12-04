@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 97272449}
   m_Layer: 10
   m_Name: hitbox
-  m_TagString: Untagged
+  m_TagString: EnemyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -369,6 +369,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
+--- !u!1 &680492128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 680492129}
+  - component: {fileID: 680492130}
+  m_Layer: 11
+  m_Name: Sword
+  m_TagString: PlayerWeapon
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &680492129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680492128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1307483621}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &680492130
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680492128}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.01817923, y: -0.14069338}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.09102662, y: 0.079960614}
+  m_EdgeRadius: 0
 --- !u!1001 &684656525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -432,6 +489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pikeman
       objectReference: {fileID: 0}
+    - target: {fileID: 6340035761726217311, guid: d9299d793e331a649a44627c117738cf, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8774829537399170201, guid: d9299d793e331a649a44627c117738cf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d9299d793e331a649a44627c117738cf, type: 3}
@@ -466,6 +527,7 @@ MonoBehaviour:
   attackDistance: 2
   moveSpeed: 3
   timer: 3
+  maxHealth: 3
   leftEdge: {fileID: 1734388739}
   rightEdge: {fileID: 2141312972}
 --- !u!50 &684656530
@@ -1262,6 +1324,38 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1307483611 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6345752265292192294, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
+  m_PrefabInstance: {fileID: 424434172}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1307483616 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6345752265292192732, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
+  m_PrefabInstance: {fileID: 424434172}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1307483621 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6345752265292192291, guid: c5b3896b35eccb047ac8f699e73d6e3f, type: 3}
+  m_PrefabInstance: {fileID: 424434172}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1307483622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307483611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0ee535c41f033478f7d70eb9b005db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  animator: {fileID: 1307483616}
+  movementSpeed: 5
+  attack: 0
+  playerSwordSwingSound: {fileID: 8300000, guid: 746df689b6ab96c45b50f62751ee0314, type: 3}
 --- !u!1 &1485438790
 GameObject:
   m_ObjectHideFlags: 0

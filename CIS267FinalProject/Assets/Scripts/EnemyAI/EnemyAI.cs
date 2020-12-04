@@ -258,11 +258,7 @@ public class EnemyAI : MonoBehaviour
     }
 
 
-    //for player
-
     
-
-
 
 }
 

@@ -62,7 +62,7 @@ public class playerAttack : MonoBehaviour
         Debug.Log("sword");
         audioSource.PlayOneShot(playerSwordSwingSound);
     }
-
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////vv
     //damage scripting
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -90,7 +90,7 @@ public class playerAttack : MonoBehaviour
 
     }
 
-
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
