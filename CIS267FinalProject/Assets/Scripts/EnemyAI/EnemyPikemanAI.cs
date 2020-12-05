@@ -51,6 +51,8 @@ public class EnemyPikemanAI : MonoBehaviour
 
     void Update()
     {
+
+
         if (!attackMode)
         {
             Move();
@@ -61,50 +63,48 @@ public class EnemyPikemanAI : MonoBehaviour
             selectTarget();
         }
 
-        if (inRange)
-        {
-            Debug.Log("IsRange");
-            hit = Physics2D.Raycast(rayCast.position, transform.right, rayCastLength, raycastMask);
-            RaycastDebugger();
-        }
+        //if (inRange)
+        //{
+        //    //Debug.Log("IsRange");
+        //    //hit = Physics2D.Raycast(rayCast.position, transform.right, rayCastLength, raycastMask);
+        //   // RaycastDebugger();
+        //}
 
 
+        //if (hit.collider != null)
+        //{
+        //    //enemyLogic();
+        //}
+        //else if (hit.collider == null)
+        //{
+        //    //inRange = false;
+        //}
+        //if (inRange == false)
+        //{
 
-        if (hit.collider != null)
-        {
-            enemyLogic();
-        }
-        else if (hit.collider == null)
-        {
-            inRange = false;
-        }
-        if (inRange == false)
-        {
-            
-            stopAttack();
-        }
+        //    //stopAttack();
+        //}
 
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
-        {
-            target = other.transform;
-            inRange = true;
-            Flip();
-        }
-
-        if (other.gameObject.CompareTag("Player"))
-        {
-            currentHealth--;
-        }
-
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        //if (other.gameObject.tag == "Player")
+        //{
+        //    target = other.transform;
+        //    inRange = true;
+        //    Flip();
+        //}
+        //if (other.gameObject.CompareTag("Player"))
+        //{
+        //    target = other.transform;
+        //    inRange = true;
+        //    Flip();
+        //}
+        //if (currentHealth <= 0)
+        //{
+        //    Die();
+        //}
     }
 
     void enemyLogic()
@@ -113,15 +113,15 @@ public class EnemyPikemanAI : MonoBehaviour
 
         if (distance > attackDistance)
         {
-            stopAttack();
+            //stopAttack();
         }
         else if (attackDistance >= distance && cooling == false)
         {
-            enemyMelee();
+            //enemyMelee();
         }
         if (cooling)
         {
-            animator.SetBool("attack", false);
+            animator.SetBool("Attack", false);
         }
     }
 
@@ -130,11 +130,12 @@ public class EnemyPikemanAI : MonoBehaviour
         Debug.Log("IsMoving");
         animator.SetBool("canWalk", true);
 
-        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Pike-man_Attack"))
-        {
+        //if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Pike-man_Attack"))
+        //{
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-        }
+
+        //}
     }
 
 
@@ -143,18 +144,18 @@ public class EnemyPikemanAI : MonoBehaviour
     //enemy fight ai
 
 
-    void enemyMelee()
-    {
-        Debug.Log("attacking");
+    //void enemyMelee()
+    //{
+    //    Debug.Log("attacking");
 
         
-        timer = intTimer;
-        attackMode = true;
+    //    timer = intTimer;
+    //    attackMode = true;
 
-        animator.SetBool("canWalk", false);
-        animator.SetBool("Attack", true);
+    //    animator.SetBool("canWalk", false);
+    //    animator.SetBool("Attack", true);
 
-    }
+    //}
 
     
 
@@ -162,9 +163,10 @@ public class EnemyPikemanAI : MonoBehaviour
     {
         //Debug.Log("Enemy Died");
         animator.SetBool("isDead", true);
+        Destroy(this.gameObject);
 
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
+        //GetComponent<Collider2D>().enabled = false;
+        //this.enabled = false;
         
 
     }
@@ -172,46 +174,40 @@ public class EnemyPikemanAI : MonoBehaviour
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // misc scripting
 
-    void cooldown()
-    {
-        timer -= Time.deltaTime;
+    //void cooldown()
+    //{
+    //    timer -= Time.deltaTime;
 
-        if (timer <= 0 && cooling && attackMode)
-        {
-            cooling = false;
-            timer = intTimer;
-        }
-    }
-    void stopAttack()
-    {
-        cooling = false;
-        attackMode = false;
-        animator.SetBool("Attack", false);
-    }
+    //    if (timer <= 0 && cooling && attackMode)
+    //    {
+    //        cooling = false;
+    //        timer = intTimer;
+    //    }
+    //}
+    //void stopAttack()
+    //{
+    //    cooling = false;
+    //    attackMode = false;
+    //    animator.SetBool("Attack", false);
+    //}
 
-    void Slash()
-    {
-        Debug.Log("sword");
-        audioSource.PlayOneShot(enemyAttackSound);
-    }
+    //void RaycastDebugger()
+    //{
+    //    if (distance > attackDistance)
+    //    {
+    //        Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.red);
+    //    }
+    //    else if (attackDistance > distance)
+    //    {
+    //        Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.green);
+    //    }
+    //}
 
-    void RaycastDebugger()
-    {
-        if (distance > attackDistance)
-        {
-            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.red);
-        }
-        else if (attackDistance > distance)
-        {
-            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.green);
-        }
-    }
-
-    public void TriggerCooling()
-    {
-        cooldown();
-        cooling = true;
-    }
+    //public void TriggerCooling()
+    //{
+    //    cooldown();
+    //    cooling = true;
+    //}
 
     private bool withinLimits()
     {
