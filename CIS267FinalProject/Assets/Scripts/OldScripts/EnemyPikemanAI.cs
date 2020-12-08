@@ -89,22 +89,22 @@ public class EnemyPikemanAI : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //if (other.gameObject.tag == "Player")
-        //{
-        //    target = other.transform;
-        //    inRange = true;
-        //    Flip();
-        //}
-        //if (other.gameObject.CompareTag("Player"))
-        //{
-        //    target = other.transform;
-        //    inRange = true;
-        //    Flip();
-        //}
-        //if (currentHealth <= 0)
-        //{
-        //    Die();
-        //}
+        if (other.gameObject.tag == "Player")
+        {
+            target = other.transform;
+            inRange = true;
+            Flip();
+        }
+        if (other.gameObject.CompareTag("Player"))
+        {
+            target = other.transform;
+            inRange = true;
+            Flip();
+        }
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     void enemyLogic()
