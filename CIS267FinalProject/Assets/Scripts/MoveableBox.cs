@@ -29,19 +29,19 @@ public class MoveableBox : MonoBehaviour
         {
             float distance = transform.position.x - Player.transform.position.x;
             Player.GetComponent<playerMovement>().setJumping(false);
-            if (distance >= 0 && canMoveLeft)
+            if (distance >= 0 && canMoveRight)
             {
-                //Debug.Log("Im on the left");
+                //Debug.Log("Player on the left");
                 transform.position = new Vector2(Player.transform.position.x + .84f, transform.position.y);
                 boxDirection = -1;
-                Debug.Log("Box Direction: " + boxDirection);
+                //Debug.Log("Box Direction: " + boxDirection);
             }
-            else if (distance < 0 && canMoveRight)
+            else if (distance < 0 && canMoveLeft)
             {
-                //Debug.Log("Im on the right");
+                //Debug.Log("Player on the right");
                 transform.position = new Vector2(Player.transform.position.x - .833f, transform.position.y);
                 boxDirection = 1;
-                Debug.Log("Box Direction: " + boxDirection);
+                //Debug.Log("Box Direction: " + boxDirection);
             }
 
 
@@ -77,15 +77,27 @@ public class MoveableBox : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Stopper"))
+        if(collision.gameObject.CompareTag("Stopper"))
         {
-            if (boxDirection == 1)
+            //Debug.Log("Box location: " + transform.position.x);
+            //Debug.Log("Collider Location: " + collision.transform.position.x);
+
+            float boxX = transform.position.x;
+            float colliderX = collision.transform.position.x;
+
+            if(boxX > colliderX)
             {
-                canMoveRight = false;
-            }
-            else if (boxDirection == -1)
-            {
+                //box is on the right of the collider
+                //remove ability for the box to move left
+                //Debug.Log("Box cannot move more left!");
                 canMoveLeft = false;
+            }
+            else if(boxX < colliderX)
+            {
+                //box is on the left of the collider
+                //remove ability for the box to move right
+                //Debug.Log("Box cannot move more right!");
+                canMoveRight = false;
             }
         }
     }
