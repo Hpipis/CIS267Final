@@ -58,9 +58,8 @@ public class LizardMain : MonoBehaviour
     {
         Debug.Log("DEAD");
         animator.SetBool("isDead", true);
-
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
         GetComponent<Collider2D>().enabled = false;
-        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll; // Freeze all constraints so it doesn't fall after death
         this.enabled = false;
     }
 

@@ -58,11 +58,9 @@ public class PikemanMain : MonoBehaviour
     {
         Debug.Log("DEAD");
         animator.SetBool("isDead", true);
-
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
-
-
     }
 
     public bool withinLimits()
