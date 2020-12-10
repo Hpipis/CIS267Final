@@ -28,6 +28,7 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.H))
         {
             animator.SetTrigger("attack");
+
         }
 
 
@@ -36,14 +37,16 @@ public class PlayerAttack : MonoBehaviour
 
     void AttackPlayer()
     {
+        Debug.Log("HIT");
         
 
-        Collider2D[] hitEnemy = Physics2D.OverlapCircleAll(Weapon.position, attackRange, enemyLayers);
+        Collider2D colInfo = Physics2D.OverlapCircle(Weapon.position, attackRange, enemyLayers);
 
-        for (int i = 0; i < hitEnemy.Length; i++)
+        if (colInfo != null)
         {
-            Debug.Log("HIT");
-            hitEnemy[i].GetComponent<EnemyHealth>().TakeDamage(attackDamage);
+            colInfo.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
+            colInfo.GetComponent<LizardHealth>().TakeDamage(attackDamage);
+
         }
     }
 
