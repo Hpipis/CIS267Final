@@ -7,10 +7,10 @@ public class LizardHealth : MonoBehaviour
     public Animator animator;
     public int maxHealth = 1;
     int currentHealth;
-
-
+    
     void Start()
     {
+        gameObject.tag = "Lizard";
         currentHealth = maxHealth;
     }
 

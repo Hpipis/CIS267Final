@@ -45,8 +45,6 @@ public class PlayerAttack : MonoBehaviour
         if (colInfo != null)
         {
             colInfo.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
-            colInfo.GetComponent<LizardHealth>().TakeDamage(attackDamage);
-
         }
     }
 

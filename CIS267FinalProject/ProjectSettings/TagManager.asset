@@ -16,7 +16,7 @@ TagManager:
   - EnemyWeapon
   - PlayerWeapon
   - Enemy
-  - PikeManHitBox
+  - Lizard
   layers:
   - Default
   - TransparentFX
