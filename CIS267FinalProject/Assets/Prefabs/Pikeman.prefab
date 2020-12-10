@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4209434719511554379}
   - component: {fileID: 4209434719511554374}
   m_Layer: 0
-  m_Name: Pikeman 1
+  m_Name: Pikeman
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,7 +129,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &4209434719511554373
 BoxCollider2D:
   m_ObjectHideFlags: 0
