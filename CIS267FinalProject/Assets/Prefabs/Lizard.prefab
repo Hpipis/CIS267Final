@@ -13,10 +13,11 @@ GameObject:
   - component: {fileID: 7506561910466869614}
   - component: {fileID: 7506561910466869585}
   - component: {fileID: 7163817083904455445}
+  - component: {fileID: -5350752952132314126}
   - component: {fileID: 7508847521424385136}
-  - component: {fileID: 7508847521424385137}
+  - component: {fileID: 467677849523927134}
   m_Layer: 0
-  m_Name: Lizard 1
+  m_Name: Lizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,6 +155,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-5350752952132314126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7506561910466869584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 607b76fd723143c4a9182d2da5a871d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  player: {fileID: 0}
+  target: {fileID: 0}
+  leftEdge: {fileID: 0}
+  rightEdge: {fileID: 0}
+  isFlipped: 1
+  inRange: 0
+  moveSpeed: 3
 --- !u!114 &7508847521424385136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,14 +187,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dbca1e1d99e2c84fa757dbb030217f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 1
-  FireBreath: {fileID: 7508847523068766759}
-  attackOffset: {x: 0, y: 0, z: 0}
-  attackRange: 1
+  animator: {fileID: 0}
   attackMask:
     serializedVersion: 2
     m_Bits: 2048
---- !u!114 &7508847521424385137
+  Weapon: {fileID: 0}
+  startTimeBtwAttack: 0
+  attackRange: 1
+  attackDamage: 1
+--- !u!114 &467677849523927134
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,18 +204,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7506561910466869584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 607b76fd723143c4a9182d2da5a871d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 241a718074d3fa447a57d866e358fc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 7506561910466869614}
-  player: {fileID: 0}
-  target: {fileID: 0}
-  leftEdge: {fileID: 0}
-  rightEdge: {fileID: 0}
-  isFlipped: 1
-  inRange: 0
+  animator: {fileID: 0}
   maxHealth: 1
-  moveSpeed: 3
 --- !u!1 &7508847523068766758
 GameObject:
   m_ObjectHideFlags: 0

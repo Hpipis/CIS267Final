@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 7615995442067084424}
   - component: {fileID: 2281486007846017286}
   - component: {fileID: 4209434719511554373}
-  - component: {fileID: 4209434719511554377}
   - component: {fileID: 4209434719511554378}
-  - component: {fileID: 4209434719511554379}
-  - component: {fileID: 4209434719511554374}
+  - component: {fileID: -4710747890085706121}
+  - component: {fileID: 3503305441036967138}
   m_Layer: 0
   m_Name: Pikeman
   m_TagString: Enemy
@@ -156,25 +155,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.71227056, y: 1.470866}
   m_EdgeRadius: 0
---- !u!114 &4209434719511554377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910450335758262766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8437cb2fd9c6fe41a9a88a4333f2e8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 1
-  Pike: {fileID: 4209434720703035914}
-  attackOffset: {x: 0, y: 0, z: 0}
-  attackRange: 1
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &4209434719511554378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,9 +174,8 @@ MonoBehaviour:
   rightEdge: {fileID: 0}
   isFlipped: 1
   inRange: 0
-  maxHealth: 1
   moveSpeed: 3
---- !u!114 &4209434719511554379
+--- !u!114 &-4710747890085706121
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,34 +184,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 1910450335758262766}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8437cb2fd9c6fe41a9a88a4333f2e8e, type: 3}
+  m_Script: {fileID: 11500000, guid: 241a718074d3fa447a57d866e358fc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 1
-  Pike: {fileID: 4209434720703035914}
-  attackOffset: {x: 0, y: 0, z: 0}
-  attackRange: 1
+  animator: {fileID: 0}
+  maxHealth: 1
+--- !u!114 &3503305441036967138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910450335758262766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbca1e1d99e2c84fa757dbb030217f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   attackMask:
     serializedVersion: 2
     m_Bits: 0
---- !u!114 &4209434719511554374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910450335758262766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64b6f88b49842734385e2471f7d779b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 1
-  attackOffset: {x: 0, y: 0, z: 0}
+  Weapon: {fileID: 0}
+  startTimeBtwAttack: 0
   attackRange: 1
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 2048
+  attackDamage: 1
 --- !u!1 &4209434720703035913
 GameObject:
   m_ObjectHideFlags: 0

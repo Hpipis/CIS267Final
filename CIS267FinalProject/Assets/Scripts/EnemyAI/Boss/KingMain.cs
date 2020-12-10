@@ -9,14 +9,10 @@ public class KingMain : MonoBehaviour
     public Transform player;
 
     public bool isFlipped = true;
-    public int maxHealth = 1;
-    int currentHealth;
+   
 
 
-    void Start()
-    {
-        currentHealth = maxHealth;
-    }
+   
 
     public void lookAtPlayer()
     {
@@ -39,26 +35,7 @@ public class KingMain : MonoBehaviour
     }
 
 
-   public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-    
-    void Die()
-    {
-        Debug.Log("DEAD");
-        animator.SetBool("isDead", true);
-        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
-        
-
-    }
+   
 
 
 }

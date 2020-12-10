@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyWalk : StateMachineBehaviour
+public class EnemyWalkKing : StateMachineBehaviour
 {
     public float speed = 3f;
     public float attackRange = 3f;

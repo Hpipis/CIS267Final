@@ -97,6 +97,13 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.33333334
+    functionName: AttackPlayer
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.33333334
     functionName: Slash
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 746df689b6ab96c45b50f62751ee0314, type: 3}

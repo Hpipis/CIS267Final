@@ -9,7 +9,7 @@ public class PlayerAttack : MonoBehaviour
 
     public AudioClip playerSwordSwingSound;
 
-    public Transform Sword;
+    public Transform Weapon;
     public float attackRange = 0.5f;
     public int attackDamage = 1;
 
@@ -27,34 +27,34 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.H))
         {
-            Attack();
+            animator.SetTrigger("attack");
         }
 
 
     }
 
 
-    void Attack()
+    void AttackPlayer()
     {
-        animator.SetTrigger("attack");
+        
 
-        Collider2D[] hitEnemy = Physics2D.OverlapCircleAll(Sword.position, attackRange, enemyLayers);
+        Collider2D[] hitEnemy = Physics2D.OverlapCircleAll(Weapon.position, attackRange, enemyLayers);
 
-        foreach (Collider2D enemy in hitEnemy)
+        for (int i = 0; i < hitEnemy.Length; i++)
         {
-            //Debug.Log("HIT" + enemy.name);
-            enemy.GetComponent<KingMain>().TakeDamage(attackDamage);
+            Debug.Log("HIT");
+            hitEnemy[i].GetComponent<EnemyHealth>().TakeDamage(attackDamage);
         }
     }
 
     private void OnDrawGizmosSelected()
     {
-        if (Sword == null)
+        if (Weapon == null)
         
             return;
        
 
-        Gizmos.DrawWireSphere(Sword.position, attackRange);
+        Gizmos.DrawWireSphere(Weapon.position, attackRange);
     }
 
 
@@ -72,7 +72,7 @@ public class PlayerAttack : MonoBehaviour
     {
         Debug.Log("DEAD");
         animator.SetBool("isDead", true);
-
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
 

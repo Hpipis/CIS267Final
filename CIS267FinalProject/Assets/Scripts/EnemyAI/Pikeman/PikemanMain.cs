@@ -13,15 +13,9 @@ public class PikemanMain : MonoBehaviour
 
     public bool isFlipped = true;
     public bool inRange;
-    public int maxHealth = 1;
     public float moveSpeed = 3f;
-    int currentHealth;
+    
 
-
-    void Start()
-    {
-        currentHealth = maxHealth;
-    }
 
     public void lookAtPlayer()
     {
@@ -43,25 +37,6 @@ public class PikemanMain : MonoBehaviour
         }
     }
 
-
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-
-    void Die()
-    {
-        Debug.Log("DEAD");
-        animator.SetBool("isDead", true);
-        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
-    }
 
     public bool withinLimits()
     {
