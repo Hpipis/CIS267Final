@@ -5,20 +5,30 @@ using UnityEngine;
 public class LizardMain : MonoBehaviour
 {
     public Animator animator;
+    private AudioSource audioSource;
 
     public Transform player;
     public Transform target;
     public Transform leftEdge;
     public Transform rightEdge;
 
+    public AudioClip lizardChargingSound;
+    public AudioClip lizardAttackSound;
+    public AudioClip lizardBlastSound;
+    public AudioClip klizardDeathSound;
+    public AudioClip walking;
+
     public bool isFlipped = true;
     public bool inRange;
     
     public float moveSpeed = 3f;
-    
 
 
-    
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
 
     public void lookAtPlayer()
     {
@@ -98,4 +108,27 @@ public class LizardMain : MonoBehaviour
         }
     }
 
+    private void LizardCharging()
+    {
+        audioSource.PlayOneShot(lizardChargingSound);
+    }
+
+    private void LizardAttack()
+    {
+        audioSource.PlayOneShot(lizardAttackSound);
+    }
+
+    private void LizardBlast()
+    {
+        audioSource.PlayOneShot(lizardBlastSound);
+    }
+    private void LizardDeath()
+    {
+        audioSource.PlayOneShot(klizardDeathSound);
+    }
+
+    private void WalkingLizard()
+    {
+        audioSource.PlayOneShot(walking);
+    }
 }

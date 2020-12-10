@@ -5,14 +5,23 @@ using UnityEngine;
 public class KingMain : MonoBehaviour
 {
     public Animator animator;
-
     public Transform player;
+    private AudioSource audioSource;
 
+    public AudioClip kingChargingSound;
+    public AudioClip kingImpactSound;
+    public AudioClip kingAttackSound;
+    public AudioClip kingFizzleSound;
+    public AudioClip kingCrownDropSound;
+    public AudioClip walking;
     public bool isFlipped = true;
-   
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
 
-   
 
     public void lookAtPlayer()
     {
@@ -34,8 +43,35 @@ public class KingMain : MonoBehaviour
         }
     }
 
+    private void KingCharge()
+    {
+        audioSource.PlayOneShot(kingChargingSound);
+    }
 
-   
+    private void KingAttack()
+    {
+        audioSource.PlayOneShot(kingAttackSound);
+    }
+
+    private void AttackImpact()
+    {
+        audioSource.PlayOneShot(kingImpactSound);
+    }
+
+    private void KingCrownDrop()
+    {
+        audioSource.PlayOneShot(kingCrownDropSound);
+    }
+    private void KingFizzle()
+    {
+        audioSource.PlayOneShot(kingFizzleSound);
+    }
+
+    private void WalkingHuman()
+    {
+        audioSource.PlayOneShot(walking);
+    }
+
 
 
 }

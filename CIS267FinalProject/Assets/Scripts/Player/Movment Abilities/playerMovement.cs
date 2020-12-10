@@ -19,9 +19,14 @@ public class playerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer; //the serialized field adds a dropdown to this scripts in which you can select the layer
 
     public Animator animator;
+    private AudioSource audioSource;
+
+    public AudioClip walking;
+    public AudioClip playerJumpSound;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         playerRigidBody = GetComponent<Rigidbody2D>();
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
         playerBoxCollider2D = GetComponent<BoxCollider2D>();
@@ -85,6 +90,7 @@ public class playerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isGrounded() && canJump)
         {
+            audioSource.PlayOneShot(playerJumpSound);
             animator.SetBool("IsGrounded", false);
             animator.SetBool("IsJumping", true);
             isJumping = true;
@@ -160,5 +166,12 @@ public class playerMovement : MonoBehaviour
     {
         canJump = j;
     }
+
+    private void WalkingHuman()
+    {
+        audioSource.PlayOneShot(walking);
+    }
+
+
 
 }

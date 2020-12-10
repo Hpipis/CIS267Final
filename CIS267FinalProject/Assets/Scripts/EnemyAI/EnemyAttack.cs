@@ -33,8 +33,6 @@ public class EnemyAttack : MonoBehaviour
 
     public void AttackEnemy()
     {
-        animator.SetTrigger("attack");
-
         Collider2D colInfo = Physics2D.OverlapCircle(Weapon.position, attackRange, attackMask);
 
         if (colInfo != null)

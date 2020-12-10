@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PowerUps : MonoBehaviour
 {
+    private AudioSource audioSource;
+    public AudioClip powerUp;
     public static bool collectedDash = false;
     public static bool collectedDoubleJump = false;
 
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,6 +19,7 @@ public class PowerUps : MonoBehaviour
         if (collision.gameObject.CompareTag("DoubleJumpPowerUp") && this.gameObject.CompareTag("Player"))
         {
             Debug.Log("You collected double jump");
+            audioSource.PlayOneShot(powerUp);
             collectedDoubleJump = true;
             
             Destroy(collision.gameObject);
@@ -24,6 +27,7 @@ public class PowerUps : MonoBehaviour
         else if (collision.gameObject.CompareTag("DashPowerUp") && this.gameObject.CompareTag("Player"))
         {
             Debug.Log("You collected dash");
+            audioSource.PlayOneShot(powerUp);
             collectedDash = true;
             Destroy(collision.gameObject);
         }

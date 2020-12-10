@@ -5,6 +5,11 @@ using UnityEngine;
 public class PikemanMain : MonoBehaviour
 {
     public Animator animator;
+    private AudioSource audioSource;
+
+    public AudioClip pikemanPikeSwingSound;
+    public AudioClip pikemanDeath;
+    public AudioClip walking;
 
     public Transform player;
     public Transform target;
@@ -15,7 +20,10 @@ public class PikemanMain : MonoBehaviour
     public bool inRange;
     public float moveSpeed = 3f;
     
-
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     public void lookAtPlayer()
     {
@@ -93,6 +101,21 @@ public class PikemanMain : MonoBehaviour
             inRange = true;
             Flip();
         }
+    }
+
+    private void PikemanSlash()
+    {
+        audioSource.PlayOneShot(pikemanPikeSwingSound);
+    }
+
+    private void PikemanDead()
+    {
+        audioSource.PlayOneShot(pikemanDeath);
+    }
+
+    private void WalkingHuman()
+    {
+        audioSource.PlayOneShot(walking);
     }
 
 }

@@ -5,6 +5,10 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public Animator animator;
+    private AudioSource audioSource;
+
+    public AudioClip enemyHurt;
+
     public int maxHealth = 1;
     int currentHealth;
 
@@ -12,11 +16,13 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {        
         currentHealth = maxHealth;
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        audioSource.PlayOneShot(enemyHurt);
 
         if (currentHealth <= 0)
         {

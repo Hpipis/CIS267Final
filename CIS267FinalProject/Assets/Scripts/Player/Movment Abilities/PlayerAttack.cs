@@ -8,6 +8,7 @@ public class PlayerAttack : MonoBehaviour
     private AudioSource audioSource;
 
     public AudioClip playerSwordSwingSound;
+    public AudioClip playerHurt;
 
     public Transform Weapon;
     public float attackRange = 0.5f;
@@ -21,6 +22,7 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -37,7 +39,7 @@ public class PlayerAttack : MonoBehaviour
 
     void AttackPlayer()
     {
-        Debug.Log("HIT");
+        //Debug.Log("HIT");
         
 
         Collider2D colInfo = Physics2D.OverlapCircle(Weapon.position, attackRange, enemyLayers);
@@ -62,6 +64,7 @@ public class PlayerAttack : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        audioSource.PlayOneShot(playerHurt);
 
         if (currentHealth <= 0)
         {

@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 3200105728988869071}
   - component: {fileID: 1052528038365198151}
   m_Layer: 11
-  m_Name: Player 1
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,6 +192,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   animator: {fileID: 6236342801736968379}
+  walking: {fileID: 8300000, guid: b503d69bc2f13be419bcf5189d7fe30c, type: 3}
+  playerJumpSound: {fileID: 8300000, guid: 62b619a0c45fa4542af13cc365936304, type: 3}
 --- !u!95 &6236342801736968379
 Animator:
   serializedVersion: 3
@@ -5252,6 +5254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 6236342801736968379}
   playerSwordSwingSound: {fileID: 8300000, guid: 746df689b6ab96c45b50f62751ee0314, type: 3}
+  playerHurt: {fileID: 8300000, guid: ca890de484f61c543bb2e080263ee8b5, type: 3}
   Weapon: {fileID: 1052528038979606266}
   attackRange: 1
   attackDamage: 1
