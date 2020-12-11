@@ -24,7 +24,7 @@ public class EndMenu : MonoBehaviour
 
     //temp = 0 tba kill counter reference
     private int getEnemieskilled = 0;
-
+    private KillCounter kills;
     
 
     //totals
@@ -35,6 +35,7 @@ public class EndMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        getEnemieskilled = kills.getKillCounter();
         CalculateScore();
 
         setText();

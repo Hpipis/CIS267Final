@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 547693399575081892}
   - component: {fileID: 7713957786749464336}
   - component: {fileID: 4689944866537667141}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bat Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 547693399697059411}
   - component: {fileID: 547693399697059410}
   - component: {fileID: 547693399697059409}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bat GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
