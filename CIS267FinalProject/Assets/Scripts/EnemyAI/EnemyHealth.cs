@@ -30,8 +30,8 @@ public class EnemyHealth : MonoBehaviour
         {
             if (Time.time >= despawnTime)
             {
-                Debug.Log("DESPAWN TIME: " + despawnTime);
-                Debug.Log("NORMAL TIME: " + Time.time);
+                //Debug.Log("DESPAWN TIME: " + despawnTime);
+                //Debug.Log("NORMAL TIME: " + Time.time);
                 GetComponentInChildren<SpriteRenderer>().enabled = false;
                 this.enabled = false;
             }
@@ -60,7 +60,7 @@ public class EnemyHealth : MonoBehaviour
             GetComponent<CircleCollider2D>().enabled = false;
             GetComponent<AIDestinationSetter>().enabled = false;
             KillCounter k = FindObjectOfType<KillCounter>();
-            k.setKillCounter(k.getKillCounter()+1);
+            k.setSceneKills(k.getSceneKills() + 1);
         }
 
         else
@@ -71,7 +71,7 @@ public class EnemyHealth : MonoBehaviour
             GetComponent<EnemyAttack>().enabled = false;
             GetComponent<Collider2D>().enabled = false;
             KillCounter k = FindObjectOfType<KillCounter>();
-            k.setKillCounter(k.getKillCounter() + 1);
+            k.setSceneKills(k.getSceneKills() + 1);
             this.enabled = false;
         }
     }
