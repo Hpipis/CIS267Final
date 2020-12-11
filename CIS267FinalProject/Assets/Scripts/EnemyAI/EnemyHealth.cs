@@ -59,7 +59,8 @@ public class EnemyHealth : MonoBehaviour
             animator.SetBool("isDead", true);
             GetComponent<CircleCollider2D>().enabled = false;
             GetComponent<AIDestinationSetter>().enabled = false;
-
+            KillCounter k = FindObjectOfType<KillCounter>();
+            k.setKillCounter(k.getKillCounter()+1);
         }
 
         else
@@ -69,6 +70,8 @@ public class EnemyHealth : MonoBehaviour
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
             GetComponent<EnemyAttack>().enabled = false;
             GetComponent<Collider2D>().enabled = false;
+            KillCounter k = FindObjectOfType<KillCounter>();
+            k.setKillCounter(k.getKillCounter() + 1);
             this.enabled = false;
         }
     }
