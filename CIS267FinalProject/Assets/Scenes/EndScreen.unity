@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 146937569}
   - component: {fileID: 146937568}
   - component: {fileID: 146937573}
+  - component: {fileID: 146937574}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -416,6 +417,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &146937574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146937567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6549ef96cfb1cb1469ba900bbd5bb852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txt_TtlScore: {fileID: 1622889778}
+  txt_BonusScore: {fileID: 1894001419}
+  txt_EnemiesKilled: {fileID: 641215512}
+  LevelCompletePoints: 1000
+  totalEnemiesLevel1: 5
+  totalEnemiesLevel2: 0
+  totalEnemiesLevel3: 0
+  bossPoints: 2000
 --- !u!1 &232073839
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +916,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 8}
+  m_AnchoredPosition: {x: 0, y: 12}
   m_SizeDelta: {x: 1335.2404, y: 86.038025}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1109934943
@@ -1331,7 +1352,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -39.5, y: 98}
+  m_AnchoredPosition: {x: -39.5, y: 82}
   m_SizeDelta: {x: 1335.2404, y: 86.038025}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1894001419
