@@ -3,7 +3,15 @@ guid: 1f35540ce499ff041adc0196edf5e3b5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - animator: {instanceID: 0}
+  - player: {fileID: 6236342801736968516, guid: 6b7b31277093245498fea6d41a772d64, type: 3}
+  - kingChargingSound: {instanceID: 0}
+  - kingImpactSound: {instanceID: 0}
+  - kingAttackSound: {instanceID: 0}
+  - kingFizzleSound: {instanceID: 0}
+  - kingCrownDropSound: {instanceID: 0}
+  - walking: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2777197078962262297}
-  player: {fileID: 0}
+  player: {fileID: 6236342801736968516, guid: 6b7b31277093245498fea6d41a772d64, type: 3}
   kingChargingSound: {fileID: 8300000, guid: b9e9afee2013a1a4080c5e456bf785e7, type: 3}
   kingImpactSound: {fileID: 8300000, guid: 866e75e2cea0a6c409dd686f79209796, type: 3}
   kingAttackSound: {fileID: 8300000, guid: 287e62bf5883cd543bd847ae86ac007c, type: 3}
