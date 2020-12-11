@@ -108,7 +108,7 @@ public class Dash : MonoBehaviour
         RaycastHit2D rayHit = Physics2D.Raycast(transform.position + new Vector3(offset, 0), direction, Mathf.Abs(dashDistance), groundLayer);
 
         if (rayHit.collider != null)
-            Debug.Log(rayHit.collider.gameObject);
+            //Debug.Log(rayHit.collider.gameObject);
 
         Debug.DrawRay(transform.position + new Vector3(offset, 0), direction * Mathf.Abs(dashDistance), Color.red);
         return rayHit.collider != null;

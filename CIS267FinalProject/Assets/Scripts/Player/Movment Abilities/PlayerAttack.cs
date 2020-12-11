@@ -46,6 +46,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (colInfo != null)
         {
+            Debug.Log(colInfo.gameObject.name);
             colInfo.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
         }
     }
