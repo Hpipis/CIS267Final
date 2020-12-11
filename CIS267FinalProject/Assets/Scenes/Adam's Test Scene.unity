@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1aeebe1035d34e94aa34eb98fb4c8e02, type: 3}
---- !u!1001 &832851349
+--- !u!1001 &336926162
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -198,11 +198,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1776047477603797179, guid: 7800e46058faaa24fab5a0581d9f7fdf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.6412819
+      value: -1.0220445
       objectReference: {fileID: 0}
     - target: {fileID: 1776047477603797179, guid: 7800e46058faaa24fab5a0581d9f7fdf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.224449
+      value: -2.2645288
       objectReference: {fileID: 0}
     - target: {fileID: 1776047477603797179, guid: 7800e46058faaa24fab5a0581d9f7fdf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -240,22 +240,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1782768519474435495, guid: 7800e46058faaa24fab5a0581d9f7fdf, type: 3}
-      propertyPath: startTimeBtwAttack
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1782768519474435495, guid: 7800e46058faaa24fab5a0581d9f7fdf, type: 3}
-      propertyPath: timer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4987504618214828581, guid: 7800e46058faaa24fab5a0581d9f7fdf, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1976067730}
-    - target: {fileID: 4987504618214828581, guid: 7800e46058faaa24fab5a0581d9f7fdf, type: 3}
-      propertyPath: leftEdge
-      value: 
-      objectReference: {fileID: 108027865}
     - target: {fileID: 4987504618214828581, guid: 7800e46058faaa24fab5a0581d9f7fdf, type: 3}
       propertyPath: rightEdge
       value: 
@@ -264,6 +248,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2118059691}
+    - target: {fileID: 4987504618214828581, guid: 7800e46058faaa24fab5a0581d9f7fdf, type: 3}
+      propertyPath: leftEdge
+      value: 
+      objectReference: {fileID: 108027865}
+    - target: {fileID: 4987504618214828581, guid: 7800e46058faaa24fab5a0581d9f7fdf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1976067730}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7800e46058faaa24fab5a0581d9f7fdf, type: 3}
 --- !u!1 &1204354677
