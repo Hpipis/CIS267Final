@@ -19,12 +19,19 @@ public class PikemanMain : MonoBehaviour
     public bool isFlipped = true;
     public bool inRange;
     public float moveSpeed = 3f;
-    
+    float distanceToPlayer;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
 
+    private void Update()
+    {
+        distanceToPlayer = Vector2.Distance(transform.position, player.position);
+        //Debug.Log("Distance: " + distanceToPlayer);
+
+    }
     public void lookAtPlayer()
     {
         Vector3 flipped = transform.localScale;
@@ -115,7 +122,22 @@ public class PikemanMain : MonoBehaviour
 
     private void WalkingHuman()
     {
-        audioSource.PlayOneShot(walking);
+        if (distanceToPlayer < 30 && distanceToPlayer >= 20)
+        {
+            audioSource.volume = 0.25f;
+            audioSource.PlayOneShot(walking);
+        }
+        if (distanceToPlayer < 20 && distanceToPlayer >= 14)
+        {
+            audioSource.volume = 0.5f;
+            audioSource.PlayOneShot(walking);
+        }
+
+        if (distanceToPlayer < 14)
+        {
+            audioSource.volume = 1f;
+            audioSource.PlayOneShot(walking);
+        }
     }
 
 }

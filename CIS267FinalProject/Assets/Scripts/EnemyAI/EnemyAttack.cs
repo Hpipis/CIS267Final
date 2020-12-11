@@ -8,27 +8,45 @@ public class EnemyAttack : MonoBehaviour
     public LayerMask attackMask;
     public Transform Weapon;
 
-    private float timeBtwAttack;
-    public float startTimeBtwAttack;
+    private bool cooling;
+    public float timer;
+    private float intTimer;
     
     public float attackRange = 1f;
     public int attackDamage = 1;
-    
 
+    private void Awake()
+    {
+        intTimer = timer;
+    }
 
     private void Update()
     {
-        if (timeBtwAttack <= 0)
-        {
-            timeBtwAttack = startTimeBtwAttack;
-
-            AttackEnemy();
+        if (cooling == false)
+        {            
+            AttackEnemy();            
         }
 
-        else
+        if (cooling == true)
         {
-            timeBtwAttack -= Time.deltaTime;
+            Cooldown();
         }
+       
+    }
+
+    void Cooldown()
+    {
+        timer -= Time.deltaTime;
+
+        if (timer <= 0 && cooling)
+        {
+            cooling = false;
+            timer = intTimer;
+        }
+    }
+    public void TriggerCooling()
+    {
+        cooling = true;
     }
 
     public void AttackEnemy()

@@ -325,7 +325,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  playerDashSound: {fileID: 0}
+  playerDashSound: {fileID: 8300000, guid: a6b3ccf0b5273e34c9ebb116b7101c1d, type: 3}
   dashDistance: 4
   effectCooldownTime: 0.2
 --- !u!114 &6465552457344825823
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 415632eca7a02a940aae3a013d6c4989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUp: {fileID: 0}
+  powerUp: {fileID: 8300000, guid: 27a49dac9f91c6a4e86e41a3e406cd78, type: 3}
 --- !u!199 &3546311938754417761
 ParticleSystemRenderer:
   serializedVersion: 6

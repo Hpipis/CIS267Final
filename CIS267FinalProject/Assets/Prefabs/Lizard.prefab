@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1776047477603797177}
-  player: {fileID: 0}
+  player: {fileID: 6236342801736968516, guid: 6b7b31277093245498fea6d41a772d64, type: 3}
   target: {fileID: 0}
   leftEdge: {fileID: 0}
   rightEdge: {fileID: 0}
@@ -294,7 +294,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   Weapon: {fileID: 1782768517964274672}
-  startTimeBtwAttack: 0
+  timer: 0
   attackRange: 1
   attackDamage: 1
 --- !u!114 &3841964222744192663

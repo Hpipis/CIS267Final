@@ -7,6 +7,7 @@ public class LizardMain : MonoBehaviour
     public Animator animator;
     private AudioSource audioSource;
 
+    private Transform thisEnemy;
     public Transform player;
     public Transform target;
     public Transform leftEdge;
@@ -18,20 +19,30 @@ public class LizardMain : MonoBehaviour
     public AudioClip klizardDeathSound;
     public AudioClip walking;
 
+
+
     public bool isFlipped = true;
     public bool inRange;
     
     public float moveSpeed = 3f;
-
+    float distanceToPlayer;
 
     void Start()
-    {
+    {        
         audioSource = GetComponent<AudioSource>();
     }
 
+    private void Update()
+    {
+        distanceToPlayer = Vector2.Distance(transform.position, player.position);
+        //Debug.Log("Distance: " + distanceToPlayer);
+        
+    }
 
     public void lookAtPlayer()
     {
+        
+
         Vector3 flipped = transform.localScale;
         flipped.z *= -1f;
 
@@ -129,6 +140,21 @@ public class LizardMain : MonoBehaviour
 
     private void WalkingLizard()
     {
-        audioSource.PlayOneShot(walking);
+        if (distanceToPlayer < 30 && distanceToPlayer >= 20)
+        {
+            audioSource.volume = 0.25f;
+            audioSource.PlayOneShot(walking);
+        }
+        if (distanceToPlayer < 20 && distanceToPlayer >= 14)
+        {
+            audioSource.volume = 0.5f;         
+            audioSource.PlayOneShot(walking);
+        }
+
+        if (distanceToPlayer < 14)
+        {
+            audioSource.volume = 1f;
+            audioSource.PlayOneShot(walking);
+        }
     }
 }

@@ -268,7 +268,7 @@ MonoBehaviour:
   pikemanPikeSwingSound: {fileID: 8300000, guid: 746df689b6ab96c45b50f62751ee0314, type: 3}
   pikemanDeath: {fileID: 8300000, guid: 4db116ebf96ff3f4b95bbbc7083d54ff, type: 3}
   walking: {fileID: 8300000, guid: b503d69bc2f13be419bcf5189d7fe30c, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 6236342801736968516, guid: 6b7b31277093245498fea6d41a772d64, type: 3}
   target: {fileID: 0}
   leftEdge: {fileID: 0}
   rightEdge: {fileID: 0}
@@ -307,7 +307,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   Weapon: {fileID: 2913355813167698651}
-  startTimeBtwAttack: 0
+  timer: 0
   attackRange: 1
   attackDamage: 1
 --- !u!1 &2913355813167698648
