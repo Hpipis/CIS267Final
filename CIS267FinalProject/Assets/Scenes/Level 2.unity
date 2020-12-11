@@ -141588,6 +141588,14 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6023553205327417102, guid: 6b7b31277093245498fea6d41a772d64, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 14aa72e27dcc9804c821d8471565e449, type: 3}
+    - target: {fileID: 6023553205327417102, guid: 6b7b31277093245498fea6d41a772d64, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: ff10e50eda68bd04f8cb559dbf56bb1c, type: 2}
     - target: {fileID: 6236342801736968513, guid: 6b7b31277093245498fea6d41a772d64, type: 3}
       propertyPath: m_Name
       value: Player

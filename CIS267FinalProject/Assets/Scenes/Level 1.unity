@@ -77132,6 +77132,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6023553205327417102, guid: 6b7b31277093245498fea6d41a772d64, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: ff10e50eda68bd04f8cb559dbf56bb1c, type: 2}
+    - target: {fileID: 6023553205327417102, guid: 6b7b31277093245498fea6d41a772d64, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: def0977d4278ee444aa2227fd50d7f04, type: 3}
     - target: {fileID: 6236342801736968513, guid: 6b7b31277093245498fea6d41a772d64, type: 3}
       propertyPath: m_Name
       value: Player
@@ -82927,6 +82935,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8222730664180307152, guid: 2f58bb12501d60347be9db4e540a8f05, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: ff10e50eda68bd04f8cb559dbf56bb1c, type: 2}
     - target: {fileID: 614727377799907647, guid: 2f58bb12501d60347be9db4e540a8f05, type: 3}
       propertyPath: m_Name
       value: Pikeman

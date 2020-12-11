@@ -18,6 +18,11 @@ public class BtnPress : MonoBehaviour
 
     public void btn_settings()
     {
-        
+        SceneManager.LoadScene("SettingsScreen");
+    }
+
+    public void btn_back()
+    {
+        SceneManager.LoadScene("StartScreen");
     }
 }
