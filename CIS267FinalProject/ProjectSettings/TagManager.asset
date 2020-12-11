@@ -17,6 +17,7 @@ TagManager:
   - PlayerWeapon
   - Enemy
   - Lizard
+  - SwitchScene
   layers:
   - Default
   - TransparentFX

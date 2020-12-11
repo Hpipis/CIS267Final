@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 102005382}
   m_Layer: 0
   m_Name: End Level
-  m_TagString: Untagged
+  m_TagString: SwitchScene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
