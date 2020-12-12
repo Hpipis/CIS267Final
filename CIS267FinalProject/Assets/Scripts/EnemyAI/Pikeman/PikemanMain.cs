@@ -29,7 +29,7 @@ public class PikemanMain : MonoBehaviour
     private void Update()
     {
         distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        Debug.Log("Distance: " + distanceToPlayer);
+        //Debug.Log("Distance: " + distanceToPlayer);
 
     }
     public void lookAtPlayer()
