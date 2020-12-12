@@ -45,32 +45,7 @@ public class PlayerAttack : MonoBehaviour
         }
 
     }
-
-
-    void AttackPlayer()
-    {
-        //Debug.Log("HIT");
-        
-
-        Collider2D colInfo = Physics2D.OverlapCircle(Weapon.position, attackRange, enemyLayers);
-
-        if (colInfo != null)
-        {
-            Debug.Log(colInfo.gameObject.name);
-            colInfo.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
-        }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        if (Weapon == null)
-        
-            return;
        
-
-        Gizmos.DrawWireSphere(Weapon.position, attackRange);
-    }
-
 
     public void TakeDamage(int damage)
     {

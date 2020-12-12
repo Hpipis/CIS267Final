@@ -208,7 +208,7 @@ TextureImporter:
         serializedVersion: 2
         x: 55
         y: 20
-        width: 24
+        width: 48
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -229,7 +229,7 @@ TextureImporter:
         serializedVersion: 2
         x: 199
         y: 20
-        width: 24
+        width: 48
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -250,7 +250,7 @@ TextureImporter:
         serializedVersion: 2
         x: 343
         y: 20
-        width: 24
+        width: 48
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -271,7 +271,7 @@ TextureImporter:
         serializedVersion: 2
         x: 487
         y: 20
-        width: 21
+        width: 48
         height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -292,7 +292,7 @@ TextureImporter:
         serializedVersion: 2
         x: 631
         y: 20
-        width: 21
+        width: 48
         height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -313,7 +313,7 @@ TextureImporter:
         serializedVersion: 2
         x: 775
         y: 20
-        width: 41
+        width: 48
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -334,7 +334,7 @@ TextureImporter:
         serializedVersion: 2
         x: 919
         y: 20
-        width: 37
+        width: 48
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -355,7 +355,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1063
         y: 20
-        width: 37
+        width: 48
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -376,7 +376,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1207
         y: 20
-        width: 33
+        width: 48
         height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -397,7 +397,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1340
         y: 20
-        width: 30
+        width: 48
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -439,7 +439,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1639
         y: 20
-        width: 39
+        width: 48
         height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -460,7 +460,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1783
         y: 20
-        width: 39
+        width: 48
         height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -481,7 +481,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1931
         y: 20
-        width: 30
+        width: 48
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -502,7 +502,7 @@ TextureImporter:
         serializedVersion: 2
         x: 2082
         y: 20
-        width: 27
+        width: 48
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -523,7 +523,7 @@ TextureImporter:
         serializedVersion: 2
         x: 2226
         y: 20
-        width: 21
+        width: 48
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -544,7 +544,7 @@ TextureImporter:
         serializedVersion: 2
         x: 2375
         y: 20
-        width: 18
+        width: 48
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -586,7 +586,7 @@ TextureImporter:
         serializedVersion: 2
         x: 2675
         y: 20
-        width: 40
+        width: 48
         height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -607,7 +607,7 @@ TextureImporter:
         serializedVersion: 2
         x: 2819
         y: 20
-        width: 22
+        width: 48
         height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -628,7 +628,7 @@ TextureImporter:
         serializedVersion: 2
         x: 2963
         y: 20
-        width: 22
+        width: 48
         height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -649,7 +649,7 @@ TextureImporter:
         serializedVersion: 2
         x: 3107
         y: 20
-        width: 22
+        width: 48
         height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
