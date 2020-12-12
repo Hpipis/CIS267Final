@@ -10,6 +10,7 @@ public class BtnPress : MonoBehaviour
     public void btn_start()
     {
         SceneManager.LoadScene("Level 1");
+        Time.timeScale = 1f;
     }
     public void btn_exit()
     {

@@ -24,7 +24,7 @@ public class EnemyWalkPikeman : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateinfo, int layerindex)
     {
-        pikeman.lookAtPlayer();
+        //pikeman.lookAtPlayer();
 
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Pike-man_Attack"))
         {
@@ -51,7 +51,7 @@ public class EnemyWalkPikeman : StateMachineBehaviour
         animator.ResetTrigger("Attack");
     }
 
-    
+
 
 
 }
