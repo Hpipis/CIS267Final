@@ -11,7 +11,13 @@ public class playerHitbox : MonoBehaviour
     {
         Debug.Log("Hit");
 
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy" && other.gameObject.name == "Bat Enemy")
+        {
+            Debug.Log("bat hit!");
+            other.GetComponent<EnemyHealth>().Die();
+        }
+
+        else if (other.gameObject.tag == "Enemy")
         {
             other.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
         }

@@ -62,7 +62,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    void Die()
+    public void Die()
     {
         if(gameObject.name == "Bat Enemy")
         {
@@ -82,21 +82,34 @@ public class EnemyHealth : MonoBehaviour
             sceneEndTime += Time.time + sceneEndDelay;
             animator.SetBool("isDead", true);
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-            GetComponent<EnemyAttack>().enabled = false;
             GetComponent<Collider2D>().enabled = false;
             KillCounter k = FindObjectOfType<KillCounter>();
             k.setSceneKills(k.getSceneKills() + 1);
+            GetComponent<KingEnemyMain>().enabled = false;
         }
 
-        else
+        else if(gameObject.name == "Pikeman")
         {
             Debug.Log("DEAD");
             animator.SetBool("isDead", true);
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-            GetComponent<EnemyAttack>().enabled = false;
             GetComponent<Collider2D>().enabled = false;
             KillCounter k = FindObjectOfType<KillCounter>();
             k.setSceneKills(k.getSceneKills() + 1);
+            GetComponent<PikemanEnemyMain>().enabled = false;
+            Debug.Log("pikeman enemy script disabled");
+            this.enabled = false;
+        }
+
+        else if (gameObject.name == "Lizard")
+        {
+            Debug.Log("DEAD");
+            animator.SetBool("isDead", true);
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+            GetComponent<Collider2D>().enabled = false;
+            KillCounter k = FindObjectOfType<KillCounter>();
+            k.setSceneKills(k.getSceneKills() + 1);
+            GetComponent<LizardEnemyMain>().enabled = false;
             this.enabled = false;
         }
     }
