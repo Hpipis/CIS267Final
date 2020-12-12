@@ -26,23 +26,23 @@ public class EnemyWalkPikeman : StateMachineBehaviour
     {
         //pikeman.lookAtPlayer();
 
-        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Pike-man_Attack"))
-        {
-            Vector2 targetPosition = new Vector2(pikeman.target.position.x, pikeman.transform.position.y);
-            pikeman.transform.position = Vector2.MoveTowards(pikeman.transform.position, targetPosition, pikeman.moveSpeed * Time.deltaTime);
-        }
+    //    if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Pike-man_Attack"))
+    //    {
+    //        Vector2 targetPosition = new Vector2(pikeman.target.position.x, pikeman.transform.position.y);
+    //        pikeman.transform.position = Vector2.MoveTowards(pikeman.transform.position, targetPosition, pikeman.moveSpeed * Time.deltaTime);
+    //    }
 
-        if (!pikeman.withinLimits() && !pikeman.inRange && !animator.GetCurrentAnimatorStateInfo(0).IsName("Pike-man_Attack"))
-        {
-            pikeman.selectTarget();
-        }
+    //    if (!pikeman.withinLimits() && !pikeman.inRange && !animator.GetCurrentAnimatorStateInfo(0).IsName("Pike-man_Attack"))
+    //    {
+    //        pikeman.selectTarget();
+    //    }
 
         
 
-        if (Vector2.Distance(player.position, rb.position) <= attackRange)
-        {
-            animator.SetTrigger("Attack");
-        }
+    //    if (Vector2.Distance(player.position, rb.position) <= attackRange)
+    //    {
+    //        animator.SetTrigger("Attack");
+    //    }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
