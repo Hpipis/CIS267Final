@@ -253,12 +253,8 @@ public class PikemanEnemyMain : MonoBehaviour
 
     private void WalkingHuman()
     {
-        if (distanceToPlayer < 30 && distanceToPlayer >= 20)
-        {
-            audioSource.volume = 0.5f;
-            audioSource.PlayOneShot(walking);
-        }
-        if (distanceToPlayer < 20 && distanceToPlayer >= 14)
+        
+        if (distanceToPlayer < 20)
         {
             audioSource.volume = 0.1f;
             audioSource.PlayOneShot(walking);
@@ -266,7 +262,7 @@ public class PikemanEnemyMain : MonoBehaviour
 
         if (distanceToPlayer < 14)
         {
-            audioSource.volume = .25f;
+            audioSource.volume = .15f;
             audioSource.PlayOneShot(walking);
         }
     }
