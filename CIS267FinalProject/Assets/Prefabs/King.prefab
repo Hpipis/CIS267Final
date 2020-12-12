@@ -288,7 +288,7 @@ MonoBehaviour:
   kingCrownDropSound: {fileID: 8300000, guid: 5d15b0d0831ebac4bbeb4c99bb5f8bf7, type: 3}
   walking: {fileID: 8300000, guid: b503d69bc2f13be419bcf5189d7fe30c, type: 3}
   rayCast: {fileID: 3174920031156785101}
-  player: {fileID: 6236342801736968516, guid: 6b7b31277093245498fea6d41a772d64, type: 3}
+  player: {fileID: 2824001405747099058, guid: fb7e4ba81dc85ad4281ec0509e821fcc, type: 3}
   leftEdge: {fileID: 0}
   rightEdge: {fileID: 0}
   raycastMask:

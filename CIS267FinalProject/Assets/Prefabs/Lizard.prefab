@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6308635986125524318}
   - component: {fileID: 8671563948300087006}
   m_Layer: 10
-  m_Name: Lizard 1
+  m_Name: Lizard
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -272,7 +272,7 @@ MonoBehaviour:
   klizardDeathSound: {fileID: 8300000, guid: 0bbba01274fb8d94c852ae3eb3d56651, type: 3}
   walking: {fileID: 8300000, guid: 2b76bded35eea08409a402dcaa1e7e25, type: 3}
   rayCast: {fileID: 5545295360200667720}
-  player: {fileID: 0}
+  player: {fileID: 2824001405747099058, guid: fb7e4ba81dc85ad4281ec0509e821fcc, type: 3}
   leftEdge: {fileID: 0}
   rightEdge: {fileID: 0}
   raycastMask:

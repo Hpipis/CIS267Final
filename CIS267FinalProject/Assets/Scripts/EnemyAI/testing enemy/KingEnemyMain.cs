@@ -271,6 +271,7 @@ public class KingEnemyMain : MonoBehaviour
 
     private void WalkingHuman()
     {
+        audioSource.volume = .5f;
         audioSource.PlayOneShot(walking);
     }
 

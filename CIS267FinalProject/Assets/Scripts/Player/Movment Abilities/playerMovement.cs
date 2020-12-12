@@ -169,6 +169,7 @@ public class playerMovement : MonoBehaviour
 
     private void WalkingHuman()
     {
+        audioSource.volume = .25f;
         audioSource.PlayOneShot(walking);
     }
 

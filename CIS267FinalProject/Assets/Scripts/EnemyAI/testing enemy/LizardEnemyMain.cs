@@ -267,18 +267,18 @@ public class LizardEnemyMain : MonoBehaviour
     {
         if (distanceToPlayer < 30 && distanceToPlayer >= 20)
         {
-            audioSource.volume = 0.25f;
+            audioSource.volume = 0.1f;
             audioSource.PlayOneShot(walking);
         }
         if (distanceToPlayer < 20 && distanceToPlayer >= 14)
         {
-            audioSource.volume = 0.5f;
+            audioSource.volume = 0.25f;
             audioSource.PlayOneShot(walking);
         }
 
         if (distanceToPlayer < 14)
         {
-            audioSource.volume = 1f;
+            audioSource.volume = .5f;
             audioSource.PlayOneShot(walking);
         }
     }
