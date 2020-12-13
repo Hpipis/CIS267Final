@@ -104,7 +104,6 @@ public class EnemyHealth : MonoBehaviour
             animator.SetBool("isDead", true);
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
             GetComponent<Collider2D>().enabled = false;
-            KillCounter k = FindObjectOfType<KillCounter>();
             GetComponent<KingEnemyMain>().enabled = false;
         }
 
