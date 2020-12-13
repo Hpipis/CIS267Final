@@ -22,6 +22,10 @@ public class PlayerAttack : MonoBehaviour
     private float resetOffset = 1f;
     private bool playerDead = false;
 
+    private bool hasAttacked = false;
+    private float hasAttackedResetTimer = 0f;
+    private float hasAttackedNextStateSwitch = .6f;
+
     public LayerMask enemyLayers;
 
     void Start()
@@ -32,8 +36,17 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
+        //reset the variable
+        if (hasAttacked == true && Time.time >= hasAttackedResetTimer)
+        {
+            hasAttacked = false;
+        }
+
+
         if (Input.GetKeyDown(KeyCode.H))
         {
+            hasAttackedResetTimer = Time.time + hasAttackedNextStateSwitch;
+            hasAttacked = true;
             animator.SetTrigger("attack");
         }
 
@@ -43,7 +56,9 @@ public class PlayerAttack : MonoBehaviour
             SceneManager.LoadScene(cur.name);
             this.enabled = false;
         }
+        Debug.Log("hasAttacked Status" + hasAttacked);
 
+       
     }
        
 
@@ -72,5 +87,10 @@ public class PlayerAttack : MonoBehaviour
     {
         Debug.Log("sword");
         audioSource.PlayOneShot(playerSwordSwingSound);
+    }
+
+    public bool getAttacking()
+    {
+        return hasAttacked;
     }
 }

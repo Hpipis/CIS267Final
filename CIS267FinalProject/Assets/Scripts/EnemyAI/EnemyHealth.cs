@@ -7,12 +7,19 @@ using UnityEngine.SceneManagement;
 public class EnemyHealth : MonoBehaviour
 {
     public Animator animator;
+
     private AudioSource audioSource;
 
     public AudioClip enemyHurt;
 
     public int maxHealth = 1;
     int currentHealth;
+
+    //pikeman variables
+    private bool pikemanDead = false;
+    private float pikemanDespawntime = 0;
+    private float pikemanDespawnOffset = 1.5f;
+
 
     //bat variables
     private bool batDead = false;
@@ -27,7 +34,8 @@ public class EnemyHealth : MonoBehaviour
 
 
     void Start()
-    {        
+    {
+
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
     }
@@ -44,6 +52,19 @@ public class EnemyHealth : MonoBehaviour
                 this.enabled = false;
             }
         }
+        if (pikemanDead)
+        {
+            if (Time.time >= pikemanDespawntime)
+            {
+                GetComponent<SpriteRenderer>().enabled = false;
+                BoxCollider2D[] colliders = GetComponentsInChildren<BoxCollider2D>();
+                for (int componentIndex = 0; componentIndex < colliders.Length; ++componentIndex)
+                {
+                    colliders[componentIndex].enabled = false;
+                }
+                this.enabled = false;
+            }
+        }    
         if(kingDead && Time.time >= sceneEndTime)
         {
             SceneManager.LoadScene("EndScreen");
@@ -53,9 +74,9 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        audioSource.PlayOneShot(enemyHurt);
-
+            currentHealth -= damage;
+            //audioSource.PlayOneShot(enemyHurt);
+           
         if (currentHealth <= 0)
         {
             Die();
@@ -84,12 +105,13 @@ public class EnemyHealth : MonoBehaviour
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
             GetComponent<Collider2D>().enabled = false;
             KillCounter k = FindObjectOfType<KillCounter>();
-            k.setSceneKills(k.getSceneKills() + 1);
             GetComponent<KingEnemyMain>().enabled = false;
         }
 
         else if(gameObject.name == "Pikeman")
         {
+            pikemanDead = true;
+            pikemanDespawntime += Time.time + pikemanDespawnOffset;
             Debug.Log("DEAD");
             animator.SetBool("isDead", true);
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
@@ -97,8 +119,6 @@ public class EnemyHealth : MonoBehaviour
             KillCounter k = FindObjectOfType<KillCounter>();
             k.setSceneKills(k.getSceneKills() + 1);
             GetComponent<PikemanEnemyMain>().enabled = false;
-            Debug.Log("pikeman enemy script disabled");
-            this.enabled = false;
         }
 
         else if (gameObject.name == "Lizard")

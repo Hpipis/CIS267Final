@@ -18,6 +18,8 @@ TagManager:
   - Enemy
   - Lizard
   - SwitchScene
+  - Pikeman
+  - King
   layers:
   - Default
   - TransparentFX

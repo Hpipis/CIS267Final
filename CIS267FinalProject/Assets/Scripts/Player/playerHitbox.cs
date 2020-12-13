@@ -5,21 +5,25 @@ using UnityEngine;
 public class playerHitbox : MonoBehaviour
 {
     public int attackDamage = 1;
-
+    private PlayerAttack hasPlayerAttacked;
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        hasPlayerAttacked = FindObjectOfType<PlayerAttack>();
         Debug.Log("Hit");
 
-        if (other.gameObject.tag == "Enemy" && other.gameObject.name == "Bat Enemy")
+        if (hasPlayerAttacked.getAttacking() == true)
         {
-            Debug.Log("bat hit!");
-            other.GetComponent<EnemyHealth>().Die();
-        }
+            if (other.gameObject.tag == "Enemy" && other.gameObject.name == "Bat Enemy")
+            {
+                Debug.Log("bat hit!");
+                other.GetComponent<EnemyHealth>().Die();
+            }
 
-        else if (other.gameObject.tag == "Enemy")
-        {
-            other.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
+            else if (other.gameObject.tag == "Enemy")
+            {
+                other.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
+            }
         }
 
     }

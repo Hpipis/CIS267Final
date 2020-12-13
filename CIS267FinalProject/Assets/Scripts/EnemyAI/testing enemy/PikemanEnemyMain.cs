@@ -34,6 +34,11 @@ public class PikemanEnemyMain : MonoBehaviour
     private float distance;
     private float intTimer;
 
+    //used to make enemies not kill you before even attacking - this links to Enemy HitBox script
+    //private bool hasAttacked;
+    //private float hasAttackedTimer = 0f;
+    //private float hasAttackOffset = .6f;
+
     void Awake()
     {
         SelectTarget();
@@ -82,8 +87,6 @@ public class PikemanEnemyMain : MonoBehaviour
     {
         distance = Vector2.Distance(transform.position, target.position);
 
-        
-
         if (distance > attackDistance)        {
             
             StopAttack();
@@ -91,6 +94,7 @@ public class PikemanEnemyMain : MonoBehaviour
         else if (attackDistance >= distance && cooling == false)
         {
             Attack();
+
         }
         if (cooling)
         {
@@ -118,10 +122,9 @@ public class PikemanEnemyMain : MonoBehaviour
     void Attack()
     {
         timer = intTimer;
-        attackMode = true;
-
         animator.SetBool("canWalk", false);
         animator.SetBool("Attack", true);
+        attackMode = true;
     }
 
     void StopAttack()
@@ -166,7 +169,6 @@ public class PikemanEnemyMain : MonoBehaviour
         {
             target = leftEdge;
         }
-
         else
         {
             target = rightEdge;
@@ -267,4 +269,10 @@ public class PikemanEnemyMain : MonoBehaviour
         }
     }
 
+
+
+    //public bool getAttacking()
+    //{
+    //    return hasAttacked;
+    //}
 }

@@ -37,6 +37,11 @@ public class KingEnemyMain : MonoBehaviour
     private float distance;
     private float intTimer;
 
+    //used to make enemies not kill you before even attacking - this links to Enemy HitBox script
+    //private bool hasAttacked;
+    //private float hasAttackedTimer = 0f;
+    //private float hasAttackOffset = .6f;
+
     void Awake()
     {
         SelectTarget();
@@ -274,5 +279,11 @@ public class KingEnemyMain : MonoBehaviour
         audioSource.volume = .5f;
         audioSource.PlayOneShot(walking);
     }
+
+
+    //public bool getAttacking()
+    //{
+    //    return hasAttacked;
+    //}
 
 }

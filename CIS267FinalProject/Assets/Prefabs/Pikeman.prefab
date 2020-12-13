@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8681466629545701165}
   m_Layer: 10
   m_Name: hitBox
-  m_TagString: Untagged
+  m_TagString: Pikeman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
