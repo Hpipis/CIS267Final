@@ -18,11 +18,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 3.unity
     guid: cf7652958ec40e04d87f1f2c6700d4b1
   - enabled: 1
+    path: Assets/Scenes/Boss Level.unity
+    guid: 42f4e33dd43ab6344b12bf6a91e74a88
+  - enabled: 1
     path: Assets/Scenes/SettingsScreen.unity
     guid: 1732b2ab8c1bb654fb79c5314b36edb5
   - enabled: 1
-    path: Assets/Scenes/Boss Level.unity
-    guid: 42f4e33dd43ab6344b12bf6a91e74a88
+    path: Assets/Scenes/RulesScreen.unity
+    guid: 54166405b7e5bc445bb9aa496e05ba33
   - enabled: 1
     path: Assets/Scenes/EndScreen.unity
     guid: d5efb1183c790c14ba19c8e9b5c32413

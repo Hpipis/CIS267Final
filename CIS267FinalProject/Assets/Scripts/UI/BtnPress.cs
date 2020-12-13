@@ -26,4 +26,9 @@ public class BtnPress : MonoBehaviour
     {
         SceneManager.LoadScene("StartScreen");
     }
+
+    public void btn_rules()
+    {
+        SceneManager.LoadScene("RulesScreen");
+    }
 }

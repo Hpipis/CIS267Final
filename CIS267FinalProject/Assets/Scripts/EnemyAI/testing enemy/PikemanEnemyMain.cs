@@ -109,6 +109,7 @@ public class PikemanEnemyMain : MonoBehaviour
 
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Pike-man_Attack"))
         {
+            Flip();
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
         }
