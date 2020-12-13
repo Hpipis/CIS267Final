@@ -129,6 +129,7 @@ public class EnemyHealth : MonoBehaviour
             KillCounter k = FindObjectOfType<KillCounter>();
             k.setSceneKills(k.getSceneKills() + 1);
             GetComponent<LizardEnemyMain>().enabled = false;
+            GetComponentInChildren<Hazard>().setEnabled(false);
             this.enabled = false;
         }
     }
