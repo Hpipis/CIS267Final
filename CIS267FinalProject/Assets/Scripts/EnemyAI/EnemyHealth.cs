@@ -20,6 +20,11 @@ public class EnemyHealth : MonoBehaviour
     private float pikemanDespawntime = 0;
     private float pikemanDespawnOffset = 1.5f;
 
+    //Lizard variables
+    private bool lizardDead = false;
+    private float lizardDespawntime = 0;
+    private float lizardDespawnOffset = 1.5f;
+
 
     //bat variables
     private bool batDead = false;
@@ -64,7 +69,20 @@ public class EnemyHealth : MonoBehaviour
                 }
                 this.enabled = false;
             }
-        }    
+        }
+        if (lizardDead)
+        {
+            if (Time.time >= lizardDespawntime)
+            {
+                GetComponent<SpriteRenderer>().enabled = false;
+                BoxCollider2D[] colliders = GetComponentsInChildren<BoxCollider2D>();
+                for (int componentIndex = 0; componentIndex < colliders.Length; ++componentIndex)
+                {
+                    colliders[componentIndex].enabled = false;
+                }
+                this.enabled = false;
+            }
+        }
         if(kingDead && Time.time >= sceneEndTime)
         {
             SceneManager.LoadScene("EndScreen");
@@ -74,11 +92,12 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-            currentHealth -= damage;
-            //audioSource.PlayOneShot(enemyHurt);
-           
+        currentHealth -= damage;
+        //audioSource.PlayOneShot(enemyHurt);
+        //Debug.Log("Enemy damage taken ");
         if (currentHealth <= 0)
         {
+            //Debug.Log("Current enemy health " + currentHealth);
             Die();
         }
     }
@@ -107,7 +126,7 @@ public class EnemyHealth : MonoBehaviour
             GetComponent<KingEnemyMain>().enabled = false;
         }
 
-        else if(gameObject.name == "Pikeman")
+        else if (gameObject.name == "Pikeman")
         {
             pikemanDead = true;
             pikemanDespawntime += Time.time + pikemanDespawnOffset;
@@ -122,6 +141,8 @@ public class EnemyHealth : MonoBehaviour
 
         else if (gameObject.name == "Lizard")
         {
+            lizardDead = true;
+            lizardDespawntime += Time.time + lizardDespawnOffset;
             Debug.Log("DEAD");
             animator.SetBool("isDead", true);
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
@@ -130,7 +151,6 @@ public class EnemyHealth : MonoBehaviour
             k.setSceneKills(k.getSceneKills() + 1);
             GetComponent<LizardEnemyMain>().enabled = false;
             GetComponentInChildren<Hazard>().setEnabled(false);
-            this.enabled = false;
         }
     }
 }

@@ -33,13 +33,6 @@ public class KillCounter : MonoBehaviour
             }
         }
     }
-
-    //void MyFunction<Scene>(Scene scene)
-    //{
-
-
-    //}
-
     public int getKillCounter()
     {
         return killCounter;

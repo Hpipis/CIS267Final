@@ -22,6 +22,7 @@ public class playerHitbox : MonoBehaviour
 
             else if (other.gameObject.tag == "Enemy")
             {
+                Debug.Log("Hit Enemy");
                 other.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
             }
         }

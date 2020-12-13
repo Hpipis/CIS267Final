@@ -45,7 +45,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.H))
         {
-            hasAttackedResetTimer = Time.time + hasAttackedNextStateSwitch;
+            hasAttackedResetTimer += Time.time + hasAttackedNextStateSwitch;
             hasAttacked = true;
             animator.SetTrigger("attack");
         }
