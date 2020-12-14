@@ -57,6 +57,7 @@ public class EndMenu : MonoBehaviour
 
         totalScore += LevelCompletePoints;
         totalScore += bossPoints;
+        totalScore += BonusScore;
     }
     
 

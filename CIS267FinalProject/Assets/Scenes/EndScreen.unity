@@ -434,7 +434,7 @@ MonoBehaviour:
   txt_BonusScore: {fileID: 1894001419}
   txt_EnemiesKilled: {fileID: 641215512}
   LevelCompletePoints: 1000
-  totalEnemiesLevel1: 4
+  totalEnemiesLevel1: 5
   totalEnemiesLevel2: 5
   totalEnemiesLevel3: 10
   bossPoints: 2000
