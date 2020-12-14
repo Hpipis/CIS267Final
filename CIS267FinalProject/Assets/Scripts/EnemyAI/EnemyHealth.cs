@@ -124,6 +124,7 @@ public class EnemyHealth : MonoBehaviour
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
             GetComponent<Collider2D>().enabled = false;
             GetComponent<KingEnemyMain>().enabled = false;
+            GetComponentInChildren<CapsuleCollider2D>().enabled = false;
         }
 
         else if (gameObject.name == "Pikeman")

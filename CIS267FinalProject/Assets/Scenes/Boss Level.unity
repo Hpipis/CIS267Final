@@ -678,6 +678,10 @@ PrefabInstance:
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 24300002, guid: ff10e50eda68bd04f8cb559dbf56bb1c, type: 2}
+    - target: {fileID: 6764361355877023400, guid: a8315cd94a87f754eb58b9cf8fc9b82e, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8547061910731149492, guid: a8315cd94a87f754eb58b9cf8fc9b82e, type: 3}
       propertyPath: maxHealth
       value: 3
@@ -10101,7 +10105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9160456060778032049, guid: fb7e4ba81dc85ad4281ec0509e821fcc, type: 3}
       propertyPath: maxHealth
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb7e4ba81dc85ad4281ec0509e821fcc, type: 3}
